@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/output.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>VoxFlowAI</title>
+  </head>
+  <body class="font-normal bg-body overflow-x-hidden">
+    <header
+      class="absolute top-0 left-0 z-50 w-full border-b border-solid border-b-700"
+    >
+      <div
+        class="items-center justify-between hidden px-5 mx-auto desktop-header lg:flex"
+      >
+        <a href="/">
+          <img src="assets/img/navlogo.svg" alt="logo" />
+        </a>
+        <nav>
+          <ul class="flex items-center justify-center">
+            <li
+              class="relative h-full px-5 border-solid xl:px-10 py-7 border-b-700"
+            >
+              <a
+                href="/"
+                class="inline-block text-base font-medium capitalize text-w-100"
+                >главная</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="features.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >решения</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="products.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >продукты</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="pricing.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >тарифы</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="blog.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >блог</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="contact.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="items-center hidden gap-3 lg:flex">
+          <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+            <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+        <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+      </svg>
+
+          </a>
+          <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+            <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+        <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+      </svg>
+
+          </a>
+          <a href="https://wa.me/79211769883" target="_blank" aria-label="WhatsApp">
+      <svg width="26" height="26" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <clipPath id="clip">
+            <circle cx="128" cy="128" r="128"/>
+          </clipPath>
+        </defs>
+        <circle cx="128" cy="128" r="128" fill="#25D366"/>
+        <g clip-path="url(#clip)">
+          <path fill="#fff" d="M187.3 68.7C172.6 54 152 46 128.8 46c-46 0-83.2 37.2-83.2 83.1 0 14.6 3.8 28.9 11 41.5L46 210l41-10.7c12 6.6 25.6 10.1 39.8 10.1 46 0 83.2-37.2 83.2-83.1 0-23.2-8-43.8-22.7-58.6Zm-58.5 121c-12.4 0-24.6-3.4-35.1-9.8l-2.5-1.5-24.3 6.4 6.5-23.7-1.6-2.5c-6.7-10.5-10.2-22.5-10.2-34.9 0-36.3 29.6-65.9 65.9-65.9 17.6 0 34.1 6.8 46.5 19.2 12.4 12.5 19.2 29 19.1 46.5 0 36.3-29.6 65.9-65.9 65.9Zm39.1-48.9c-2.1-1-12.6-6.2-14.6-6.9-2-.8-3.5-1.2-5 1.2-1.5 2.3-5.8 6.9-7.1 8.3-1.3 1.5-2.6 1.7-4.7.8-12.8-5.4-21.2-9.6-29.7-21.7-2.2-3.1 2.2-2.9 6.2-11.4.7-1.5.4-2.7-.2-3.9-.6-1.2-5-12.1-6.9-16.6-1.8-4.3-3.7-3.7-5-3.8-1.3-.1-2.8-.1-4.3-.1-1.5 0-4 1-6 3-2 2-7.9 7.7-7.9 18.7s8.1 21.7 9.2 23.2c1.1 1.5 16 24.5 38.8 33.2 22.8 8.7 22.8 5.8 26.9 5.5 4.1-.3 13.2-5.3 15.1-10.4 1.9-5.1 1.9-9.5 1.3-10.4-.5-.9-1.8-1.5-3.9-2.5Z"/>
+        </g>
+      </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="container flex items-center justify-between px-4 py-4 mx-auto mobile-header lg:hidden"
+      >
+        <a href="/">
+          <img src="assets/img/navlogo.svg" alt="logo" />
+        </a>
+        <span class="text-white cursor-pointer menu-open-icon lg:hidden">
+          <svg
+            class="block w-8 h-8 font-semibold"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </span>
+        <div
+          class="fixed top-0 left-0 flex flex-col items-start justify-start w-full h-screen transition-all duration-300 translate-x-full bg-black mobile-menu p-7"
+        >
+          <div class="flex items-start justify-between w-full">
+            <nav>
+              <ul class="mt-5">
+                <li>
+                  <a
+                    href="index.html"
+                    class="inline-block mb-5 text-base font-medium capitalize text-w-100"
+                    >главная</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="features.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >решения</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="products.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >продукты</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="pricing.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >тарифы</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="blog.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >блог</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >контакты</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <strong class="text-white cursor-pointer mobile-menu-close-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-x-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+                />
+              </svg>
+            </strong>
+          </div>
+          <div class="flex items-center justify-start w-full gap-2 mt-6">
+            <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+              <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+          <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+        </svg>
+
+            </a>
+            <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+              <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+          <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+        </svg>
+
+            </a>
+            <a href="https://wa.me/79211769883" target="_blank" aria-label="WhatsApp">
+        <svg width="26" height="26" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="clip">
+              <circle cx="128" cy="128" r="128"/>
+            </clipPath>
+          </defs>
+          <circle cx="128" cy="128" r="128" fill="#25D366"/>
+          <g clip-path="url(#clip)">
+            <path fill="#fff" d="M187.3 68.7C172.6 54 152 46 128.8 46c-46 0-83.2 37.2-83.2 83.1 0 14.6 3.8 28.9 11 41.5L46 210l41-10.7c12 6.6 25.6 10.1 39.8 10.1 46 0 83.2-37.2 83.2-83.1 0-23.2-8-43.8-22.7-58.6Zm-58.5 121c-12.4 0-24.6-3.4-35.1-9.8l-2.5-1.5-24.3 6.4 6.5-23.7-1.6-2.5c-6.7-10.5-10.2-22.5-10.2-34.9 0-36.3 29.6-65.9 65.9-65.9 17.6 0 34.1 6.8 46.5 19.2 12.4 12.5 19.2 29 19.1 46.5 0 36.3-29.6 65.9-65.9 65.9Zm39.1-48.9c-2.1-1-12.6-6.2-14.6-6.9-2-.8-3.5-1.2-5 1.2-1.5 2.3-5.8 6.9-7.1 8.3-1.3 1.5-2.6 1.7-4.7.8-12.8-5.4-21.2-9.6-29.7-21.7-2.2-3.1 2.2-2.9 6.2-11.4.7-1.5.4-2.7-.2-3.9-.6-1.2-5-12.1-6.9-16.6-1.8-4.3-3.7-3.7-5-3.8-1.3-.1-2.8-.1-4.3-.1-1.5 0-4 1-6 3-2 2-7.9 7.7-7.9 18.7s8.1 21.7 9.2 23.2c1.1 1.5 16 24.5 38.8 33.2 22.8 8.7 22.8 5.8 26.9 5.5 4.1-.3 13.2-5.3 15.1-10.4 1.9-5.1 1.9-9.5 1.3-10.4-.5-.9-1.8-1.5-3.9-2.5Z"/>
+          </g>
+        </svg>
+          </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="bg-primary-hero bg-cover bg-center bg-no-repeat pt-52 pb-32 px-5 xl:px-0 text-center"
+    >
+      <a
+        data-aos="fade-up"
+        data-aos-delay="100"
+        href="products.html"
+        class="inline-block py-1.5 px-4 border border-w-100 border-opacity-[8%] text-b-150 text-sm font-semibold hover:bg-w-800 hover:text-b-800 bg-blog-tag rounded"
+        >Продажи и автоматизация</a
+      >
+      <h2
+        class="block my-6 text-5xl font-semibold leading-tight text-w-800"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        Зачем бизнесу чат-бот для продаж
+      </h2>
+      <div
+        class="flex items-center justify-center gap-2"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <div class="flex items-center justify-start gap-3">
+          <img src="assets/img/card1idimg.png" alt="img" />
+          <span class="text-sm font-semibold text-w-800">Редакция VF Blog</span>
+        </div>
+        <div class="flex items-center justify-center gap-2 text-sm text-w-100">
+          &#8226;
+          <span>18 марта 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container px-8 pt-24 pb-12 mx-auto">
+      <img
+        data-aos="fade-up-right"
+        class="w-full mb-12"
+        src="assets/img/blog/1_1070x544.png"
+        alt="img"
+      />
+      <p class="text-base text-w-100 lg:px-28 md:px-0">
+        В современном цифровом мире скорость реакции на клиента играет ключевую роль. Потенциальные покупатели хотят получать ответы мгновенно, независимо от времени суток. Если компания не отвечает быстро, клиент легко уходит к конкурентам. Именно поэтому всё больше бизнесов внедряют чат-ботов для продаж. <br><br>
+        Чат-бот — это программа на базе искусственного интеллекта, которая автоматически общается с пользователями на сайте, в мессенджерах или социальных сетях. Такой инструмент способен отвечать на вопросы клиентов, помогать с выбором товаров, собирать заявки и даже закрывать сделки. В этой статье мы рассмотрим, зачем бизнесу нужен чат-бот для продаж и какие преимущества он может дать компании.
+      </p>
+      <h3 class="mt-12 mb-6 text-3xl font-semibold text-w-800 lg:px-28 md:px-0">
+        Что такое чат-бот для продаж
+      </h3>
+      <p class="mb-12 text-base text-w-100 lg:px-28 md:px-0">
+        Чат-бот для продаж — это цифровой помощник, который автоматизирует общение с потенциальными клиентами и помогает вести их по воронке продаж. Он может работать на сайте, в мессенджерах (Telegram, WhatsApp, Facebook Messenger) или в мобильных приложениях.<br><br>
+        Основная задача чат-бота — быстро реагировать на запросы пользователей и помогать им получить нужную информацию. Например, бот может рассказать о продукте, предложить варианты услуг, ответить на частые вопросы или направить клиента к менеджеру.<br><br>
+        Современные чат-боты используют технологии искусственного интеллекта и обработки естественного языка. Это позволяет им понимать запросы пользователей и вести более «живой» диалог, что делает взаимодействие с клиентом удобным и эффективным.
+      </p>
+      <h3 class="mb-6 text-3xl font-semibold text-w-800 lg:px-28 md:px-0">
+        Почему чат-боты становятся важным инструментом продаж
+      </h3>
+      <p class="mb-12 text-base text-w-100 lg:px-28 md:px-0">
+        Сегодня бизнес сталкивается с высокой конкуренцией и растущими ожиданиями клиентов. Люди хотят получать ответы быстро и без лишних действий. Если им приходится долго ждать ответа менеджера, вероятность покупки значительно снижается.<br><br>
+        Чат-боты помогают решить эту проблему. Они работают круглосуточно и могут одновременно общаться с десятками или даже сотнями пользователей. Благодаря этому компания не теряет потенциальных клиентов и повышает уровень сервиса.<br><br>
+        Кроме того, чат-боты помогают автоматизировать рутинные задачи. Вместо того чтобы отвечать на одни и те же вопросы, менеджеры могут сосредоточиться на более сложных задачах и работе с «горячими» лидами.
+      </p>
+      <img
+        class="w-full mb-12"
+        src="assets/img/blog/2_1070x544.png"
+        alt="img"
+        data-aos="fade-up-left"
+      />
+      <h3 class="mb-6 text-4xl font-semibold text-w-800 lg:px-28 md:px-0">
+        Основные преимущества чат-ботов для бизнеса
+      </h3>
+        <h3 class="mb-6 text-3xl font-semibold text-w-800 lg:px-28 md:px-0">
+        Круглосуточная работа
+      </h3>
+      <p class="mb-12 text-base text-w-100 lg:px-28 md:px-0">
+        Одним из главных преимуществ чат-ботов является возможность работать 24/7. Клиенты могут задавать вопросы и получать ответы в любое время — даже ночью или в выходные.<br><br>
+        Это особенно важно для онлайн-бизнеса, где клиенты могут заходить на сайт из разных часовых поясов. Чат-бот обеспечивает постоянное присутствие компании и помогает не упустить потенциальные продажи.
+      </p>
+      <h3 class="mb-6 text-3xl font-semibold text-w-800 lg:px-28 md:px-0">
+        Быстрая обработка заявок
+      </h3>
+      <p class="mb-12 text-base text-w-100 lg:px-28 md:px-0">
+        Чат-бот мгновенно реагирует на обращения пользователей. Он может задать уточняющие вопросы, собрать контактные данные и передать информацию менеджеру.<br><br>
+        Такой подход позволяет быстрее обрабатывать заявки и сокращает время ожидания для клиента. Чем быстрее компания отвечает, тем выше вероятность того, что пользователь станет покупателем.
+      </p>
+      <h3 class="mb-6 text-3xl font-semibold text-w-800 lg:px-28 md:px-0">
+        Повышение конверсии
+      </h3>
+      <p class="mb-12 text-base text-w-100 lg:px-28 md:px-0">
+        Чат-бот может сопровождать клиента на всех этапах покупки. Он может предложить товары, рассказать об акциях, показать примеры использования продукта и помочь выбрать подходящее решение.<br><br>
+        Персонализированные предложения и оперативная коммуникация повышают вероятность покупки и увеличивают конверсию сайта.
+      </p>
+      <h3 class="mb-6 text-3xl font-semibold text-w-800 lg:px-28 md:px-0">
+        Экономия ресурсов
+      </h3>
+      <p class="mb-12 text-base text-w-100 lg:px-28 md:px-0">
+        Автоматизация общения с клиентами позволяет снизить нагрузку на отдел продаж и поддержку. Чат-бот может взять на себя ответы на часто задаваемые вопросы, обработку заявок и базовую консультацию.<br><br>
+        В результате компания может обслуживать больше клиентов без увеличения штата сотрудников.
+      </p>
+      <h3 class="mb-6 text-3xl font-semibold text-w-800 lg:px-28 md:px-0">
+        Как чат-бот помогает воронке продаж
+      </h3>
+      <p class="mb-12 text-base text-w-100 lg:px-28 md:px-0">
+        Чат-боты могут эффективно работать на разных этапах воронки продаж.<br><br>
+        На этапе привлечения клиентов бот может приветствовать посетителей сайта, предлагать помощь и задавать уточняющие вопросы. Это помогает вовлечь пользователя и удержать его на странице.<br><br>
+        На этапе интереса чат-бот может рассказать о продуктах, услугах и преимуществах компании. Он может показать каталог товаров, отправить презентацию или предложить демо.<br><br>
+        На этапе принятия решения бот может предложить скидку, записать клиента на консультацию или передать его менеджеру. Такой подход помогает быстрее довести клиента до покупки.
+      </p>
+      <h3 class="mb-6 text-3xl font-semibold text-w-800 lg:px-28 md:px-0">
+        Реальные сценарии использования чат-ботов
+      </h3>
+      <p class="mb-12 text-base text-w-100 lg:px-28 md:px-0">
+        В интернет-магазинах они помогают подобрать товары, отвечают на вопросы о доставке и оформляют заказы.<br><br>
+        В сфере услуг чат-боты записывают клиентов на консультации, помогают выбрать подходящий тариф или услугу.<br><br>
+        В B2B-компаниях чат-боты собирают лиды, квалифицируют клиентов и передают информацию отделу продаж.<br><br>
+        Благодаря гибкости настроек чат-бот можно адаптировать практически под любую бизнес-модель.
+      </p>
+      <h3 class="mb-6 text-3xl font-semibold text-w-800 lg:px-28 md:px-0">
+        Возможные сложности внедрения
+      </h3>
+      <p class="mb-12 text-base text-w-100 lg:px-28 md:px-0">
+        Несмотря на многочисленные преимущества, внедрение чат-ботов требует правильного подхода. Важно тщательно продумать сценарии общения с клиентами и определить задачи, которые бот должен выполнять.<br><br>
+        Если бот отвечает слишком шаблонно или не понимает запросы пользователей, это может вызвать раздражение у клиентов. Поэтому важно тестировать систему и регулярно улучшать её работу.<br><br>
+        Также необходимо правильно интегрировать чат-бота с CRM-системой и другими инструментами бизнеса. Это позволит эффективно обрабатывать данные и использовать их для улучшения продаж.
+      </p>
+        <h3 class="mb-6 text-3xl font-semibold text-w-800 lg:px-28 md:px-0">
+        Будущее чат-ботов в продажах
+      </h3>
+      <p class="mb-12 text-base text-w-100 lg:px-28 md:px-0">
+        Развитие искусственного интеллекта открывает новые возможности для чат-ботов. Современные системы становятся всё более интеллектуальными и способны вести сложные диалоги с пользователями.<br><br>
+        В будущем чат-боты смогут лучше понимать намерения клиентов, анализировать их поведение и предлагать персонализированные решения. Это позволит компаниям создавать более эффективные и удобные системы коммуникации.<br><br>
+        Кроме того, всё большую популярность получают голосовые помощники и AI-агенты, которые могут работать не только в текстовых чатах, но и в голосовых интерфейсах.
+      </p>
+        <h3 class="mb-6 text-3xl font-semibold text-w-800 lg:px-28 md:px-0">
+        Заключение
+      </h3>
+      <p class="mb-12 text-base text-w-100 lg:px-28 md:px-0">
+        Чат-боты становятся важным инструментом для современных компаний. Они помогают автоматизировать общение с клиентами, ускоряют обработку заявок и повышают конверсию продаж.<br><br>
+        Использование чат-ботов позволяет бизнесу работать эффективнее, улучшать клиентский сервис и масштабировать продажи без значительного увеличения затрат.<br><br>
+        По мере развития технологий роль чат-ботов будет только расти. Компании, которые внедряют такие решения уже сегодня, получают конкурентное преимущество и создают более удобный и современный опыт взаимодействия с клиентами.
+      </p>
+      </div>
+    </div>
+
+    <div
+      class="bg-[url('../img/exploreourblogsbg.png')] bg-cover bg-center bg-no-repeat pt-12 pb-24 overflow-hidden"
+    >
+      <div class="container mx-auto px-5 xl:px-0">
+        <h2
+          class="gd-title text-5xl font-semibold leading-[64px] text-center mx-auto mb-16"
+          data-aos="fade-up"
+        >
+          Свежие статьи
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+          <!-- BLOG CARD 1 -->
+          <div
+            class="p-8 bg-blog-card rounded border border-w-100 border-opacity-[8%]"
+            data-aos="fade-right"
+          >
+            <img class="w-full mb-8" src="assets/img/blog/1_346x200.png" alt="img" />
+            <a
+              href="products.html"
+              class="inline-block py-1.5 px-4 border border-w-100 border-opacity-[8%] text-b-150 text-sm font-semibold hover:bg-w-800 hover:text-b-800 rounded"
+              >Продажи и автоматизация</a
+            >
+            <a
+              href="blog-details1.html"
+              class="block my-6 text-2xl font-medium text-w-800 hover:underline"
+            >
+              Зачем бизнесу чат-бот для продаж
+            </a>
+            <div class="flex items-center justify-start gap-2">
+              <div class="flex items-center justify-start gap-3">
+                <img src="assets/img/card1idimg.png" alt="img" />
+                <span class="text-sm font-semibold text-w-800"
+                  >Редакция VF Blog</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-center gap-2 text-sm text-w-100"
+              >
+                &#8226;
+                <span>15 января 2026</span>
+              </div>
+            </div>
+          </div>
+          <!-- BLOG CARD 2 -->
+          <div
+            class="p-8 bg-blog-card rounded border border-w-100 border-opacity-[8%]"
+            data-aos="fade-up"
+          >
+            <img class="w-full mb-8" src="assets/img/blog/3_346x200.png" alt="img" />
+            <a
+              href="products.html"
+              class="py-1.5 px-4 border border-w-100 border-opacity-[8%] text-b-150 text-sm font-semibold hover:bg-w-800 hover:text-b-800 rounded"
+              >Технологии</a
+            >
+            <a
+              href="blog-details2.html"
+              class="block my-6 text-2xl font-medium text-w-800 hover:underline"
+            >
+              Как ИИ меняет бизнес-процессы в 2025
+            </a>
+            <div class="flex gap-2">
+              <div class="flex items-center justify-center gap-3">
+                <img src="assets/img/card2idimg.png" alt="img" />
+                <span class="text-sm font-semibold text-w-800"
+                  >Редакция VF Blog</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-center gap-2 text-sm text-w-100"
+              >
+                &#8226;
+                <span>20 февраля 2026</span>
+              </div>
+            </div>
+          </div>
+          <!-- BLOG CARD 3 -->
+          <div
+            class="p-8 bg-blog-card rounded border border-w-100 border-opacity-[8%]"
+            data-aos="fade-left"
+          >
+            <img class="w-full mb-8" src="assets/img/blog/5_346x200.png" alt="img" />
+            <a
+              href="products.html"
+              class="py-1.5 px-4 border border-w-100 border-opacity-[8%] text-b-150 text-sm font-semibold hover:bg-w-800 hover:text-b-800 rounded"
+              >Интеграция</a
+            >
+            <a
+              href="blog-details3.html"
+              class="block my-6 text-2xl font-medium text-w-800 hover:underline"
+            >
+              Нейросети для автоматизации и роста продаж
+            </a>
+            <div class="flex gap-2">
+              <div class="flex items-center justify-center gap-3">
+                <img src="assets/img/card3idimg.png" alt="img" />
+                <span class="text-sm font-semibold text-w-800"
+                  >Редакция VF Blog</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-center gap-2 text-sm text-w-100"
+              >
+                &#8226;
+                <span>20 марта 2026</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>    
+      </div>
+    </div>
+
+    <footer class="bg-footer-bg bg-cover bg-center bg-no-repeat pt-24 pb-8">
+      <div class="container mx-auto px-5 xl:px-0">
+        <div class="mb-24 text-center">
+          <h2
+            class="gd-title text-5xl font-semibold leading-[64px] text-center mx-auto mb-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Хотите регулярные обновления продуктов?
+          </h2>
+          <p
+            class="text-xl text-w-100 mb-[32px]"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            олучайте эксклюзивные обновления на свой почтовый ящик – подпишитесь на блог.
+          </p>
+
+          <form
+            action="#"
+            class="grid lg:flex items-center justify-center gap-2 transition-all duration-300"
+            data-aos-delay="300"
+            data-aos="fade-up"
+          >
+            <input
+              type="email"
+              placeholder="Укажите емейл"
+              class="w-full sm:w-64 border border-[#515A67] focus:outline-none bg-transparent py-3 px-4 rounded placeholder:text-[#515A67] text-w-100"
+              required
+            />
+            <button
+              type="submit"
+              class="w-full sm:w-auto px-6 py-3 capitalize text-base font-semibold border border-solid border-w-900 rounded bg-w-800 text-b-800 hover:bg-transparent hover:text-w-800 transition-colors duration-300"
+            >
+              Подписаться
+            </button>
+          </form>
+        </div>
+        <div
+          class="flex flex-col items-start justify-between py-24 md:flex-row"
+        >
+          <div>
+            <a href="index.html">
+              <img src="assets/img/footerlogo.png" alt="logo" />
+            </a>
+            <p class="mt-8 text-sm font-medium capitalize text-w-800">
+              Адрес:
+            </p>
+            <p class="mb-4 text-sm text-w-100">
+              просп. Ленина, 16А, Мурманск 183032
+            </p>
+            <p class="text-sm font-medium capitalize text-w-800">контакты:</p>
+            <a class="inline-block text-sm text-w-100" href="tel:+7921-176-98-83"
+              >+7(921)-176-98-83</a
+            >
+            <br />
+            <a
+              class="inline-block text-sm text-w-100"
+              href="mailto:info@voxflowai.ru"
+              >info@voxflowai.ru</a
+            >
+            <div class="flex items-center justify-start gap-4 my-8 text-w-100">
+                  <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+                    <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+                <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+              </svg>
+
+                  </a>
+                  <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+                    <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+                <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+              </svg>
+
+                  </a>
+                  <a href="https://wa.me/79211769883" target="_blank" aria-label="WhatsApp">
+              <svg width="26" height="26" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <clipPath id="clip">
+                    <circle cx="128" cy="128" r="128"/>
+                  </clipPath>
+                </defs>
+                <circle cx="128" cy="128" r="128" fill="#25D366"/>
+                <g clip-path="url(#clip)">
+                  <path fill="#fff" d="M187.3 68.7C172.6 54 152 46 128.8 46c-46 0-83.2 37.2-83.2 83.1 0 14.6 3.8 28.9 11 41.5L46 210l41-10.7c12 6.6 25.6 10.1 39.8 10.1 46 0 83.2-37.2 83.2-83.1 0-23.2-8-43.8-22.7-58.6Zm-58.5 121c-12.4 0-24.6-3.4-35.1-9.8l-2.5-1.5-24.3 6.4 6.5-23.7-1.6-2.5c-6.7-10.5-10.2-22.5-10.2-34.9 0-36.3 29.6-65.9 65.9-65.9 17.6 0 34.1 6.8 46.5 19.2 12.4 12.5 19.2 29 19.1 46.5 0 36.3-29.6 65.9-65.9 65.9Zm39.1-48.9c-2.1-1-12.6-6.2-14.6-6.9-2-.8-3.5-1.2-5 1.2-1.5 2.3-5.8 6.9-7.1 8.3-1.3 1.5-2.6 1.7-4.7.8-12.8-5.4-21.2-9.6-29.7-21.7-2.2-3.1 2.2-2.9 6.2-11.4.7-1.5.4-2.7-.2-3.9-.6-1.2-5-12.1-6.9-16.6-1.8-4.3-3.7-3.7-5-3.8-1.3-.1-2.8-.1-4.3-.1-1.5 0-4 1-6 3-2 2-7.9 7.7-7.9 18.7s8.1 21.7 9.2 23.2c1.1 1.5 16 24.5 38.8 33.2 22.8 8.7 22.8 5.8 26.9 5.5 4.1-.3 13.2-5.3 15.1-10.4 1.9-5.1 1.9-9.5 1.3-10.4-.5-.9-1.8-1.5-3.9-2.5Z"/>
+                </g>
+              </svg>
+                  </a>
+            </div>
+          </div>
+          <div
+            class="flex md:flex-row flex-col justify-end items-start gap-[46px] lg:gap-[88px] capitalize"
+          >
+            <ul class="flex flex-col gap-4 text-base font-medium text-white">
+              <li>
+                <a href="index.html" class="inline-block hover:underline">Главная</a>
+              </li>
+              <li>
+                <a href="features.html" class="inline-block hover:underline">Решения</a>
+              </li>
+              <li>
+                <a href="products.html" class="inline-block hover:underline">Продукты</a>
+              </li>
+            </ul>
+            <ul class="flex flex-col gap-4 text-base font-medium text-white">
+              <li>
+                <a href="pricing.html" class="inline-block hover:underline">Тарифы</a>
+              </li>
+              <li>
+                <a href="blog.html" class="inline-block hover:underline">Блог</a>
+              </li>
+              <li>
+                <a href="contact.html" class="inline-block hover:underline">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center gap-3 pt-8 text-sm md:flex-row md:justify-between md:gap-0"
+        >
+          <p class="text-w-100">
+            Copyright © 2025 VoxFlowAI Все права защищены.
+          </p>
+          <ul class="flex gap-8">
+            <li>
+              <a class="text-w-100" href="privacy-policy.html"
+                >Политика конфиденциальности</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

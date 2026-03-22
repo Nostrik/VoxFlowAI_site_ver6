@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/output.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>VoxFlowAI</title>
+  </head>
+  <body class="font-normal bg-body overflow-x-hidden">
+    <header
+      class="absolute top-0 left-0 z-50 w-full border-b border-solid border-b-700"
+    >
+      <div
+        class="items-center justify-between hidden px-5 mx-auto desktop-header lg:flex"
+      >
+        <a href="/">
+          <img src="assets/img/navlogo.svg" alt="logo" />
+        </a>
+        <nav>
+          <ul class="flex items-center justify-center">
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="/"
+                class="inline-block text-base font-medium capitalize text-w-100"
+                >главная</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="features.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >решения</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="products.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >продукты</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="pricing.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >тарифы</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="blog.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >блог</a
+              >
+            </li>
+
+            <li
+              class="relative h-full px-5 border-solid xl:px-10 py-7 border-x border-b-700"
+            >
+              <span
+                class="inline-block absolute bottom-0 left-0 w-full h-[1px] bg-w-800"
+              ></span>
+              <a
+                href="contact.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-800 hover:text-w-800"
+                >контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="items-center hidden gap-3 lg:flex">
+                        <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+      <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+  <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+</svg>
+
+    </a>
+    <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+      <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+  <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+</svg>
+
+    </a>
+    <a href="https://wa.me/79211769883" target="_blank" aria-label="WhatsApp">
+<svg width="26" height="26" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="clip">
+      <circle cx="128" cy="128" r="128"/>
+    </clipPath>
+  </defs>
+  <circle cx="128" cy="128" r="128" fill="#25D366"/>
+  <g clip-path="url(#clip)">
+    <path fill="#fff" d="M187.3 68.7C172.6 54 152 46 128.8 46c-46 0-83.2 37.2-83.2 83.1 0 14.6 3.8 28.9 11 41.5L46 210l41-10.7c12 6.6 25.6 10.1 39.8 10.1 46 0 83.2-37.2 83.2-83.1 0-23.2-8-43.8-22.7-58.6Zm-58.5 121c-12.4 0-24.6-3.4-35.1-9.8l-2.5-1.5-24.3 6.4 6.5-23.7-1.6-2.5c-6.7-10.5-10.2-22.5-10.2-34.9 0-36.3 29.6-65.9 65.9-65.9 17.6 0 34.1 6.8 46.5 19.2 12.4 12.5 19.2 29 19.1 46.5 0 36.3-29.6 65.9-65.9 65.9Zm39.1-48.9c-2.1-1-12.6-6.2-14.6-6.9-2-.8-3.5-1.2-5 1.2-1.5 2.3-5.8 6.9-7.1 8.3-1.3 1.5-2.6 1.7-4.7.8-12.8-5.4-21.2-9.6-29.7-21.7-2.2-3.1 2.2-2.9 6.2-11.4.7-1.5.4-2.7-.2-3.9-.6-1.2-5-12.1-6.9-16.6-1.8-4.3-3.7-3.7-5-3.8-1.3-.1-2.8-.1-4.3-.1-1.5 0-4 1-6 3-2 2-7.9 7.7-7.9 18.7s8.1 21.7 9.2 23.2c1.1 1.5 16 24.5 38.8 33.2 22.8 8.7 22.8 5.8 26.9 5.5 4.1-.3 13.2-5.3 15.1-10.4 1.9-5.1 1.9-9.5 1.3-10.4-.5-.9-1.8-1.5-3.9-2.5Z"/>
+  </g>
+</svg>
+    </a>
+        </div>
+      </div>
+      <div
+        class="container flex items-center justify-between px-4 py-4 mx-auto mobile-header lg:hidden"
+      >
+        <a href="/">
+          <img src="assets/img/navlogo.svg" alt="logo" />
+        </a>
+        <span class="text-white cursor-pointer menu-open-icon lg:hidden">
+          <svg
+            class="block w-8 h-8 font-semibold"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </span>
+        <div
+          class="fixed top-0 left-0 flex flex-col items-start justify-start w-full h-screen transition-all duration-300 translate-x-full bg-black mobile-menu p-7"
+        >
+          <div class="flex items-start justify-between w-full">
+            <nav>
+              <ul class="mt-5">
+                <li>
+                  <a
+                    href="index.html"
+                    class="inline-block mb-5 text-base font-medium capitalize text-w-100"
+                    >главная</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="features.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >решения</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="products.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >продукты</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="pricing.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >тарифы</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="blog.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >блог</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-800 hover:text-w-800"
+                    >контакты</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <strong class="text-white cursor-pointer mobile-menu-close-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-x-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+                />
+              </svg>
+            </strong>
+          </div>
+          <div class="flex items-center justify-center w-full gap-2 mt-6">
+              <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+                <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+            <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+          </svg>
+
+              </a>
+              <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+                <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+            <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+          </svg>
+
+              </a>
+              <a href="https://wa.me/79211769883" target="_blank" aria-label="WhatsApp">
+          <svg width="26" height="26" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <clipPath id="clip">
+                <circle cx="128" cy="128" r="128"/>
+              </clipPath>
+            </defs>
+            <circle cx="128" cy="128" r="128" fill="#25D366"/>
+            <g clip-path="url(#clip)">
+              <path fill="#fff" d="M187.3 68.7C172.6 54 152 46 128.8 46c-46 0-83.2 37.2-83.2 83.1 0 14.6 3.8 28.9 11 41.5L46 210l41-10.7c12 6.6 25.6 10.1 39.8 10.1 46 0 83.2-37.2 83.2-83.1 0-23.2-8-43.8-22.7-58.6Zm-58.5 121c-12.4 0-24.6-3.4-35.1-9.8l-2.5-1.5-24.3 6.4 6.5-23.7-1.6-2.5c-6.7-10.5-10.2-22.5-10.2-34.9 0-36.3 29.6-65.9 65.9-65.9 17.6 0 34.1 6.8 46.5 19.2 12.4 12.5 19.2 29 19.1 46.5 0 36.3-29.6 65.9-65.9 65.9Zm39.1-48.9c-2.1-1-12.6-6.2-14.6-6.9-2-.8-3.5-1.2-5 1.2-1.5 2.3-5.8 6.9-7.1 8.3-1.3 1.5-2.6 1.7-4.7.8-12.8-5.4-21.2-9.6-29.7-21.7-2.2-3.1 2.2-2.9 6.2-11.4.7-1.5.4-2.7-.2-3.9-.6-1.2-5-12.1-6.9-16.6-1.8-4.3-3.7-3.7-5-3.8-1.3-.1-2.8-.1-4.3-.1-1.5 0-4 1-6 3-2 2-7.9 7.7-7.9 18.7s8.1 21.7 9.2 23.2c1.1 1.5 16 24.5 38.8 33.2 22.8 8.7 22.8 5.8 26.9 5.5 4.1-.3 13.2-5.3 15.1-10.4 1.9-5.1 1.9-9.5 1.3-10.4-.5-.9-1.8-1.5-3.9-2.5Z"/>
+            </g>
+          </svg>
+              </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="bg-primary-hero bg-cover bg-no-repeat pt-52 pb-32">
+      <div class="container px-5 xl:px-0 mx-auto">
+        <h1
+          class="pb-4 text-5xl font-semibold lg:text-8xl text-w-800"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Свяжитесь с
+          <span class="gd-title">нами</span>
+        </h1>
+        <p
+          class="pt-4 pb-8 text-base text-w-100 lg:text-xl"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          Есть вопросы или нужна помощь&quest; Обращайтесь в любое время. Наша команда всегда
+          <span class="inline-block lg:block"></span>
+          готова помочь вам найти правильные решения..
+        </p>
+      </div>
+    </div>
+    <div class="py-24 bg-api-card">
+      <div class="container px-5 xl:px-0 mx-auto">
+        <h2
+          class="gd-title text-5xl font-semibold leading-[64px] text-center mx-auto mb-16"
+          data-aos="fade-up"
+        >
+          Быстрые ответы на ваши вопросы
+        </h2>
+        <div class="lg:flex block justify-center items-start gap-[30px]">
+          <!-- LEFT CARD -->
+          <div
+            class="bg-api-card p-8 rounded border border-w-100 border-opacity-[8%] lg:w-[850px] mb-8 lg:mb-0"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <p class="mb-8 text-2xl font-semibold text-w-800">
+              Получить консультацию
+            </p>
+            <!-- FORM -->
+            <form id="contact-form">
+              <div class="flex flex-col gap-4 mb-6">
+                <div class="flex items-center gap-4">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Имя"
+                    class="placeholder:text-b-100 px-4 py-3 w-full rounded focus:outline-none border border-w-100 border-opacity-[8%] text-base bg-transparent text-w-800"
+                    required
+                  />
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    placeholder="Компания"
+                    class="placeholder:text-b-100 px-4 py-3 w-full rounded focus:outline-none border border-w-100 border-opacity-[8%] text-base bg-transparent text-w-800"
+                    required
+                  />
+                </div>
+                <div class="flex flex-col items-center gap-4 md:flex-row">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    class="placeholder:text-b-100 px-4 py-3 w-full rounded focus:outline-none border border-w-100 border-opacity-[8%] text-base bg-transparent text-w-800"
+                    required
+                  />
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Телефон"
+                    class="placeholder:text-b-100 px-4 py-3 w-full rounded focus:outline-none border border-w-100 border-opacity-[8%] text-base bg-transparent text-w-800"
+                    required
+                  />
+                </div>
+                <div class="flex flex-col items-center gap-4 md:flex-row">
+                  <textarea
+                    id="description"
+                    name="description"
+                    placeholder="Краткое описание задачи*"
+                    cols="30"
+                    rows="10"
+                    class="placeholder:text-b-100 h-[324px] px-4 py-3 w-full rounded focus:outline-none border border-w-100 border-opacity-[8%] text-base bg-transparent text-w-800"
+                    required
+                  ></textarea>
+                </div>
+                <p class="text-sm font-medium text-w-100">
+                  Нажимая "отправить", вы соглашаетесь с нашей
+                  <a
+                    href="terms-of-service.html"
+                    class="inline-block text-b-150 underline"
+                    >политикой конфиденциальности</a
+                  >.
+                </p>
+              </div>
+              <button
+                type="submit"
+                class="py-3 w-[144px] border border-solid border-w-100 capitalize rounded text-center text-base font-semibold text-b-800 hover:text-w-800 bg-w-800 hover:bg-transparent transition-all duration-300"
+              >
+                Отправить
+              </button>
+              <button 
+                type="button" 
+                class="py-3 w-[144px] border border-solid border-w-100 capitalize rounded text-center text-base font-semibold text-b-800 hover:text-w-800 bg-w-800 hover:bg-transparent transition-all duration-300"
+                onclick="fillTestData(this)">
+                Тест
+              </button>
+              <span id="form-success-message" style="margin-left: 20px;" class="hidden text-sm text-w-800">
+                Данные успешно отправлены
+              </span>
+              <span id="form-message" class="text-sm text-w-800" style="margin-left: 20px;"></span>
+            </form>
+          </div>
+          <!-- RIGHT CARD -->
+          <div
+            class="bg-api-card p-8 rounded border border-w-100 border-opacity-[8%]"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M20.0007 3.75C16.5749 3.75 13.2895 5.11086 10.8672 7.5332C8.44484 9.95555 7.08398 13.241 7.08398 16.6667V18.75H6.66732C5.45174 18.75 4.28595 19.2329 3.42641 20.0924C2.56687 20.952 2.08398 22.1178 2.08398 23.3333V26.6667C2.08398 27.8822 2.56687 29.048 3.42641 29.9076C4.28595 30.7671 5.45174 31.25 6.66732 31.25H8.33398C8.66551 31.25 8.98345 31.1183 9.21787 30.8839C9.45229 30.6495 9.58398 30.3315 9.58398 30V16.6667C9.58398 13.904 10.6815 11.2545 12.635 9.30097C14.5885 7.34747 17.238 6.25 20.0007 6.25C22.7633 6.25 25.4128 7.34747 27.3664 9.30097C29.3199 11.2545 30.4173 13.904 30.4173 16.6667V31.6667C30.4173 32.8167 29.484 33.75 28.334 33.75H24.304C24.0673 33.2511 23.6939 32.8296 23.2272 32.5346C22.7604 32.2395 22.2195 32.0831 21.6673 32.0833H20.0007C19.2271 32.0833 18.4852 32.3906 17.9383 32.9376C17.3913 33.4846 17.084 34.2265 17.084 35C17.084 35.7735 17.3913 36.5154 17.9383 37.0624C18.4852 37.6094 19.2271 37.9167 20.0007 37.9167H21.6673C22.8307 37.9167 23.834 37.235 24.304 36.25H28.334C29.5496 36.25 30.7154 35.7671 31.5749 34.9076C32.4344 34.048 32.9173 32.8822 32.9173 31.6667V31.25H33.334C34.5496 31.25 35.7154 30.7671 36.5749 29.9076C37.4344 29.048 37.9173 27.8822 37.9173 26.6667V23.3333C37.9173 22.1178 37.4344 20.952 36.5749 20.0924C35.7154 19.2329 34.5496 18.75 33.334 18.75H32.9173V16.6667C32.9173 13.241 31.5565 9.95555 29.1341 7.5332C26.7118 5.11086 23.4264 3.75 20.0007 3.75ZM22.084 35C22.084 34.8895 22.0401 34.7835 21.9619 34.7054C21.8838 34.6272 21.7778 34.5833 21.6673 34.5833H20.0007C19.8901 34.5833 19.7842 34.6272 19.706 34.7054C19.6279 34.7835 19.584 34.8895 19.584 35C19.584 35.1105 19.6279 35.2165 19.706 35.2946C19.7842 35.3728 19.8901 35.4167 20.0007 35.4167H21.6673C21.7778 35.4167 21.8838 35.3728 21.9619 35.2946C22.0401 35.2165 22.084 35.1105 22.084 35ZM32.9173 28.75V21.25H33.334C34.484 21.25 35.4173 22.1833 35.4173 23.3333V26.6667C35.4173 27.8167 34.484 28.75 33.334 28.75H32.9173ZM7.08398 21.25H6.66732C5.51732 21.25 4.58398 22.1833 4.58398 23.3333V26.6667C4.58398 27.8167 5.51732 28.75 6.66732 28.75H7.08398V21.25Z"
+                fill="#47A9FF"
+              />
+            </svg>
+            <h3 class="font-semibold text-[24px] text-w-800 mt-4 mb-3">
+              Быстрая диагностика
+            </h3>
+            <p class="text-w-100">
+              Поделитесь вашим сценарием, и мы <br />
+              предложим оптимальную <br />
+              интеграцию голосового канала.
+            </p>
+            <svg
+              class="mt-8 mb-4"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1527_19780)">
+                <path
+                  d="M36.25 33.3332H3.75C2.75571 33.3323 1.80239 32.9369 1.09932 32.2338C0.396254 31.5308 0.000882638 30.5775 0 29.5832V10.4165C0.000882638 9.42221 0.396254 8.4689 1.09932 7.76583C1.80239 7.06276 2.75571 6.66739 3.75 6.6665H36.25C37.2443 6.66739 38.1976 7.06276 38.9007 7.76583C39.6037 8.4689 39.9991 9.42221 40 10.4165V29.5832C39.9991 30.5775 39.6037 31.5308 38.9007 32.2338C38.1976 32.9369 37.2443 33.3323 36.25 33.3332ZM3.75 9.1665C3.41848 9.1665 3.10054 9.2982 2.86612 9.53262C2.6317 9.76704 2.5 10.085 2.5 10.4165V29.5832C2.5 30.2732 3.06 30.8332 3.75 30.8332H36.25C36.5815 30.8332 36.8995 30.7015 37.1339 30.4671C37.3683 30.2326 37.5 29.9147 37.5 29.5832V10.4165C37.5 10.085 37.3683 9.76704 37.1339 9.53262C36.8995 9.2982 36.5815 9.1665 36.25 9.1665H3.75Z"
+                  fill="#47A9FF"
+                />
+                <path
+                  d="M19.9986 23.3266C19.2686 23.3266 18.5403 23.155 17.8769 22.8116L0.671948 13.8233C0.518716 13.752 0.381531 13.6504 0.268687 13.5246C0.155842 13.3988 0.0696821 13.2514 0.0154143 13.0913C-0.0388534 12.9313 -0.0601016 12.7619 -0.0470456 12.5934C-0.0339895 12.4249 0.0130994 12.2608 0.0913748 12.111C0.16965 11.9612 0.277486 11.8289 0.408364 11.7219C0.539242 11.615 0.690443 11.5357 0.852828 11.4889C1.01521 11.4421 1.18541 11.4286 1.35312 11.4495C1.52084 11.4703 1.6826 11.5249 1.82861 11.61L19.0286 20.5933C19.6253 20.9016 20.3753 20.9016 20.9769 20.59L38.172 11.61C38.3174 11.5339 38.4764 11.4872 38.6399 11.4726C38.8033 11.458 38.9681 11.4757 39.1247 11.5248C39.2813 11.5739 39.4268 11.6533 39.5527 11.7586C39.6786 11.8638 39.7826 11.9929 39.8586 12.1383C39.9347 12.2837 39.9813 12.4427 39.996 12.6062C40.0106 12.7697 39.9928 12.9344 39.9438 13.091C39.8947 13.2477 39.8153 13.3931 39.71 13.519C39.6048 13.6449 39.4757 13.7489 39.3303 13.825L22.1303 22.8083C21.4712 23.1486 20.7403 23.3263 19.9986 23.3266Z"
+                  fill="#47A9FF"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1527_19780">
+                  <rect width="40" height="40" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <h3 class="font-semibold text-[24px] text-w-800 mb-3">
+              Напишите нам
+            </h3>
+            <p class="text-w-100">
+              Можете прислать описание задачи прямо на почту.<br/>
+              <a
+                href="mailto:security@synthmind.com"
+                class="underline text-b-150"
+                >info@voxflowai.ru</a
+              >
+            </p>
+            <svg
+              class="mt-8 mb-4"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15.1509 12.917C13.4198 12.9169 11.7274 13.4303 10.2881 14.3923C8.84884 15.3542 7.72724 16.7215 7.06527 18.3212C6.4033 19.9208 6.2307 21.6808 6.56933 23.3785C6.90796 25.0763 7.74259 26.6354 8.96761 27.8587C9.1014 27.9921 9.2032 28.1542 9.26534 28.3326C9.32747 28.5111 9.34834 28.7013 9.32636 28.889C9.30438 29.0767 9.24014 29.257 9.13845 29.4163C9.03676 29.5756 8.90028 29.7097 8.73927 29.8087L7.74927 30.417H15.1493C17.4699 30.417 19.6955 29.4951 21.3365 27.8542C22.9774 26.2132 23.8993 23.9876 23.8993 21.667C23.8993 19.3464 22.9774 17.1208 21.3365 15.4798C19.6955 13.8389 17.4716 12.917 15.1509 12.917ZM3.90094 21.667C3.90094 19.442 4.56074 17.2669 5.79691 15.4168C7.03307 13.5668 8.79008 12.1248 10.8458 11.2734C12.9014 10.4219 15.1634 10.1991 17.3457 10.6332C19.528 11.0672 21.5326 12.1387 23.1059 13.712C24.6792 15.2854 25.7507 17.2899 26.1848 19.4722C26.6189 21.6545 26.3961 23.9165 25.5446 25.9722C24.6931 28.0279 23.2512 29.7849 21.4011 31.021C19.5511 32.2572 17.376 32.917 15.1509 32.917H3.33427C3.06185 32.9175 2.79672 32.829 2.57923 32.6649C2.36175 32.5008 2.20382 32.2702 2.12948 32.0081C2.05513 31.746 2.06845 31.4668 2.16739 31.213C2.26634 30.9592 2.4455 30.7446 2.67761 30.602L6.17594 28.4503C4.6961 26.4988 3.89643 24.1162 3.89927 21.667H3.90094Z"
+                fill="#47A9FF"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15.2537 11.0401C16.0227 9.71218 17.0554 8.55562 18.288 7.64158C19.5207 6.72754 20.9273 6.07535 22.4214 5.72512C23.9154 5.3749 25.4654 5.33405 26.9758 5.60507C28.4863 5.8761 29.9253 6.45329 31.2044 7.30112C32.4835 8.14895 33.5756 9.24951 34.4136 10.5351C35.2515 11.8207 35.8176 13.2641 36.077 14.7766C36.3364 16.2891 36.2836 17.8387 35.9219 19.33C35.5602 20.8213 34.8972 22.2229 33.9737 23.4485L37.472 25.6018C37.704 25.7443 37.8831 25.9587 37.9821 26.2124C38.0811 26.4661 38.0945 26.7451 38.0204 27.0071C37.9462 27.2691 37.7886 27.4997 37.5714 27.6639C37.3542 27.8281 37.0893 27.9169 36.817 27.9168H24.9987C24.7012 27.9308 24.4036 27.8907 24.1203 27.7985L24.0987 27.7901H24.0953C24.0503 27.7783 24.0047 27.7689 23.9587 27.7618C23.7967 27.7346 23.6417 27.6759 23.5024 27.5888C23.3632 27.5018 23.2424 27.3881 23.1471 27.2544C23.0518 27.1207 22.9837 26.9695 22.9468 26.8095C22.9099 26.6495 22.9049 26.4838 22.932 26.3218C22.9592 26.1598 23.0179 26.0048 23.105 25.8655C23.192 25.7263 23.3057 25.6056 23.4394 25.5102C23.5731 25.4149 23.7243 25.3468 23.8843 25.3099C24.0443 25.273 24.21 25.268 24.372 25.2951C24.5447 25.3229 24.7151 25.363 24.882 25.4151L24.9987 25.4168H32.4003L31.4103 24.8068C31.2493 24.7079 31.1129 24.5737 31.0112 24.4144C30.9095 24.2551 30.8452 24.0749 30.8233 23.8872C30.8013 23.6995 30.8221 23.5092 30.8843 23.3308C30.9464 23.1523 31.0482 22.9902 31.182 22.8568C32.062 21.9761 32.744 20.9177 33.1823 19.7523C33.6206 18.587 33.8052 17.3415 33.7236 16.0992C33.6421 14.8568 33.2964 13.6461 32.7096 12.5481C32.1228 11.45 31.3084 10.4898 30.3209 9.73156C29.3333 8.97337 28.1953 8.43467 26.9829 8.15144C25.7705 7.8682 24.5117 7.84697 23.2904 8.08915C22.0691 8.33133 20.9136 8.83135 19.9011 9.5558C18.8885 10.2803 18.0422 11.2125 17.4187 12.2901C17.3372 12.4334 17.2282 12.5592 17.0979 12.6602C16.9676 12.7612 16.8186 12.8354 16.6595 12.8786C16.5005 12.9218 16.3344 12.9331 16.1709 12.9119C16.0074 12.8906 15.8498 12.8373 15.707 12.7548C15.5643 12.6724 15.4392 12.5626 15.3391 12.4316C15.2389 12.3006 15.1657 12.1512 15.1236 11.9918C15.0814 11.8324 15.0712 11.6663 15.0936 11.503C15.1159 11.3396 15.1703 11.1823 15.2537 11.0401Z"
+                fill="#47A9FF"
+              />
+            </svg>
+            <h3 class="font-semibold text-[24px] text-w-800 mt-4 mb-3">
+              Готовы пообщаться?
+            </h3>
+            <p class="text-w-100">
+              Задайте вопрос<br />
+              напрямую. <br />
+              <a href="#" class="underline text-b-150">
+                +7(921)-176-98-83</a
+              >
+            </p>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-footer-bg bg-cover bg-center bg-no-repeat pt-24 pb-8">
+      <div class="container mx-auto px-5 xl:px-0">
+        <div class="mb-24 text-center">
+          <h2
+            class="gd-title text-5xl font-semibold leading-[64px] text-center mx-auto mb-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Создайте своего бота с ИИ уже сегодня
+          </h2>
+          <p
+            class="text-xl text-w-100 mb-[32px]"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            Отправьтесь вместе с нами в путешествие и испытайте беспрецедентную мощь искусственного интеллекта.
+          </p>
+          <a
+            href="form.html"
+            class="inline-block px-6 py-3 capitalize text-base font-semibold border border-solid border-w-900 rounded bg-w-800 text-b-800 hover:bg-transparent hover:text-w-800 transition-all duration-300"
+            >Начать</a
+          >
+        </div>
+        <div
+          class="flex flex-col items-start justify-between py-24 md:flex-row"
+        >
+          <div>
+            <a href="index.html">
+              <img src="assets/img/footerlogo.png" alt="logo" />
+            </a>
+            <p class="mt-8 text-sm font-medium capitalize text-w-800">
+              Адрес:
+            </p>
+            <p class="mb-4 text-sm text-w-100">
+              просп. Ленина, 16А, Мурманск 183032
+            </p>
+            <p class="text-sm font-medium capitalize text-w-800">contact:</p>
+            <a class="inline-block text-sm text-w-100" href="tel:+319-270-8254"
+              >+7(921)-176-98-83</a
+            >
+            <br />
+            <a
+              class="inline-block text-sm text-w-100"
+              href="mailto:contact@synthmind.com"
+              >info@voxflowai.ru</a
+            >
+            <div class="flex items-center justify-start gap-4 my-8 text-w-100">
+            <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+                <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+            <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+          </svg>
+
+              </a>
+              <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+                <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+            <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+          </svg>
+
+              </a>
+              <a href="https://wa.me/79211769883" target="_blank" aria-label="WhatsApp">
+          <svg width="26" height="26" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <clipPath id="clip">
+                <circle cx="128" cy="128" r="128"/>
+              </clipPath>
+            </defs>
+            <circle cx="128" cy="128" r="128" fill="#25D366"/>
+            <g clip-path="url(#clip)">
+              <path fill="#fff" d="M187.3 68.7C172.6 54 152 46 128.8 46c-46 0-83.2 37.2-83.2 83.1 0 14.6 3.8 28.9 11 41.5L46 210l41-10.7c12 6.6 25.6 10.1 39.8 10.1 46 0 83.2-37.2 83.2-83.1 0-23.2-8-43.8-22.7-58.6Zm-58.5 121c-12.4 0-24.6-3.4-35.1-9.8l-2.5-1.5-24.3 6.4 6.5-23.7-1.6-2.5c-6.7-10.5-10.2-22.5-10.2-34.9 0-36.3 29.6-65.9 65.9-65.9 17.6 0 34.1 6.8 46.5 19.2 12.4 12.5 19.2 29 19.1 46.5 0 36.3-29.6 65.9-65.9 65.9Zm39.1-48.9c-2.1-1-12.6-6.2-14.6-6.9-2-.8-3.5-1.2-5 1.2-1.5 2.3-5.8 6.9-7.1 8.3-1.3 1.5-2.6 1.7-4.7.8-12.8-5.4-21.2-9.6-29.7-21.7-2.2-3.1 2.2-2.9 6.2-11.4.7-1.5.4-2.7-.2-3.9-.6-1.2-5-12.1-6.9-16.6-1.8-4.3-3.7-3.7-5-3.8-1.3-.1-2.8-.1-4.3-.1-1.5 0-4 1-6 3-2 2-7.9 7.7-7.9 18.7s8.1 21.7 9.2 23.2c1.1 1.5 16 24.5 38.8 33.2 22.8 8.7 22.8 5.8 26.9 5.5 4.1-.3 13.2-5.3 15.1-10.4 1.9-5.1 1.9-9.5 1.3-10.4-.5-.9-1.8-1.5-3.9-2.5Z"/>
+            </g>
+          </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="flex md:flex-row flex-col justify-end items-start gap-[46px] lg:gap-[88px] capitalize"
+          >
+                        <ul class="flex flex-col gap-4 text-base font-medium text-white">
+              <li>
+                <a href="index.html" class="inline-block hover:underline">Главная</a>
+              </li>
+              <li>
+                <a href="features.html" class="inline-block hover:underline">Решения</a>
+              </li>
+              <li>
+                <a href="products.html" class="inline-block hover:underline">Продукты</a>
+              </li>
+            </ul>
+            <ul class="flex flex-col gap-4 text-base font-medium text-white">
+              <li>
+                <a href="pricing.html" class="inline-block hover:underline">Тарифы</a>
+              </li>
+              <li>
+                <a href="blog.html" class="inline-block hover:underline">Блог</a>
+              </li>
+              <li>
+                <a href="contact.html" class="inline-block hover:underline">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center gap-3 pt-8 text-sm md:flex-row md:justify-between md:gap-0"
+        >
+          <p class="text-w-100">
+            Copyright © 2025 VoxFlowAI Все права защищены.
+          </p>
+          <ul class="flex gap-8">
+            <li>
+              <a class="text-w-100" href="privacy-policy.html"
+                >Политика конфиденциальности</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/sent_contact_form.js"></script>
+
+    <script>
+      function fillTestData(button) {
+        const form = button.closest('form');
+
+        const testData = {
+          name: "Тест Имя",
+          email: "test@example.com",
+          company: "Тестовая компания ООО",
+          phone: "+79991234567",
+          description: "Тестовое описание задачи для проверки формы"
+        };
+
+        form.querySelector('[name="name"]').value = testData.name;
+        form.querySelector('[name="email"]').value = testData.email;
+        form.querySelector('[name="company"]').value = testData.company;
+        form.querySelector('[name="phone"]').value = testData.phone;
+        form.querySelector('[name="description"]').value = testData.description;
+      }
+    </script>
+  </body>
+</html>

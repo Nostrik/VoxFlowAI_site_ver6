@@ -1,0 +1,1814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/output.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/reviews.css">
+    <title>VoxFlowAI</title>
+  </head>
+  <body class="font-normal bg-body overflow-x-hidden">
+    <header
+      class="absolute top-0 left-0 z-50 w-full border-b border-solid border-b-700"
+    >
+      <div
+        class="items-center justify-between hidden px-5 mx-auto desktop-header lg:flex"
+      >
+        <a href="/">
+          <img src="assets/img/navlogo.svg" alt="logo" />
+        </a>
+        <nav>
+          <ul class="flex items-center justify-center">
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="/"
+                class="inline-block text-base font-medium capitalize text-w-100"
+                >главная</a
+              >
+            </li>
+
+            <li
+              class="relative h-full px-5 border-solid xl:px-10 py-7 border-x border-b-700"
+            >
+              <span
+                class="inline-block absolute bottom-0 left-0 w-full h-[1px] bg-w-800"
+              ></span>
+              <a
+                href="features.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-800 hover:text-w-800"
+                >решения</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="products.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >продукты</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="pricing.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >тарифы</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="blog.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >блог</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="contact.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="items-center hidden gap-3 lg:flex">
+          <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+      <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+      <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+      </svg>
+
+          </a>
+          <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+            <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+        <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+      </svg>
+
+          </a>
+          <a href="https://wa.me/79211769883" target="_blank" aria-label="WhatsApp">
+      <svg width="26" height="26" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <clipPath id="clip">
+            <circle cx="128" cy="128" r="128"/>
+          </clipPath>
+        </defs>
+        <circle cx="128" cy="128" r="128" fill="#25D366"/>
+        <g clip-path="url(#clip)">
+          <path fill="#fff" d="M187.3 68.7C172.6 54 152 46 128.8 46c-46 0-83.2 37.2-83.2 83.1 0 14.6 3.8 28.9 11 41.5L46 210l41-10.7c12 6.6 25.6 10.1 39.8 10.1 46 0 83.2-37.2 83.2-83.1 0-23.2-8-43.8-22.7-58.6Zm-58.5 121c-12.4 0-24.6-3.4-35.1-9.8l-2.5-1.5-24.3 6.4 6.5-23.7-1.6-2.5c-6.7-10.5-10.2-22.5-10.2-34.9 0-36.3 29.6-65.9 65.9-65.9 17.6 0 34.1 6.8 46.5 19.2 12.4 12.5 19.2 29 19.1 46.5 0 36.3-29.6 65.9-65.9 65.9Zm39.1-48.9c-2.1-1-12.6-6.2-14.6-6.9-2-.8-3.5-1.2-5 1.2-1.5 2.3-5.8 6.9-7.1 8.3-1.3 1.5-2.6 1.7-4.7.8-12.8-5.4-21.2-9.6-29.7-21.7-2.2-3.1 2.2-2.9 6.2-11.4.7-1.5.4-2.7-.2-3.9-.6-1.2-5-12.1-6.9-16.6-1.8-4.3-3.7-3.7-5-3.8-1.3-.1-2.8-.1-4.3-.1-1.5 0-4 1-6 3-2 2-7.9 7.7-7.9 18.7s8.1 21.7 9.2 23.2c1.1 1.5 16 24.5 38.8 33.2 22.8 8.7 22.8 5.8 26.9 5.5 4.1-.3 13.2-5.3 15.1-10.4 1.9-5.1 1.9-9.5 1.3-10.4-.5-.9-1.8-1.5-3.9-2.5Z"/>
+        </g>
+      </svg>
+      </a>
+        </div>
+      </div>
+      <div
+        class="container flex items-center justify-between px-4 py-4 mx-auto mobile-header lg:hidden"
+      >
+        <a href="/">
+          <img src="assets/img/navlogo.svg" alt="logo" />
+        </a>
+        <span class="text-white cursor-pointer menu-open-icon lg:hidden">
+          <svg
+            class="block w-8 h-8 font-semibold"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </span>
+        <div
+          class="fixed top-0 left-0 flex flex-col items-start justify-start w-full h-screen transition-all duration-300 translate-x-full bg-black mobile-menu p-7"
+        >
+          <div class="flex items-start justify-between w-full">
+            <nav>
+              <ul class="mt-5">
+                <li>
+                  <a
+                    href="index.html"
+                    class="inline-block mb-5 text-base font-medium capitalize text-w-100"
+                    >главная</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="features.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-800 hover:text-w-800"
+                    >решения</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="products.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >продукты</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="pricing.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >тарифы</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="blog.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >блог</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >контакты</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <strong class="text-white cursor-pointer mobile-menu-close-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-x-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+                />
+              </svg>
+            </strong>
+          </div>
+          <div class="flex items-center justify-center w-full gap-2 mt-6">
+          <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+          <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+          <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+          </svg>
+
+              </a>
+              <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+                <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+            <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+          </svg>
+
+              </a>
+              <a href="https://wa.me/79211769883" target="_blank" aria-label="WhatsApp">
+          <svg width="26" height="26" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <clipPath id="clip">
+                <circle cx="128" cy="128" r="128"/>
+              </clipPath>
+            </defs>
+            <circle cx="128" cy="128" r="128" fill="#25D366"/>
+            <g clip-path="url(#clip)">
+              <path fill="#fff" d="M187.3 68.7C172.6 54 152 46 128.8 46c-46 0-83.2 37.2-83.2 83.1 0 14.6 3.8 28.9 11 41.5L46 210l41-10.7c12 6.6 25.6 10.1 39.8 10.1 46 0 83.2-37.2 83.2-83.1 0-23.2-8-43.8-22.7-58.6Zm-58.5 121c-12.4 0-24.6-3.4-35.1-9.8l-2.5-1.5-24.3 6.4 6.5-23.7-1.6-2.5c-6.7-10.5-10.2-22.5-10.2-34.9 0-36.3 29.6-65.9 65.9-65.9 17.6 0 34.1 6.8 46.5 19.2 12.4 12.5 19.2 29 19.1 46.5 0 36.3-29.6 65.9-65.9 65.9Zm39.1-48.9c-2.1-1-12.6-6.2-14.6-6.9-2-.8-3.5-1.2-5 1.2-1.5 2.3-5.8 6.9-7.1 8.3-1.3 1.5-2.6 1.7-4.7.8-12.8-5.4-21.2-9.6-29.7-21.7-2.2-3.1 2.2-2.9 6.2-11.4.7-1.5.4-2.7-.2-3.9-.6-1.2-5-12.1-6.9-16.6-1.8-4.3-3.7-3.7-5-3.8-1.3-.1-2.8-.1-4.3-.1-1.5 0-4 1-6 3-2 2-7.9 7.7-7.9 18.7s8.1 21.7 9.2 23.2c1.1 1.5 16 24.5 38.8 33.2 22.8 8.7 22.8 5.8 26.9 5.5 4.1-.3 13.2-5.3 15.1-10.4 1.9-5.1 1.9-9.5 1.3-10.4-.5-.9-1.8-1.5-3.9-2.5Z"/>
+            </g>
+          </svg>
+          </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="pt-[152px] pb-24 bg-secondary-hero bg-cover bg-center bg-no-repeat overflow-hidden"
+    >
+      <div
+        class="container px-5 xl:-px-0 mx-auto grid items-start lg:grid-cols-2 gap-10 lg:gap-[145px] text-center lg:text-left"
+      >
+        <!-- HERO LEFT -->
+        <div class="mt-5 xl:mt-[80px]">
+          <h1
+            class="pb-4 text-5xl font-semibold leading-tight lg:text-8xl text-w-800"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+          ИИ, который
+            <span class="lg:block gd-title">понимает ваш рынок</span>
+          </h1>
+          <p
+            class="w-full md:max-w-[560px] pt-4 pb-8 text-base text-w-100 lg:text-xl"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+          От финансов и медицины до логистики — отраслевые боты для автоматизации коммуникаций и сервисов.
+          </p>
+          <div
+            class="flex items-center justify-center gap-4 lg:justify-start"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <a
+              href="sign-up.html"
+              class="inline-block px-6 py-3 capitalize border border-solid border-w-100 font-semibold rounded text-b-800 hover:text-w-800 bg-w-800 hover:bg-transparent transition-all duration-300"
+            >
+              Запросить демо
+            </a>
+          </div>
+        </div>
+        <!-- HERO RIGHT -->
+        <img
+          data-aos="fade-up"
+          data-aos-delay="300"
+          src="assets/img/featuresheroimg.png"
+          alt="product"
+        />
+      </div>
+    </div>
+
+    <div class="container px-5 py-24 mx-auto xl:px-0 overflow-hidden">
+      <h2
+        class="gd-title text-5xl font-semibold leading-[64px] text-center mx-auto mb-16"
+        data-aos="fade-up"
+      >
+        Отраслевые решения
+      </h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[30px]"
+      >
+        <!-- CARD 1 -->
+        <div
+          class="p-8 bg-feature-card rounded border border-w-100 border-opacity-[8%]"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <svg width="48" height="45" viewBox="0 0 48 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_8_33)">
+          <path d="M36.7246 37C38.1551 37.4768 42.3142 37.4989 46.166 35.7652C46.5114 35.6097 46.7246 35.2607 46.7246 34.882V17C46.7246 17 46.2246 15.5 42.7246 15" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M34.7246 28.5C38.2246 29 44.7246 28.5 46.7246 26.5" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M36.2246 31C39.7246 31.5 44.7246 31 46.7246 29" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M36.7246 34C40.2246 34.5 44.7246 34 46.7246 32" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M29.2236 33.5001C29.2236 30 24.2236 29.5002 23.2236 32.5001C23.2236 34.5002 25.2236 34.5002 25.2236 34.5002C29.7236 34 29.2236 37.1001 28.7236 37.5002C26.2236 39.5002 22.2236 38.0002 23.2236 36.0002" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M26.2246 28V30.3125" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M26.2246 39V41" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M21.2237 26.9997C31.2237 22.4996 35.7237 30.9998 35.2237 35.4997C34.6682 40.4998 30.7237 43.4997 26.2237 43.4997C15.2238 42.9998 15.7237 31.9998 20.2237 27.4997" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M41.7246 14.5001C39.2246 14 30.7246 14 28.2246 16.5V18M28.2246 18C32.7246 20.5 42.7246 20.5 46.2246 18M28.2246 18V21M46.7246 23.5C45.7246 25.5 30.2246 27 28.2246 23V21M28.2246 21C36.2246 24.5 44.7246 22 46.7246 21" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M26.7242 20C26.3242 16.4 22.2242 12.5 19.7242 10.4999C18.1242 9.6999 20.7242 4.83323 22.2242 2.4999C22.7242 0.5 18.2232 2 15.7242 2.4999C13.7242 2.89998 12.7242 2 7.72418 1C6.52418 1.4 10.0575 7.33333 11.2242 10C11.2242 10.7999 6.22418 13.5 4.22419 17C-2.27577 26.5 0.724183 40 16.2242 39" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M10.7246 10.5H17.2246" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M12.7246 8H19.2246" stroke="#47A9FF" stroke-width="1.5"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_8_33">
+          <rect width="48" height="45" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
+          <h3 class="mt-12 mb-3 text-2xl font-medium text-w-800">
+            Финансы и страхование
+          </h3>
+          <p class="text-base text-w-100">
+            В финансово-страховом секторе ежедневно обрабатываются огромные объёмы информации и ведётся постоянное общение с клиентами.
+            Сделать эти коммуникации быстрыми, качественными и недорогими помогают наши продукты.
+          </p>
+        </div>
+        <!-- CARD 2 -->
+        <div
+          class="p-8 bg-feature-card rounded border border-w-100 border-opacity-[8%]"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <svg width="48" height="42" viewBox="0 0 48 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_9_46)">
+          <path d="M1 34.493V15.4366C1 9.85921 2.40815 8 8.04081 8H38.0816C42.3061 7.99995 46.249 8.55775 47 12.6479V34.493C47 36.3521 47 41 40.898 41H6.16327C4.12925 40.8451 1.00001 39.1408 1 34.493Z" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M20.9211 27.7692H20.0263M20.0263 27.7692H17C16.4477 27.7692 16 27.3215 16 26.7692V22.2308C16 21.6785 16.4477 21.2308 17 21.2308H20.3684C20.9207 21.2308 21.3684 20.7831 21.3684 20.2308V17C21.3684 16.4477 21.8161 16 22.3684 16H26.6316C27.1839 16 27.6316 16.4477 27.6316 17V20.2308C27.6316 20.7831 28.0793 21.2308 28.6316 21.2308H32C32.5523 21.2308 33 21.6785 33 22.2308V26.7692C33 27.3215 32.5523 27.7692 32 27.7692H28.6316C28.0793 27.7692 27.6316 28.2169 27.6316 28.7692V32C27.6316 32.5523 27.1839 33 26.6316 33H22.3684C21.8161 33 21.3684 32.5523 21.3684 32V28.7692C21.3684 28.2169 20.9207 27.7692 20.3684 27.7692H20.0263Z" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M16 8.00001V2.90896C16.4423 0.516506 29.3574 0.372901 31.6887 2.47789C31.9523 2.71588 32 3.09075 32 3.44586V8.00001" stroke="#47A9FF" stroke-width="1.5"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_9_46">
+          <rect width="48" height="42" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
+          <h3 class="mt-12 mb-3 text-2xl font-medium text-w-800">
+            Медицина
+          </h3>
+          <p class="text-base text-w-100">
+            Рынок mHealth быстро растёт, и пациенты всё чаще хотят записываться к врачу, получать консультации и результаты анализов онлайн.
+            Эти задачи помогают решать медицинские чат-боты и голосовые ИИ-боты от нашей компании для клиник и медцентров.
+          </p>
+        </div>
+        <!-- CARD 3 -->
+        <div
+          class="p-8 bg-feature-card rounded border border-w-100 border-opacity-[8%]"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <svg width="61" height="45" viewBox="0 0 61 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_9_50)">
+          <path d="M0 1.5H1.5" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M4 1.5H18" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M4 5.5H38.5C39.0523 5.5 39.5 5.94772 39.5 6.5V37.5C39.5 38.0523 39.0523 38.5 38.5 38.5H19.5" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M8 39H2C1.44772 39 1 38.5523 1 38V6.5C1 5.94772 1.44772 5.5 2 5.5H7" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M4 10H39" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M1 34.5H6.5" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M21.5 34H39.5" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M14.5 37.5V39" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M49 37.5V39" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M56 34H60" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M59.5 26.5L44.4688 26.0303C43.9289 26.0134 43.5 25.5709 43.5 25.0308V17.5C43.5 16.9477 43.9477 16.5 44.5 16.5H53" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M40 12.5H50.4437C50.7896 12.5 51.1109 12.6788 51.2934 12.9726L59.8496 26.7578C59.9479 26.9161 60 27.0988 60 27.2851V37.5C60 38.0523 59.5523 38.5 59 38.5H55" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M37.5 38.5H43" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M14.5 44C17.5376 44 20 41.5376 20 38.5C20 35.4624 17.5376 33 14.5 33C11.4624 33 9 35.4624 9 38.5C9 41.5376 11.4624 44 14.5 44Z" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M48.5 44C51.5376 44 54 41.5376 54 38.5C54 35.4624 51.5376 33 48.5 33C45.4624 33 43 35.4624 43 38.5C43 41.5376 45.4624 44 48.5 44Z" stroke="#47A9FF" stroke-width="1.5"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_9_50">
+          <rect width="61" height="45" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
+          <h3 class="mt-12 mb-3 text-2xl font-medium text-w-800">
+            Транспорт и логистика
+          </h3>
+          <p class="text-base text-w-100">
+            В транспортных и логистических компаниях вместе с потоками грузов и пассажиров обрабатываются огромные объёмы информации и коммуникаций.
+            Автоматизировать и удешевить эти процессы — от уведомлений до приёма заявок и работы с клиентами — помогут наши продукты.
+          </p>
+        </div>
+        <!-- CARD 4 -->
+        <div
+          class="p-8 bg-feature-card rounded border border-w-100 border-opacity-[8%]"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <svg width="49" height="46" viewBox="0 0 49 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_9_66)">
+          <path d="M16.3027 10.8975V13.0835" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M21.2207 10.8975V13.0835" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M2.63867 45.3277V38.7695" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M46.3613 45.3277V38.7695" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M45.8028 39.2932L2.93301 38.8501C1.86222 38.8391 1 37.9679 1 36.897C1 35.8183 1.87447 34.9438 2.95319 34.9438H45.8252C47.0263 34.9438 48 35.9175 48 37.1186C48 38.3285 47.0126 39.3057 45.8028 39.2932Z" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M7.01172 34.9439V20.6416C7.01172 20.0893 7.45943 19.6416 8.01172 19.6416H30.0582C30.6105 19.6416 31.0582 20.0893 31.0582 20.6416V34.3974" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M31.0586 24.0137C34.5563 25.3253 34.1555 29.2966 33.7912 31.1183" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M7.01168 24.0137C3.14315 25.4262 3.87615 29.1565 4.27912 31.1183" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M30.5117 30.5718C32.9983 30.5718 35.6921 30.5718 34.656 34.9439" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M7.55861 30.5718C5.07202 30.5718 2.3782 30.5718 3.41429 34.9439" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M19.5805 25.1064C11.9294 26.746 21.22 34.3971 21.22 26.1995" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M10.837 10.8977C8.65085 -1.67199 22.3137 -0.578927 21.2207 4.88604" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M21.2207 4.88614C23.844 -0.797582 29.4184 5.43232 26.6858 11.444" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M15.7568 19.6413C13.1335 17.4553 12.842 12.1723 13.0242 9.80413C13.0242 6.30646 24.5009 6.5251 24.5009 9.80413C24.9382 15.925 23.2257 18.9126 22.3149 19.6413" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M13.0236 14.7231C7.0119 15.2697 10.8375 9.25792 13.0236 10.8976" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M25.0461 10.9327C29.9647 10.3508 27.2322 16.3624 24.4996 14.723" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M18.4876 15.2695C19.0912 15.2695 19.5806 15.7589 19.5806 16.3626C19.5806 16.9662 19.0912 17.4556 18.4876 17.4556C17.8839 17.4556 17.3945 16.9662 17.3945 16.3626C17.3945 15.7589 17.8839 15.2695 18.4876 15.2695Z" fill="#47A9FF" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M19.0352 16.9087H25.9521C26.6026 16.9087 27.08 16.2973 26.9222 15.6662L26.6863 14.7227" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M2 45H47" stroke="#47A9FF" stroke-width="1.5"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_9_66">
+          <rect width="49" height="46" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
+          <h3 class="mt-12 mb-3 text-2xl font-medium text-w-800">
+            ИТ и связь
+          </h3>
+          <p class="text-base text-w-100">
+            В ИТ и телеком-отрасли высокий уровень технологий и автоматизации, но коммуникации с рынком и клиентами часто остаются недостаточно автоматизированными.
+            Эту работу можно упростить и удешевить с помощью искусственного интеллекта и ботов нового поколения от нашей компании.
+          </p>
+        </div>
+
+         <!-- CARD 5 -->
+        <div
+          class="p-8 bg-feature-card rounded border border-w-100 border-opacity-[8%]"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_9_86)">
+          <path d="M6.5 32.0001C7.5 9.49986 36.5 11 37.5 32.0002M0 21.9999H5.5M39 21.9999H44.5" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M6.5 6.5L10 10" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M34 10.5L37.5 7" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M22 0V5" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M17.5 10H26.5" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M22 10V15.5" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M4.5 32.5H39.5" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M11 33V37" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M33 32.5V37" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M3 43L4.52 37H38.9733L41 43" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M0 43H43.5" stroke="#47A9FF" stroke-width="1.5"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_9_86">
+          <rect width="45" height="44" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
+          <h3 class="mt-12 mb-3 text-2xl font-medium text-w-800">
+            Гостиницы и рестораны
+          </h3>
+          <p class="text-base text-w-100">
+            В сфере услуг, особенно в HoReCa, важно постоянно привлекать гостей и поддерживать связь с клиентской базой, чтобы стимулировать повторные визиты.
+            Быстро и недорого наладить такую коммуникацию помогают наши продукты
+          </p>
+        </div>
+        <!-- CARD 6 -->
+        <div
+          class="p-8 bg-feature-card rounded border border-w-100 border-opacity-[8%]"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <svg width="49" height="47" viewBox="0 0 49 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_9_98)">
+          <path d="M12.091 7.87229H47.6397C43.2645 22.7113 44.3583 26.9363 37.7955 26.9363H31.2326M31.2326 26.9363H17.56L10.9971 4.26558C8.80955 1.17386 3.88741 0.658812 2.24667 1.17412C0.934097 3.2351 0.0590714 3.75034 2.79357 3.75034C6.29379 4.16254 8.26265 4.26558 9.35646 8.38753L14.8255 27.4515C6.62194 30.0277 5.52813 36.2106 12.091 37.2411H41.0769C45.9991 37.2411 47.0929 34.6649 40.53 34.6649H12.091C9.90336 34.1497 10.9971 32.0887 12.091 31.5735L16.4662 29.5125H28.4981C31.1233 27.8637 31.4149 27.108 31.2326 26.9363Z" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M7.71484 5.29584L9.90246 3.23486" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M14.2793 14.0547H20.2952" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M15.373 20.7529H21.389" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M19.2012 7.87207L22.4826 26.9361" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M26.3105 7.87207L27.4044 26.9361" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M19.5 14.0547H45.4522" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M19.748 20.7529H44.3588" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M33.42 7.87207L32.3262 26.4208" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M40.5295 7.87207L37.248 26.9361" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M16.5302 43.9389H16.4035C15.8344 43.9389 15.373 43.4775 15.373 42.9084C15.373 42.3393 15.8344 41.8779 16.4035 41.8779H16.5302C17.0993 41.8779 17.5607 42.3393 17.5607 42.9084C17.5607 43.4775 17.0993 43.9389 16.5302 43.9389Z" fill="#47A9FF"/>
+          <path d="M40.5927 43.9389H40.466C39.8969 43.9389 39.4355 43.4775 39.4355 42.9084C39.4355 42.3393 39.8969 41.8779 40.466 41.8779H40.5927C41.1618 41.8779 41.6232 42.3393 41.6232 42.9084C41.6232 43.4775 41.1618 43.9389 40.5927 43.9389Z" fill="#47A9FF"/>
+          <path d="M16.6569 45.9998H16.277C14.5696 45.9998 13.1855 44.6157 13.1855 42.9084C13.1855 41.201 14.5696 39.8169 16.277 39.8169H16.6569C18.3643 39.8169 19.7484 41.201 19.7484 42.9084C19.7484 44.6157 18.3643 45.9998 16.6569 45.9998Z" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M40.7194 45.9998H40.3395C38.6321 45.9998 37.248 44.6157 37.248 42.9084C37.248 41.201 38.6321 39.8169 40.3395 39.8169H40.7194C42.4268 39.8169 43.8109 41.201 43.8109 42.9084C43.8109 44.6157 42.4268 45.9998 40.7194 45.9998Z" stroke="#47A9FF" stroke-width="1.5"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_9_98">
+          <rect width="49" height="47" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
+          <h3 class="mt-12 mb-3 text-2xl font-medium text-w-800">
+            Онлайн ритейл
+          </h3>
+          <p class="text-base text-w-100">
+            Интернет-торговля успешна, когда все коммуникации работают без сбоев: от приёма заказов и поддержки до доставки.
+            Быстрое, недорогое и качественное общение с клиентами помогает обеспечить использование наших продуктов.
+          </p>
+        </div>
+        <!-- CARD 7 -->
+        <div
+          class="p-8 bg-feature-card rounded border border-w-100 border-opacity-[8%]"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_9_113)">
+          <path d="M23.5 33.5V43C23.5 43.5523 23.0523 44 22.5 44H2C1.44772 44 1 43.5523 1 43V2C1 1.44772 1.44772 1 2 1H22.5C23.0523 1 23.5 1.44772 23.5 2V6" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M5.5 44V38C5.5 37.4477 5.94772 37 6.5 37H18C18.5523 37 19 37.4477 19 38V43.5" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M12 37.5V43.5" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M5.5 30.5V32.5C5.5 33.0523 5.94772 33.5 6.5 33.5H8.5C9.05228 33.5 9.5 33.0523 9.5 32.5V30.5C9.5 29.9477 9.05228 29.5 8.5 29.5H6.5C5.94772 29.5 5.5 29.9477 5.5 30.5Z" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M14.5 30.5V32.5C14.5 33.0523 14.9477 33.5 15.5 33.5H17.5C18.0523 33.5 18.5 33.0523 18.5 32.5V30.5C18.5 29.9477 18.0523 29.5 17.5 29.5H15.5C14.9477 29.5 14.5 29.9477 14.5 30.5Z" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M15 21V24.5C15 25.0523 15.4477 25.5 16 25.5H16.5" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M15 17.5V14.5C15 13.9477 15.4477 13.5 16 13.5H16.5" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M5.5 22.5V24.5C5.5 25.0523 5.94772 25.5 6.5 25.5H8.5C9.05228 25.5 9.5 25.0523 9.5 24.5V22.5C9.5 21.9477 9.05228 21.5 8.5 21.5H6.5C5.94772 21.5 5.5 21.9477 5.5 22.5Z" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M5.5 6.5V8.5C5.5 9.05228 5.94772 9.5 6.5 9.5H8.5C9.05228 9.5 9.5 9.05228 9.5 8.5V6.5C9.5 5.94772 9.05228 5.5 8.5 5.5H6.5C5.94772 5.5 5.5 5.94772 5.5 6.5Z" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M14.5 6.5V8.5C14.5 9.05228 14.9477 9.5 15.5 9.5H17.5C18.0523 9.5 18.5 9.05228 18.5 8.5V6.5C18.5 5.94772 18.0523 5.5 17.5 5.5H15.5C14.9477 5.5 14.5 5.94772 14.5 6.5Z" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M29.5 20L28 29L35 18L32 17.5L33.5 13.5L28 11.5L26.5 19.5L29.5 20Z" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M16.5 20.1144C16.5 12.633 22.7494 6.60589 30.2298 6.73268C37.5319 6.85644 43.5 12.8132 43.5 20.1164C43.5 27.5079 37.3926 33.5 30.001 33.5C22.6083 33.5 16.5 27.5071 16.5 20.1144Z" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M5.5 14.5V16.5C5.5 17.0523 5.94772 17.5 6.5 17.5H8.5C9.05228 17.5 9.5 17.0523 9.5 16.5V14.5C9.5 13.9477 9.05228 13.5 8.5 13.5H6.5C5.94772 13.5 5.5 13.9477 5.5 14.5Z" stroke="#47A9FF" stroke-width="1.5"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_9_113">
+          <rect width="45" height="45" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
+          <h3 class="mt-12 mb-3 text-2xl font-medium text-w-800">
+            ЖКХ и энергетика
+          </h3>
+          <p class="text-base text-w-100">
+            Управляющим компаниям и поставщикам коммунальных услуг приходится регулярно общаться с жильцами: счета, должники, аварии, ремонты и изменения в законодательстве.
+            Это создаёт огромную нагрузку на сотрудников — пока на ваших линиях не начинают работать наши продукты.
+          </p>
+        </div>
+        <!-- CARD 8 -->
+        <div
+          class="p-8 bg-feature-card rounded border border-w-100 border-opacity-[8%]"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <svg width="54" height="38" viewBox="0 0 54 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_9_127)">
+          <path d="M5.05078 36.7189V19.938H22.989V36.7189" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M5.05078 29.1968H22.989" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M11.9941 28.618V23.4102H16.0447V28.618" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M11.9941 36.719V32.6685H16.0447V36.719" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M29.9316 36.719V11.2583H48.4485V36.719" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M29.9316 19.938H47.8698" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M29.9316 29.1968H48.4485" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M37.4551 19.3597V14.7305H40.927V19.9383" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M37.4551 28.618V23.9888H40.927V28.618" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M37.4551 36.719V33.2471H40.927V36.719" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M1 23.9886L7.36517 17.3341L13.7303 11.2583L26.4607 23.9886" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M25.8828 14.7303L32.5373 8.07584L39.1918 2L52.5008 14.7303" stroke="#47A9FF" stroke-width="1.5"/>
+          <path d="M5 37H49" stroke="#47A9FF" stroke-width="1.5"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_9_127">
+          <rect width="54" height="38" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
+          <h3 class="mt-12 mb-3 text-2xl font-medium text-w-800">
+            Недвижимость
+          </h3>
+          <p class="text-base text-w-100">
+            Агентствам недвижимости и отделам продаж нужно постоянно общаться с рынком: звонки, приглашения на просмотры, ответы на вопросы и обработка лидов.
+            Делать это вручную долго и дорого — поэтому на помощь приходят наши продукты.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- <div class="pt-12 pb-24 bg-knowledge overflow-hidden">
+      <div class="container px-5 mx-auto xl:px-0">
+        <h2
+          class="gd-title text-5xl font-semibold leading-[64px] text-center mx-auto mb-16"
+          data-aos="fade-up"
+        >
+          Diverse Knowledge Sources
+        </h2>
+        <div class="flex flex-col gap-8"> -->
+          <!-- CARD 1 -->
+          <!-- <div
+            class="flex flex-col lg:flex-row md:items-center gap-[40px] md:gap-[126px] border rounded border-w-100 border-opacity-[8%] p-8 bg-guide-card justify-between"
+            data-aos="fade-up-right"
+          >
+            <img
+              class="rounded"
+              src="assets/img/diversecardimg1.png"
+              alt="guide"
+            />
+            <div>
+              <h3 class="pb-3 text-3xl font-medium text-w-800">
+                Robust Knowledge Integration
+              </h3>
+              <p class="max-w-[502px] text-w-100 text-base">
+                Our platform offers versatile methods for incorporating
+                knowledge, allowing users to upload documents in various formats
+                such as doc, pdf, md, txt, csv, xls, and more.
+              </p>
+            </div>
+          </div> -->
+          <!-- CARD 2 -->
+          <!-- <div
+            class="flex flex-col lg:flex-row-reverse justify-between items-start md:items-center gap-[40px] md:gap-[126px] border rounded border-w-100 border-opacity-[8%] p-8 bg-guide-card"
+            data-aos="fade-up-left"
+          >
+            <img
+              class="rounded"
+              src="assets/img/diversecardimg2.png"
+              alt="guide"
+            />
+            <div class="md:ps-8">
+              <h3 class="pb-3 text-3xl font-medium text-w-800">
+                Data Structuring
+              </h3>
+              <p class="max-w-[502px] text-w-100 text-base">
+                In addition to accommodating unstructured data like traditional
+                documents, our platform also supports structured data such as
+                tables and Q&A formats as part of its knowledge base.
+              </p>
+            </div>
+          </div> -->
+          <!-- CARD 3 -->
+          <!-- <div
+            class="flex flex-col lg:flex-row md:items-center gap-[40px] md:gap-[126px] border rounded border-w-100 border-opacity-[8%] p-8 bg-guide-card justify-between"
+            data-aos="fade-up-right"
+          >
+            <img
+              class="rounded"
+              src="assets/img/diversecardimg3.png"
+              alt="guide"
+            />
+            <div>
+              <h3 class="pb-3 text-3xl font-medium text-w-800">
+                Third-party Integrations and API
+              </h3>
+              <p class="max-w-[502px] text-w-100 text-base">
+                Easily integrate knowledge from third-party applications like
+                Notion, Dropbox, Google Drive, and more, expanding the sources
+                of information for your AI.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+    <div class="container px-5 py-24 mx-auto xl:px-0 overflow-hidden">
+      <h2
+        class="gd-title text-5xl font-semibold leading-[64px] text-center mx-auto mb-16"
+        data-aos="fade-up"
+      >
+        Послушайте реальные сценарии работы
+      </h2>        
+        <div class="relative z-10 mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
+            <div
+              id="voice-demo-grid"
+              class="mobile-carousel flex gap-4 overflow-x-auto snap-x snap-mandatory pb-2 pr-4 -mr-4 scrollbar-none md:grid md:overflow-visible md:snap-none md:pb-0 md:pr-0 md:mr-0 md:grid-cols-2 xl:grid-cols-3 md:gap-8 auto-rows-fr"
+            >
+
+            <!-- CARD 1 -->
+              <article
+                class="voice-card group relative min-w-[85vw] snap-center overflow-hidden rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,rgba(11,22,42,0.70),rgba(5,10,22,0.84))] p-5 shadow-[0_0_0_1px_rgba(118,164,255,0.03),0_30px_80px_rgba(0,32,84,0.34)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_0_0_1px_rgba(118,164,255,0.05),0_34px_90px_rgba(0,50,140,0.34),0_0_60px_rgba(47,134,255,0.12)] sm:min-w-[78vw] md:min-w-0"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-player
+              >
+              <div class="relative z-10 mb-6 flex items-start justify-between gap-4">
+                <div class="flex min-w-0 items-start gap-3.5">
+                  <span class="mt-2 h-3.5 w-3.5 shrink-0 rounded-full bg-gradient-to-b from-[#55AEFF] to-[#1F7CFF] shadow-[0_0_18px_rgba(47,134,255,0.48)]"></span>
+                  <div class="min-w-0">
+                    <h3 class="text-2xl font-medium tracking-[-0.02em] text-white sm:text-[28px]">HR - агенства</h3>
+                    <p class="mt-2 text-sm leading-6 text-[#95A3C4] sm:text-base">
+                      Специалист по подбору персонала
+                    </p>
+                  </div>
+                </div>
+
+                <div class="mt-2 flex shrink-0 flex-col gap-1">
+                  <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+                  <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+                  <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+                </div>
+              </div>
+
+              <div class="relative z-10 grid grid-cols-[58px,1fr] items-center gap-4 rounded-[22px] border border-white/10 bg-white/[0.03] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.04),0_14px_34px_rgba(0,0,0,0.18)] backdrop-blur-md max-sm:grid-cols-1">
+                <button
+                  type="button"
+                  class="play-btn relative h-[58px] w-[58px] rounded-full bg-gradient-to-b from-[#2F86FF] to-[#1269F3] shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_14px_26px_rgba(20,93,255,0.26),0_0_24px_rgba(47,134,255,0.18)] transition hover:-translate-y-0.5 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_18px_30px_rgba(20,93,255,0.32),0_0_26px_rgba(47,134,255,0.24)]"
+                  aria-label="Play / Pause"
+                >
+                  <span class="play-icon absolute left-1/2 top-1/2 h-0 w-0 -translate-y-1/2 translate-x-[-35%] border-b-[10px] border-l-[16px] border-t-[10px] border-b-transparent border-l-white border-t-transparent"></span>
+                  <span class="pause-icon-1 absolute left-1/2 top-1/2 hidden h-5 w-1.5 -translate-x-[10px] -translate-y-1/2 rounded-full bg-white"></span>
+                  <span class="pause-icon-2 absolute left-1/2 top-1/2 hidden h-5 w-1.5 translate-x-[4px] -translate-y-1/2 rounded-full bg-white"></span>
+                </button>
+
+                <div class="min-w-0">
+                  <div class="mb-3 h-[92px] overflow-hidden rounded-2xl">
+                    <canvas class="waveform block h-[92px] w-full" width="900" height="120"></canvas>
+                  </div>
+
+                  <div class="flex flex-col gap-3">
+                    <div class="progress relative h-1.5 cursor-pointer rounded-full bg-white/10" data-progress>
+                      <div class="progress-fill absolute inset-y-0 left-0 w-0 rounded-full bg-gradient-to-r from-[#1E7DFF] to-[#4CB3FF] shadow-[0_0_16px_rgba(47,134,255,0.45)]"></div>
+                      <div class="progress-thumb absolute left-0 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white shadow-[0_0_0_4px_rgba(72,177,255,0.16),0_0_14px_rgba(72,177,255,0.55)]"></div>
+                    </div>
+
+                    <div class="flex items-center justify-between gap-4">
+                      <span class="time whitespace-nowrap text-sm tracking-[0.02em] text-[#B5C3E0]">00:00 / 00:00</span>
+                      <div class="relative h-6 w-6 shrink-0 opacity-90" aria-hidden="true">
+                        <span class="absolute left-[1px] top-[6px] h-3 w-[9px] rounded-[2px] bg-[#DCE7FF] [clip-path:polygon(0_30%,36%_30%,68%_0,68%_100%,36%_70%,0_70%)]"></span>
+                        <span class="absolute right-0 top-1 h-4 w-3 rounded-full border-r-2 border-[#DCE7FF] shadow-[-4px_0_0_-2px_#DCE7FF,-8px_0_0_-4px_#DCE7FF]"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <audio preload="metadata" crossorigin="anonymous" src="./assets/audio/HR_recruitment_for_mass_vacancies.mp3"></audio>
+            </article>
+
+            <!-- CARD 2 -->
+              <article
+                class="voice-card group relative min-w-[85vw] snap-center overflow-hidden rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,rgba(11,22,42,0.70),rgba(5,10,22,0.84))] p-5 shadow-[0_0_0_1px_rgba(118,164,255,0.03),0_30px_80px_rgba(0,32,84,0.34)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_0_0_1px_rgba(118,164,255,0.05),0_34px_90px_rgba(0,50,140,0.34),0_0_60px_rgba(47,134,255,0.12)] sm:min-w-[78vw] md:min-w-0"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-player
+              >
+              <div class="relative z-10 mb-6 flex items-start justify-between gap-4">
+                <div class="flex min-w-0 items-start gap-3.5">
+                  <span class="mt-2 h-3.5 w-3.5 shrink-0 rounded-full bg-gradient-to-b from-[#FF9DD7] to-[#EC75BC] shadow-[0_0_18px_rgba(245,140,207,0.4)]"></span>
+                  <div class="min-w-0">
+                    <h3 class="text-2xl font-medium tracking-[-0.02em] text-white sm:text-[28px]">NPS онлайн супермаркет</h3>
+                    <p class="mt-2 text-sm leading-6 text-[#95A3C4] sm:text-base">
+                      Сотрудник онлайн супермаркета
+                    </p>
+                  </div>
+                </div>
+
+                <div class="mt-2 flex shrink-0 flex-col gap-1">
+                  <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+                  <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+                  <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+                </div>
+              </div>
+
+              <div class="relative z-10 grid grid-cols-[58px,1fr] items-center gap-4 rounded-[22px] border border-white/10 bg-white/[0.03] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.04),0_14px_34px_rgba(0,0,0,0.18)] backdrop-blur-md max-sm:grid-cols-1">
+                <button
+                  type="button"
+                  class="play-btn relative h-[58px] w-[58px] rounded-full bg-gradient-to-b from-[#2F86FF] to-[#1269F3] shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_14px_26px_rgba(20,93,255,0.26),0_0_24px_rgba(47,134,255,0.18)] transition hover:-translate-y-0.5 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_18px_30px_rgba(20,93,255,0.32),0_0_26px_rgba(47,134,255,0.24)]"
+                  aria-label="Play / Pause"
+                >
+                  <span class="play-icon absolute left-1/2 top-1/2 h-0 w-0 -translate-y-1/2 translate-x-[-35%] border-b-[10px] border-l-[16px] border-t-[10px] border-b-transparent border-l-white border-t-transparent"></span>
+                  <span class="pause-icon-1 absolute left-1/2 top-1/2 hidden h-5 w-1.5 -translate-x-[10px] -translate-y-1/2 rounded-full bg-white"></span>
+                  <span class="pause-icon-2 absolute left-1/2 top-1/2 hidden h-5 w-1.5 translate-x-[4px] -translate-y-1/2 rounded-full bg-white"></span>
+                </button>
+
+                <div class="min-w-0">
+                  <div class="mb-3 h-[92px] overflow-hidden rounded-2xl">
+                    <canvas class="waveform block h-[92px] w-full" width="900" height="120"></canvas>
+                  </div>
+
+                  <div class="flex flex-col gap-3">
+                    <div class="progress relative h-1.5 cursor-pointer rounded-full bg-white/10" data-progress>
+                      <div class="progress-fill absolute inset-y-0 left-0 w-0 rounded-full bg-gradient-to-r from-[#1E7DFF] to-[#4CB3FF] shadow-[0_0_16px_rgba(47,134,255,0.45)]"></div>
+                      <div class="progress-thumb absolute left-0 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white shadow-[0_0_0_4px_rgba(72,177,255,0.16),0_0_14px_rgba(72,177,255,0.55)]"></div>
+                    </div>
+
+                    <div class="flex items-center justify-between gap-4">
+                      <span class="time whitespace-nowrap text-sm tracking-[0.02em] text-[#B5C3E0]">00:00 / 00:00</span>
+                      <div class="relative h-6 w-6 shrink-0 opacity-90" aria-hidden="true">
+                        <span class="absolute left-[1px] top-[6px] h-3 w-[9px] rounded-[2px] bg-[#DCE7FF] [clip-path:polygon(0_30%,36%_30%,68%_0,68%_100%,36%_70%,0_70%)]"></span>
+                        <span class="absolute right-0 top-1 h-4 w-3 rounded-full border-r-2 border-[#DCE7FF] shadow-[-4px_0_0_-2px_#DCE7FF,-8px_0_0_-4px_#DCE7FF]"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <audio preload="metadata" crossorigin="anonymous" src="./assets/audio/NPS_survey_for_the_store.mp3"></audio>
+            </article>
+
+            <!-- CARD 3 -->
+            <article
+                class="voice-card group relative min-w-[85vw] snap-center overflow-hidden rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,rgba(11,22,42,0.70),rgba(5,10,22,0.84))] p-5 shadow-[0_0_0_1px_rgba(118,164,255,0.03),0_30px_80px_rgba(0,32,84,0.34)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_0_0_1px_rgba(118,164,255,0.05),0_34px_90px_rgba(0,50,140,0.34),0_0_60px_rgba(47,134,255,0.12)] sm:min-w-[78vw] md:min-w-0"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-player
+              >
+              <div class="relative z-10 mb-6 flex items-start justify-between gap-4">
+                <div class="flex min-w-0 items-start gap-3.5">
+                  <span class="mt-2 h-3.5 w-3.5 shrink-0 rounded-full bg-gradient-to-b from-[#C2B5FF] to-[#927EFF] shadow-[0_0_18px_rgba(167,139,250,0.45)]"></span>
+                  <div class="min-w-0">
+                    <h3 class="text-2xl font-medium tracking-[-0.02em] text-white sm:text-[28px]">Автосалоны</h3>
+                    <p class="mt-2 text-sm leading-6 text-[#95A3C4] sm:text-base">
+                      Менеджер ассистент автосалона
+                    </p>
+                  </div>
+                </div>
+
+                <div class="mt-2 flex shrink-0 flex-col gap-1">
+                  <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+                  <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+                  <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+                </div>
+              </div>
+
+              <div class="relative z-10 grid grid-cols-[58px,1fr] items-center gap-4 rounded-[22px] border border-white/10 bg-white/[0.03] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.04),0_14px_34px_rgba(0,0,0,0.18)] backdrop-blur-md max-sm:grid-cols-1">
+                <button
+                  type="button"
+                  class="play-btn relative h-[58px] w-[58px] rounded-full bg-gradient-to-b from-[#2F86FF] to-[#1269F3] shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_14px_26px_rgba(20,93,255,0.26),0_0_24px_rgba(47,134,255,0.18)] transition hover:-translate-y-0.5 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_18px_30px_rgba(20,93,255,0.32),0_0_26px_rgba(47,134,255,0.24)]"
+                  aria-label="Play / Pause"
+                >
+                  <span class="play-icon absolute left-1/2 top-1/2 h-0 w-0 -translate-y-1/2 translate-x-[-35%] border-b-[10px] border-l-[16px] border-t-[10px] border-b-transparent border-l-white border-t-transparent"></span>
+                  <span class="pause-icon-1 absolute left-1/2 top-1/2 hidden h-5 w-1.5 -translate-x-[10px] -translate-y-1/2 rounded-full bg-white"></span>
+                  <span class="pause-icon-2 absolute left-1/2 top-1/2 hidden h-5 w-1.5 translate-x-[4px] -translate-y-1/2 rounded-full bg-white"></span>
+                </button>
+
+                <div class="min-w-0">
+                  <div class="mb-3 h-[92px] overflow-hidden rounded-2xl">
+                    <canvas class="waveform block h-[92px] w-full" width="900" height="120"></canvas>
+                  </div>
+
+                  <div class="flex flex-col gap-3">
+                    <div class="progress relative h-1.5 cursor-pointer rounded-full bg-white/10" data-progress>
+                      <div class="progress-fill absolute inset-y-0 left-0 w-0 rounded-full bg-gradient-to-r from-[#1E7DFF] to-[#4CB3FF] shadow-[0_0_16px_rgba(47,134,255,0.45)]"></div>
+                      <div class="progress-thumb absolute left-0 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white shadow-[0_0_0_4px_rgba(72,177,255,0.16),0_0_14px_rgba(72,177,255,0.55)]"></div>
+                    </div>
+
+                    <div class="flex items-center justify-between gap-4">
+                      <span class="time whitespace-nowrap text-sm tracking-[0.02em] text-[#B5C3E0]">00:00 / 00:00</span>
+                      <div class="relative h-6 w-6 shrink-0 opacity-90" aria-hidden="true">
+                        <span class="absolute left-[1px] top-[6px] h-3 w-[9px] rounded-[2px] bg-[#DCE7FF] [clip-path:polygon(0_30%,36%_30%,68%_0,68%_100%,36%_70%,0_70%)]"></span>
+                        <span class="absolute right-0 top-1 h-4 w-3 rounded-full border-r-2 border-[#DCE7FF] shadow-[-4px_0_0_-2px_#DCE7FF,-8px_0_0_-4px_#DCE7FF]"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <audio preload="metadata" crossorigin="anonymous" src="./assets/audio/Car_dealership_lead_gen.mp3"></audio>
+            </article>
+
+            <!-- CARD 4 -->
+              <article
+                class="voice-card group relative min-w-[85vw] snap-center overflow-hidden rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,rgba(11,22,42,0.70),rgba(5,10,22,0.84))] p-5 shadow-[0_0_0_1px_rgba(118,164,255,0.03),0_30px_80px_rgba(0,32,84,0.34)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_0_0_1px_rgba(118,164,255,0.05),0_34px_90px_rgba(0,50,140,0.34),0_0_60px_rgba(47,134,255,0.12)] sm:min-w-[78vw] md:min-w-0"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-player
+              >
+              <div class="relative z-10 mb-6 flex items-start justify-between gap-4">
+                <div class="flex min-w-0 items-start gap-3.5">
+                  <span class="mt-2 h-3.5 w-3.5 shrink-0 rounded-full bg-gradient-to-b from-[#ADC5FF] to-[#6F98FF] shadow-[0_0_18px_rgba(135,174,252,0.42)]"></span>
+                  <div class="min-w-0">
+                    <h3 class="text-2xl font-medium tracking-[-0.02em] text-white sm:text-[28px]">NPS опрос барбершоп</h3>
+                    <p class="mt-2 text-sm leading-6 text-[#95A3C4] sm:text-base">
+                      Сотрудник отдела контроля качества
+                    </p>
+                  </div>
+                </div>
+
+                <div class="mt-2 flex shrink-0 flex-col gap-1">
+                  <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+                  <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+                  <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+                </div>
+              </div>
+
+              <div class="relative z-10 grid grid-cols-[58px,1fr] items-center gap-4 rounded-[22px] border border-white/10 bg-white/[0.03] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.04),0_14px_34px_rgba(0,0,0,0.18)] backdrop-blur-md max-sm:grid-cols-1">
+                <button
+                  type="button"
+                  class="play-btn relative h-[58px] w-[58px] rounded-full bg-gradient-to-b from-[#2F86FF] to-[#1269F3] shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_14px_26px_rgba(20,93,255,0.26),0_0_24px_rgba(47,134,255,0.18)] transition hover:-translate-y-0.5 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_18px_30px_rgba(20,93,255,0.32),0_0_26px_rgba(47,134,255,0.24)]"
+                  aria-label="Play / Pause"
+                >
+                  <span class="play-icon absolute left-1/2 top-1/2 h-0 w-0 -translate-y-1/2 translate-x-[-35%] border-b-[10px] border-l-[16px] border-t-[10px] border-b-transparent border-l-white border-t-transparent"></span>
+                  <span class="pause-icon-1 absolute left-1/2 top-1/2 hidden h-5 w-1.5 -translate-x-[10px] -translate-y-1/2 rounded-full bg-white"></span>
+                  <span class="pause-icon-2 absolute left-1/2 top-1/2 hidden h-5 w-1.5 translate-x-[4px] -translate-y-1/2 rounded-full bg-white"></span>
+                </button>
+
+                <div class="min-w-0">
+                  <div class="mb-3 h-[92px] overflow-hidden rounded-2xl">
+                    <canvas class="waveform block h-[92px] w-full" width="900" height="120"></canvas>
+                  </div>
+
+                  <div class="flex flex-col gap-3">
+                    <div class="progress relative h-1.5 cursor-pointer rounded-full bg-white/10" data-progress>
+                      <div class="progress-fill absolute inset-y-0 left-0 w-0 rounded-full bg-gradient-to-r from-[#1E7DFF] to-[#4CB3FF] shadow-[0_0_16px_rgba(47,134,255,0.45)]"></div>
+                      <div class="progress-thumb absolute left-0 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white shadow-[0_0_0_4px_rgba(72,177,255,0.16),0_0_14px_rgba(72,177,255,0.55)]"></div>
+                    </div>
+
+                    <div class="flex items-center justify-between gap-4">
+                      <span class="time whitespace-nowrap text-sm tracking-[0.02em] text-[#B5C3E0]">00:00 / 00:00</span>
+                      <div class="relative h-6 w-6 shrink-0 opacity-90" aria-hidden="true">
+                        <span class="absolute left-[1px] top-[6px] h-3 w-[9px] rounded-[2px] bg-[#DCE7FF] [clip-path:polygon(0_30%,36%_30%,68%_0,68%_100%,36%_70%,0_70%)]"></span>
+                        <span class="absolute right-0 top-1 h-4 w-3 rounded-full border-r-2 border-[#DCE7FF] shadow-[-4px_0_0_-2px_#DCE7FF,-8px_0_0_-4px_#DCE7FF]"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <audio preload="metadata" crossorigin="anonymous" src="./assets/audio/NPS_barbershop.mp3"></audio>
+            </article>
+
+            <!-- CARD 5 -->
+            <article
+              class="voice-card group relative min-w-[85vw] snap-center overflow-hidden rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,rgba(11,22,42,0.70),rgba(5,10,22,0.84))] p-5 shadow-[0_0_0_1px_rgba(118,164,255,0.03),0_30px_80px_rgba(0,32,84,0.34)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_0_0_1px_rgba(118,164,255,0.05),0_34px_90px_rgba(0,50,140,0.34),0_0_60px_rgba(47,134,255,0.12)] sm:min-w-[78vw] md:min-w-0"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-player
+            >
+            <div class="relative z-10 mb-6 flex items-start justify-between gap-4">
+              <div class="flex min-w-0 items-start gap-3.5">
+                <span class="mt-2 h-3.5 w-3.5 shrink-0 rounded-full bg-gradient-to-b from-[#ADC5FF] to-[#6F98FF] shadow-[0_0_18px_rgba(135,174,252,0.42)]"></span>
+                <div class="min-w-0">
+                  <h3 class="text-2xl font-medium tracking-[-0.02em] text-white sm:text-[28px]">Онлайн магазины</h3>
+                  <p class="mt-2 text-sm leading-6 text-[#95A3C4] sm:text-base">
+                    Сотрудник онлайн магазина
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-2 flex shrink-0 flex-col gap-1">
+                <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+                <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+                <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+              </div>
+            </div>
+
+            <div class="relative z-10 grid grid-cols-[58px,1fr] items-center gap-4 rounded-[22px] border border-white/10 bg-white/[0.03] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.04),0_14px_34px_rgba(0,0,0,0.18)] backdrop-blur-md max-sm:grid-cols-1">
+              <button
+                type="button"
+                class="play-btn relative h-[58px] w-[58px] rounded-full bg-gradient-to-b from-[#2F86FF] to-[#1269F3] shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_14px_26px_rgba(20,93,255,0.26),0_0_24px_rgba(47,134,255,0.18)] transition hover:-translate-y-0.5 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_18px_30px_rgba(20,93,255,0.32),0_0_26px_rgba(47,134,255,0.24)]"
+                aria-label="Play / Pause"
+              >
+                <span class="play-icon absolute left-1/2 top-1/2 h-0 w-0 -translate-y-1/2 translate-x-[-35%] border-b-[10px] border-l-[16px] border-t-[10px] border-b-transparent border-l-white border-t-transparent"></span>
+                <span class="pause-icon-1 absolute left-1/2 top-1/2 hidden h-5 w-1.5 -translate-x-[10px] -translate-y-1/2 rounded-full bg-white"></span>
+                <span class="pause-icon-2 absolute left-1/2 top-1/2 hidden h-5 w-1.5 translate-x-[4px] -translate-y-1/2 rounded-full bg-white"></span>
+              </button>
+
+              <div class="min-w-0">
+                <div class="mb-3 h-[92px] overflow-hidden rounded-2xl">
+                  <canvas class="waveform block h-[92px] w-full" width="900" height="120"></canvas>
+                </div>
+
+                <div class="flex flex-col gap-3">
+                  <div class="progress relative h-1.5 cursor-pointer rounded-full bg-white/10" data-progress>
+                    <div class="progress-fill absolute inset-y-0 left-0 w-0 rounded-full bg-gradient-to-r from-[#1E7DFF] to-[#4CB3FF] shadow-[0_0_16px_rgba(47,134,255,0.45)]"></div>
+                    <div class="progress-thumb absolute left-0 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white shadow-[0_0_0_4px_rgba(72,177,255,0.16),0_0_14px_rgba(72,177,255,0.55)]"></div>
+                  </div>
+
+                  <div class="flex items-center justify-between gap-4">
+                    <span class="time whitespace-nowrap text-sm tracking-[0.02em] text-[#B5C3E0]">00:00 / 00:00</span>
+                    <div class="relative h-6 w-6 shrink-0 opacity-90" aria-hidden="true">
+                      <span class="absolute left-[1px] top-[6px] h-3 w-[9px] rounded-[2px] bg-[#DCE7FF] [clip-path:polygon(0_30%,36%_30%,68%_0,68%_100%,36%_70%,0_70%)]"></span>
+                      <span class="absolute right-0 top-1 h-4 w-3 rounded-full border-r-2 border-[#DCE7FF] shadow-[-4px_0_0_-2px_#DCE7FF,-8px_0_0_-4px_#DCE7FF]"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <audio preload="metadata" crossorigin="anonymous" src="./assets/audio/Online_store_oder_status.mp3"></audio>
+          </article>
+            
+          <!-- CARD 6 -->
+          <article
+            class="voice-card group relative min-w-[85vw] snap-center overflow-hidden rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,rgba(11,22,42,0.70),rgba(5,10,22,0.84))] p-5 shadow-[0_0_0_1px_rgba(118,164,255,0.03),0_30px_80px_rgba(0,32,84,0.34)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_0_0_1px_rgba(118,164,255,0.05),0_34px_90px_rgba(0,50,140,0.34),0_0_60px_rgba(47,134,255,0.12)] sm:min-w-[78vw] md:min-w-0"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-player
+          >
+          <div class="relative z-10 mb-6 flex items-start justify-between gap-4">
+            <div class="flex min-w-0 items-start gap-3.5">
+              <span class="mt-2 h-3.5 w-3.5 shrink-0 rounded-full bg-gradient-to-b from-[#ADC5FF] to-[#6F98FF] shadow-[0_0_18px_rgba(135,174,252,0.42)]"></span>
+              <div class="min-w-0">
+                <h3 class="text-2xl font-medium tracking-[-0.02em] text-white sm:text-[28px]">Доставка еды</h3>
+                <p class="mt-2 text-sm leading-6 text-[#95A3C4] sm:text-base">
+                  Менеджер доставки еды
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-2 flex shrink-0 flex-col gap-1">
+              <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+              <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+              <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+            </div>
+          </div>
+
+          <div class="relative z-10 grid grid-cols-[58px,1fr] items-center gap-4 rounded-[22px] border border-white/10 bg-white/[0.03] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.04),0_14px_34px_rgba(0,0,0,0.18)] backdrop-blur-md max-sm:grid-cols-1">
+            <button
+              type="button"
+              class="play-btn relative h-[58px] w-[58px] rounded-full bg-gradient-to-b from-[#2F86FF] to-[#1269F3] shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_14px_26px_rgba(20,93,255,0.26),0_0_24px_rgba(47,134,255,0.18)] transition hover:-translate-y-0.5 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_18px_30px_rgba(20,93,255,0.32),0_0_26px_rgba(47,134,255,0.24)]"
+              aria-label="Play / Pause"
+            >
+              <span class="play-icon absolute left-1/2 top-1/2 h-0 w-0 -translate-y-1/2 translate-x-[-35%] border-b-[10px] border-l-[16px] border-t-[10px] border-b-transparent border-l-white border-t-transparent"></span>
+              <span class="pause-icon-1 absolute left-1/2 top-1/2 hidden h-5 w-1.5 -translate-x-[10px] -translate-y-1/2 rounded-full bg-white"></span>
+              <span class="pause-icon-2 absolute left-1/2 top-1/2 hidden h-5 w-1.5 translate-x-[4px] -translate-y-1/2 rounded-full bg-white"></span>
+            </button>
+
+            <div class="min-w-0">
+              <div class="mb-3 h-[92px] overflow-hidden rounded-2xl">
+                <canvas class="waveform block h-[92px] w-full" width="900" height="120"></canvas>
+              </div>
+
+              <div class="flex flex-col gap-3">
+                <div class="progress relative h-1.5 cursor-pointer rounded-full bg-white/10" data-progress>
+                  <div class="progress-fill absolute inset-y-0 left-0 w-0 rounded-full bg-gradient-to-r from-[#1E7DFF] to-[#4CB3FF] shadow-[0_0_16px_rgba(47,134,255,0.45)]"></div>
+                  <div class="progress-thumb absolute left-0 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white shadow-[0_0_0_4px_rgba(72,177,255,0.16),0_0_14px_rgba(72,177,255,0.55)]"></div>
+                </div>
+
+                <div class="flex items-center justify-between gap-4">
+                  <span class="time whitespace-nowrap text-sm tracking-[0.02em] text-[#B5C3E0]">00:00 / 00:00</span>
+                  <div class="relative h-6 w-6 shrink-0 opacity-90" aria-hidden="true">
+                    <span class="absolute left-[1px] top-[6px] h-3 w-[9px] rounded-[2px] bg-[#DCE7FF] [clip-path:polygon(0_30%,36%_30%,68%_0,68%_100%,36%_70%,0_70%)]"></span>
+                    <span class="absolute right-0 top-1 h-4 w-3 rounded-full border-r-2 border-[#DCE7FF] shadow-[-4px_0_0_-2px_#DCE7FF,-8px_0_0_-4px_#DCE7FF]"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <audio preload="metadata" crossorigin="anonymous" src="./assets/audio/Food_delivery_order_confirmation.mp3"></audio>
+        </article>
+
+        <!-- CARD 7 -->
+        <article
+          class="voice-card group relative min-w-[85vw] snap-center overflow-hidden rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,rgba(11,22,42,0.70),rgba(5,10,22,0.84))] p-5 shadow-[0_0_0_1px_rgba(118,164,255,0.03),0_30px_80px_rgba(0,32,84,0.34)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_0_0_1px_rgba(118,164,255,0.05),0_34px_90px_rgba(0,50,140,0.34),0_0_60px_rgba(47,134,255,0.12)] sm:min-w-[78vw] md:min-w-0"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-player
+        >
+        <div class="relative z-10 mb-6 flex items-start justify-between gap-4">
+          <div class="flex min-w-0 items-start gap-3.5">
+            <span class="mt-2 h-3.5 w-3.5 shrink-0 rounded-full bg-gradient-to-b from-[#55AEFF] to-[#1F7CFF] shadow-[0_0_18px_rgba(47,134,255,0.48)]"></span>
+            <div class="min-w-0">
+              <h3 class="text-2xl font-medium tracking-[-0.02em] text-white sm:text-[28px]">Медицинские услуги</h3>
+              <p class="mt-2 text-sm leading-6 text-[#95A3C4] sm:text-base">
+                Содрудник медицинской клиники
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-2 flex shrink-0 flex-col gap-1">
+            <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+            <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+            <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+          </div>
+        </div>
+
+        <div class="relative z-10 grid grid-cols-[58px,1fr] items-center gap-4 rounded-[22px] border border-white/10 bg-white/[0.03] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.04),0_14px_34px_rgba(0,0,0,0.18)] backdrop-blur-md max-sm:grid-cols-1">
+          <button
+            type="button"
+            class="play-btn relative h-[58px] w-[58px] rounded-full bg-gradient-to-b from-[#2F86FF] to-[#1269F3] shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_14px_26px_rgba(20,93,255,0.26),0_0_24px_rgba(47,134,255,0.18)] transition hover:-translate-y-0.5 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_18px_30px_rgba(20,93,255,0.32),0_0_26px_rgba(47,134,255,0.24)]"
+            aria-label="Play / Pause"
+          >
+            <span class="play-icon absolute left-1/2 top-1/2 h-0 w-0 -translate-y-1/2 translate-x-[-35%] border-b-[10px] border-l-[16px] border-t-[10px] border-b-transparent border-l-white border-t-transparent"></span>
+            <span class="pause-icon-1 absolute left-1/2 top-1/2 hidden h-5 w-1.5 -translate-x-[10px] -translate-y-1/2 rounded-full bg-white"></span>
+            <span class="pause-icon-2 absolute left-1/2 top-1/2 hidden h-5 w-1.5 translate-x-[4px] -translate-y-1/2 rounded-full bg-white"></span>
+          </button>
+
+          <div class="min-w-0">
+            <div class="mb-3 h-[92px] overflow-hidden rounded-2xl">
+              <canvas class="waveform block h-[92px] w-full" width="900" height="120"></canvas>
+            </div>
+
+            <div class="flex flex-col gap-3">
+              <div class="progress relative h-1.5 cursor-pointer rounded-full bg-white/10" data-progress>
+                <div class="progress-fill absolute inset-y-0 left-0 w-0 rounded-full bg-gradient-to-r from-[#1E7DFF] to-[#4CB3FF] shadow-[0_0_16px_rgba(47,134,255,0.45)]"></div>
+                <div class="progress-thumb absolute left-0 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white shadow-[0_0_0_4px_rgba(72,177,255,0.16),0_0_14px_rgba(72,177,255,0.55)]"></div>
+              </div>
+
+              <div class="flex items-center justify-between gap-4">
+                <span class="time whitespace-nowrap text-sm tracking-[0.02em] text-[#B5C3E0]">00:00 / 00:00</span>
+                <div class="relative h-6 w-6 shrink-0 opacity-90" aria-hidden="true">
+                  <span class="absolute left-[1px] top-[6px] h-3 w-[9px] rounded-[2px] bg-[#DCE7FF] [clip-path:polygon(0_30%,36%_30%,68%_0,68%_100%,36%_70%,0_70%)]"></span>
+                  <span class="absolute right-0 top-1 h-4 w-3 rounded-full border-r-2 border-[#DCE7FF] shadow-[-4px_0_0_-2px_#DCE7FF,-8px_0_0_-4px_#DCE7FF]"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <audio preload="metadata" crossorigin="anonymous" src="./assets/audio/Medicine_confirmation_appointment.mp3"></audio>
+        </article>
+
+        <!-- CARD 8 -->
+        <article
+          class="voice-card group relative min-w-[85vw] snap-center overflow-hidden rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,rgba(11,22,42,0.70),rgba(5,10,22,0.84))] p-5 shadow-[0_0_0_1px_rgba(118,164,255,0.03),0_30px_80px_rgba(0,32,84,0.34)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_0_0_1px_rgba(118,164,255,0.05),0_34px_90px_rgba(0,50,140,0.34),0_0_60px_rgba(47,134,255,0.12)] sm:min-w-[78vw] md:min-w-0"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-player
+        >
+        <div class="relative z-10 mb-6 flex items-start justify-between gap-4">
+          <div class="flex min-w-0 items-start gap-3.5">
+            <span class="mt-2 h-3.5 w-3.5 shrink-0 rounded-full bg-gradient-to-b from-[#FF9DD7] to-[#EC75BC] shadow-[0_0_18px_rgba(245,140,207,0.4)]"></span>
+            <div class="min-w-0">
+              <h3 class="text-2xl font-medium tracking-[-0.02em] text-white sm:text-[28px]">Страхование транспорт</h3>
+              <p class="mt-2 text-sm leading-6 text-[#95A3C4] sm:text-base">
+                Онлайн агрегатор страховой компании
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-2 flex shrink-0 flex-col gap-1">
+            <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+            <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+            <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+          </div>
+        </div>
+
+        <div class="relative z-10 grid grid-cols-[58px,1fr] items-center gap-4 rounded-[22px] border border-white/10 bg-white/[0.03] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.04),0_14px_34px_rgba(0,0,0,0.18)] backdrop-blur-md max-sm:grid-cols-1">
+          <button
+            type="button"
+            class="play-btn relative h-[58px] w-[58px] rounded-full bg-gradient-to-b from-[#2F86FF] to-[#1269F3] shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_14px_26px_rgba(20,93,255,0.26),0_0_24px_rgba(47,134,255,0.18)] transition hover:-translate-y-0.5 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_18px_30px_rgba(20,93,255,0.32),0_0_26px_rgba(47,134,255,0.24)]"
+            aria-label="Play / Pause"
+          >
+            <span class="play-icon absolute left-1/2 top-1/2 h-0 w-0 -translate-y-1/2 translate-x-[-35%] border-b-[10px] border-l-[16px] border-t-[10px] border-b-transparent border-l-white border-t-transparent"></span>
+            <span class="pause-icon-1 absolute left-1/2 top-1/2 hidden h-5 w-1.5 -translate-x-[10px] -translate-y-1/2 rounded-full bg-white"></span>
+            <span class="pause-icon-2 absolute left-1/2 top-1/2 hidden h-5 w-1.5 translate-x-[4px] -translate-y-1/2 rounded-full bg-white"></span>
+          </button>
+
+          <div class="min-w-0">
+            <div class="mb-3 h-[92px] overflow-hidden rounded-2xl">
+              <canvas class="waveform block h-[92px] w-full" width="900" height="120"></canvas>
+            </div>
+
+            <div class="flex flex-col gap-3">
+              <div class="progress relative h-1.5 cursor-pointer rounded-full bg-white/10" data-progress>
+                <div class="progress-fill absolute inset-y-0 left-0 w-0 rounded-full bg-gradient-to-r from-[#1E7DFF] to-[#4CB3FF] shadow-[0_0_16px_rgba(47,134,255,0.45)]"></div>
+                <div class="progress-thumb absolute left-0 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white shadow-[0_0_0_4px_rgba(72,177,255,0.16),0_0_14px_rgba(72,177,255,0.55)]"></div>
+              </div>
+
+              <div class="flex items-center justify-between gap-4">
+                <span class="time whitespace-nowrap text-sm tracking-[0.02em] text-[#B5C3E0]">00:00 / 00:00</span>
+                <div class="relative h-6 w-6 shrink-0 opacity-90" aria-hidden="true">
+                  <span class="absolute left-[1px] top-[6px] h-3 w-[9px] rounded-[2px] bg-[#DCE7FF] [clip-path:polygon(0_30%,36%_30%,68%_0,68%_100%,36%_70%,0_70%)]"></span>
+                  <span class="absolute right-0 top-1 h-4 w-3 rounded-full border-r-2 border-[#DCE7FF] shadow-[-4px_0_0_-2px_#DCE7FF,-8px_0_0_-4px_#DCE7FF]"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <audio preload="metadata" crossorigin="anonymous" src="./assets/audio/Insurance_motor_OSAGO.mp3"></audio>
+        </article>
+
+        <!-- CARD 9 -->
+        <article
+            class="voice-card group relative min-w-[85vw] snap-center overflow-hidden rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,rgba(11,22,42,0.70),rgba(5,10,22,0.84))] p-5 shadow-[0_0_0_1px_rgba(118,164,255,0.03),0_30px_80px_rgba(0,32,84,0.34)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_0_0_1px_rgba(118,164,255,0.05),0_34px_90px_rgba(0,50,140,0.34),0_0_60px_rgba(47,134,255,0.12)] sm:min-w-[78vw] md:min-w-0"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-player
+          >
+          <div class="relative z-10 mb-6 flex items-start justify-between gap-4">
+            <div class="flex min-w-0 items-start gap-3.5">
+              <span class="mt-2 h-3.5 w-3.5 shrink-0 rounded-full bg-gradient-to-b from-[#C2B5FF] to-[#927EFF] shadow-[0_0_18px_rgba(167,139,250,0.45)]"></span>
+              <div class="min-w-0">
+                <h3 class="text-2xl font-medium tracking-[-0.02em] text-white sm:text-[28px]">Финансы</h3>
+                <p class="mt-2 text-sm leading-6 text-[#95A3C4] sm:text-base">
+                  Менеджер финансового отдела
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-2 flex shrink-0 flex-col gap-1">
+              <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+              <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+              <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+            </div>
+          </div>
+
+          <div class="relative z-10 grid grid-cols-[58px,1fr] items-center gap-4 rounded-[22px] border border-white/10 bg-white/[0.03] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.04),0_14px_34px_rgba(0,0,0,0.18)] backdrop-blur-md max-sm:grid-cols-1">
+            <button
+              type="button"
+              class="play-btn relative h-[58px] w-[58px] rounded-full bg-gradient-to-b from-[#2F86FF] to-[#1269F3] shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_14px_26px_rgba(20,93,255,0.26),0_0_24px_rgba(47,134,255,0.18)] transition hover:-translate-y-0.5 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_18px_30px_rgba(20,93,255,0.32),0_0_26px_rgba(47,134,255,0.24)]"
+              aria-label="Play / Pause"
+            >
+              <span class="play-icon absolute left-1/2 top-1/2 h-0 w-0 -translate-y-1/2 translate-x-[-35%] border-b-[10px] border-l-[16px] border-t-[10px] border-b-transparent border-l-white border-t-transparent"></span>
+              <span class="pause-icon-1 absolute left-1/2 top-1/2 hidden h-5 w-1.5 -translate-x-[10px] -translate-y-1/2 rounded-full bg-white"></span>
+              <span class="pause-icon-2 absolute left-1/2 top-1/2 hidden h-5 w-1.5 translate-x-[4px] -translate-y-1/2 rounded-full bg-white"></span>
+            </button>
+
+            <div class="min-w-0">
+              <div class="mb-3 h-[92px] overflow-hidden rounded-2xl">
+                <canvas class="waveform block h-[92px] w-full" width="900" height="120"></canvas>
+              </div>
+
+              <div class="flex flex-col gap-3">
+                <div class="progress relative h-1.5 cursor-pointer rounded-full bg-white/10" data-progress>
+                  <div class="progress-fill absolute inset-y-0 left-0 w-0 rounded-full bg-gradient-to-r from-[#1E7DFF] to-[#4CB3FF] shadow-[0_0_16px_rgba(47,134,255,0.45)]"></div>
+                  <div class="progress-thumb absolute left-0 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white shadow-[0_0_0_4px_rgba(72,177,255,0.16),0_0_14px_rgba(72,177,255,0.55)]"></div>
+                </div>
+
+                <div class="flex items-center justify-between gap-4">
+                  <span class="time whitespace-nowrap text-sm tracking-[0.02em] text-[#B5C3E0]">00:00 / 00:00</span>
+                  <div class="relative h-6 w-6 shrink-0 opacity-90" aria-hidden="true">
+                    <span class="absolute left-[1px] top-[6px] h-3 w-[9px] rounded-[2px] bg-[#DCE7FF] [clip-path:polygon(0_30%,36%_30%,68%_0,68%_100%,36%_70%,0_70%)]"></span>
+                    <span class="absolute right-0 top-1 h-4 w-3 rounded-full border-r-2 border-[#DCE7FF] shadow-[-4px_0_0_-2px_#DCE7FF,-8px_0_0_-4px_#DCE7FF]"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <audio preload="metadata" crossorigin="anonymous" src="./assets/audio/Payment_reminder.mp3"></audio>
+          </article>
+
+          <!-- CARD 10 -->
+            <article
+              class="voice-card group relative min-w-[85vw] snap-center overflow-hidden rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,rgba(11,22,42,0.70),rgba(5,10,22,0.84))] p-5 shadow-[0_0_0_1px_rgba(118,164,255,0.03),0_30px_80px_rgba(0,32,84,0.34)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_0_0_1px_rgba(118,164,255,0.05),0_34px_90px_rgba(0,50,140,0.34),0_0_60px_rgba(47,134,255,0.12)] sm:min-w-[78vw] md:min-w-0"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-player
+            >
+            <div class="relative z-10 mb-6 flex items-start justify-between gap-4">
+              <div class="flex min-w-0 items-start gap-3.5">
+                <span class="mt-2 h-3.5 w-3.5 shrink-0 rounded-full bg-gradient-to-b from-[#ADC5FF] to-[#6F98FF] shadow-[0_0_18px_rgba(135,174,252,0.42)]"></span>
+                <div class="min-w-0">
+                  <h3 class="text-2xl font-medium tracking-[-0.02em] text-white sm:text-[28px]">Привлечение клиентов</h3>
+                  <p class="mt-2 text-sm leading-6 text-[#95A3C4] sm:text-base">
+                    Администратор барбершоп
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-2 flex shrink-0 flex-col gap-1">
+                <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+                <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+                <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+              </div>
+            </div>
+
+            <div class="relative z-10 grid grid-cols-[58px,1fr] items-center gap-4 rounded-[22px] border border-white/10 bg-white/[0.03] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.04),0_14px_34px_rgba(0,0,0,0.18)] backdrop-blur-md max-sm:grid-cols-1">
+              <button
+                type="button"
+                class="play-btn relative h-[58px] w-[58px] rounded-full bg-gradient-to-b from-[#2F86FF] to-[#1269F3] shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_14px_26px_rgba(20,93,255,0.26),0_0_24px_rgba(47,134,255,0.18)] transition hover:-translate-y-0.5 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_18px_30px_rgba(20,93,255,0.32),0_0_26px_rgba(47,134,255,0.24)]"
+                aria-label="Play / Pause"
+              >
+                <span class="play-icon absolute left-1/2 top-1/2 h-0 w-0 -translate-y-1/2 translate-x-[-35%] border-b-[10px] border-l-[16px] border-t-[10px] border-b-transparent border-l-white border-t-transparent"></span>
+                <span class="pause-icon-1 absolute left-1/2 top-1/2 hidden h-5 w-1.5 -translate-x-[10px] -translate-y-1/2 rounded-full bg-white"></span>
+                <span class="pause-icon-2 absolute left-1/2 top-1/2 hidden h-5 w-1.5 translate-x-[4px] -translate-y-1/2 rounded-full bg-white"></span>
+              </button>
+
+              <div class="min-w-0">
+                <div class="mb-3 h-[92px] overflow-hidden rounded-2xl">
+                  <canvas class="waveform block h-[92px] w-full" width="900" height="120"></canvas>
+                </div>
+
+                <div class="flex flex-col gap-3">
+                  <div class="progress relative h-1.5 cursor-pointer rounded-full bg-white/10" data-progress>
+                    <div class="progress-fill absolute inset-y-0 left-0 w-0 rounded-full bg-gradient-to-r from-[#1E7DFF] to-[#4CB3FF] shadow-[0_0_16px_rgba(47,134,255,0.45)]"></div>
+                    <div class="progress-thumb absolute left-0 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white shadow-[0_0_0_4px_rgba(72,177,255,0.16),0_0_14px_rgba(72,177,255,0.55)]"></div>
+                  </div>
+
+                  <div class="flex items-center justify-between gap-4">
+                    <span class="time whitespace-nowrap text-sm tracking-[0.02em] text-[#B5C3E0]">00:00 / 00:00</span>
+                    <div class="relative h-6 w-6 shrink-0 opacity-90" aria-hidden="true">
+                      <span class="absolute left-[1px] top-[6px] h-3 w-[9px] rounded-[2px] bg-[#DCE7FF] [clip-path:polygon(0_30%,36%_30%,68%_0,68%_100%,36%_70%,0_70%)]"></span>
+                      <span class="absolute right-0 top-1 h-4 w-3 rounded-full border-r-2 border-[#DCE7FF] shadow-[-4px_0_0_-2px_#DCE7FF,-8px_0_0_-4px_#DCE7FF]"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <audio preload="metadata" crossorigin="anonymous" src="./assets/audio/Leadgen_barbershop.mp3"></audio>
+          </article>
+
+            <!-- CARD 11 -->
+            <article
+              class="voice-card group relative min-w-[85vw] snap-center overflow-hidden rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,rgba(11,22,42,0.70),rgba(5,10,22,0.84))] p-5 shadow-[0_0_0_1px_rgba(118,164,255,0.03),0_30px_80px_rgba(0,32,84,0.34)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_0_0_1px_rgba(118,164,255,0.05),0_34px_90px_rgba(0,50,140,0.34),0_0_60px_rgba(47,134,255,0.12)] sm:min-w-[78vw] md:min-w-0"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-player
+            >
+            <div class="relative z-10 mb-6 flex items-start justify-between gap-4">
+              <div class="flex min-w-0 items-start gap-3.5">
+                <span class="mt-2 h-3.5 w-3.5 shrink-0 rounded-full bg-gradient-to-b from-[#ADC5FF] to-[#6F98FF] shadow-[0_0_18px_rgba(135,174,252,0.42)]"></span>
+                <div class="min-w-0">
+                  <h3 class="text-2xl font-medium tracking-[-0.02em] text-white sm:text-[28px]">Стоматология</h3>
+                  <p class="mt-2 text-sm leading-6 text-[#95A3C4] sm:text-base">
+                    Администратор стоматологичесской клиники
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-2 flex shrink-0 flex-col gap-1">
+                <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+                <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+                <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+              </div>
+            </div>
+
+            <div class="relative z-10 grid grid-cols-[58px,1fr] items-center gap-4 rounded-[22px] border border-white/10 bg-white/[0.03] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.04),0_14px_34px_rgba(0,0,0,0.18)] backdrop-blur-md max-sm:grid-cols-1">
+              <button
+                type="button"
+                class="play-btn relative h-[58px] w-[58px] rounded-full bg-gradient-to-b from-[#2F86FF] to-[#1269F3] shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_14px_26px_rgba(20,93,255,0.26),0_0_24px_rgba(47,134,255,0.18)] transition hover:-translate-y-0.5 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_18px_30px_rgba(20,93,255,0.32),0_0_26px_rgba(47,134,255,0.24)]"
+                aria-label="Play / Pause"
+              >
+                <span class="play-icon absolute left-1/2 top-1/2 h-0 w-0 -translate-y-1/2 translate-x-[-35%] border-b-[10px] border-l-[16px] border-t-[10px] border-b-transparent border-l-white border-t-transparent"></span>
+                <span class="pause-icon-1 absolute left-1/2 top-1/2 hidden h-5 w-1.5 -translate-x-[10px] -translate-y-1/2 rounded-full bg-white"></span>
+                <span class="pause-icon-2 absolute left-1/2 top-1/2 hidden h-5 w-1.5 translate-x-[4px] -translate-y-1/2 rounded-full bg-white"></span>
+              </button>
+
+              <div class="min-w-0">
+                <div class="mb-3 h-[92px] overflow-hidden rounded-2xl">
+                  <canvas class="waveform block h-[92px] w-full" width="900" height="120"></canvas>
+                </div>
+
+                <div class="flex flex-col gap-3">
+                  <div class="progress relative h-1.5 cursor-pointer rounded-full bg-white/10" data-progress>
+                    <div class="progress-fill absolute inset-y-0 left-0 w-0 rounded-full bg-gradient-to-r from-[#1E7DFF] to-[#4CB3FF] shadow-[0_0_16px_rgba(47,134,255,0.45)]"></div>
+                    <div class="progress-thumb absolute left-0 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white shadow-[0_0_0_4px_rgba(72,177,255,0.16),0_0_14px_rgba(72,177,255,0.55)]"></div>
+                  </div>
+
+                  <div class="flex items-center justify-between gap-4">
+                    <span class="time whitespace-nowrap text-sm tracking-[0.02em] text-[#B5C3E0]">00:00 / 00:00</span>
+                    <div class="relative h-6 w-6 shrink-0 opacity-90" aria-hidden="true">
+                      <span class="absolute left-[1px] top-[6px] h-3 w-[9px] rounded-[2px] bg-[#DCE7FF] [clip-path:polygon(0_30%,36%_30%,68%_0,68%_100%,36%_70%,0_70%)]"></span>
+                      <span class="absolute right-0 top-1 h-4 w-3 rounded-full border-r-2 border-[#DCE7FF] shadow-[-4px_0_0_-2px_#DCE7FF,-8px_0_0_-4px_#DCE7FF]"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <audio preload="metadata" crossorigin="anonymous" src="./assets/audio/Dentistry_making_appointment.mp3"></audio>
+          </article>
+            
+          <!-- CARD 12 -->
+          <article
+            class="voice-card group relative min-w-[85vw] snap-center overflow-hidden rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,rgba(11,22,42,0.70),rgba(5,10,22,0.84))] p-5 shadow-[0_0_0_1px_rgba(118,164,255,0.03),0_30px_80px_rgba(0,32,84,0.34)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_0_0_1px_rgba(118,164,255,0.05),0_34px_90px_rgba(0,50,140,0.34),0_0_60px_rgba(47,134,255,0.12)] sm:min-w-[78vw] md:min-w-0"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-player
+          >
+          <div class="relative z-10 mb-6 flex items-start justify-between gap-4">
+            <div class="flex min-w-0 items-start gap-3.5">
+              <span class="mt-2 h-3.5 w-3.5 shrink-0 rounded-full bg-gradient-to-b from-[#ADC5FF] to-[#6F98FF] shadow-[0_0_18px_rgba(135,174,252,0.42)]"></span>
+              <div class="min-w-0">
+                <h3 class="text-2xl font-medium tracking-[-0.02em] text-white sm:text-[28px]">Недвижимость</h3>
+                <p class="mt-2 text-sm leading-6 text-[#95A3C4] sm:text-base">
+                  Служба качества агенства недвижимости
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-2 flex shrink-0 flex-col gap-1">
+              <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+              <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+              <span class="h-1 w-1 rounded-full bg-[#AAB7D4]"></span>
+            </div>
+          </div>
+
+          <div class="relative z-10 grid grid-cols-[58px,1fr] items-center gap-4 rounded-[22px] border border-white/10 bg-white/[0.03] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.04),0_14px_34px_rgba(0,0,0,0.18)] backdrop-blur-md max-sm:grid-cols-1">
+            <button
+              type="button"
+              class="play-btn relative h-[58px] w-[58px] rounded-full bg-gradient-to-b from-[#2F86FF] to-[#1269F3] shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_14px_26px_rgba(20,93,255,0.26),0_0_24px_rgba(47,134,255,0.18)] transition hover:-translate-y-0.5 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_18px_30px_rgba(20,93,255,0.32),0_0_26px_rgba(47,134,255,0.24)]"
+              aria-label="Play / Pause"
+            >
+              <span class="play-icon absolute left-1/2 top-1/2 h-0 w-0 -translate-y-1/2 translate-x-[-35%] border-b-[10px] border-l-[16px] border-t-[10px] border-b-transparent border-l-white border-t-transparent"></span>
+              <span class="pause-icon-1 absolute left-1/2 top-1/2 hidden h-5 w-1.5 -translate-x-[10px] -translate-y-1/2 rounded-full bg-white"></span>
+              <span class="pause-icon-2 absolute left-1/2 top-1/2 hidden h-5 w-1.5 translate-x-[4px] -translate-y-1/2 rounded-full bg-white"></span>
+            </button>
+
+            <div class="min-w-0">
+              <div class="mb-3 h-[92px] overflow-hidden rounded-2xl">
+                <canvas class="waveform block h-[92px] w-full" width="900" height="120"></canvas>
+              </div>
+
+              <div class="flex flex-col gap-3">
+                <div class="progress relative h-1.5 cursor-pointer rounded-full bg-white/10" data-progress>
+                  <div class="progress-fill absolute inset-y-0 left-0 w-0 rounded-full bg-gradient-to-r from-[#1E7DFF] to-[#4CB3FF] shadow-[0_0_16px_rgba(47,134,255,0.45)]"></div>
+                  <div class="progress-thumb absolute left-0 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white shadow-[0_0_0_4px_rgba(72,177,255,0.16),0_0_14px_rgba(72,177,255,0.55)]"></div>
+                </div>
+
+                <div class="flex items-center justify-between gap-4">
+                  <span class="time whitespace-nowrap text-sm tracking-[0.02em] text-[#B5C3E0]">00:00 / 00:00</span>
+                  <div class="relative h-6 w-6 shrink-0 opacity-90" aria-hidden="true">
+                    <span class="absolute left-[1px] top-[6px] h-3 w-[9px] rounded-[2px] bg-[#DCE7FF] [clip-path:polygon(0_30%,36%_30%,68%_0,68%_100%,36%_70%,0_70%)]"></span>
+                    <span class="absolute right-0 top-1 h-4 w-3 rounded-full border-r-2 border-[#DCE7FF] shadow-[-4px_0_0_-2px_#DCE7FF,-8px_0_0_-4px_#DCE7FF]"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <audio preload="metadata" crossorigin="anonymous" src="./assets/audio/Leadgen_real_estate.mp3"></audio>
+        </article>
+
+          </div>
+        </div>
+      </section>
+        <!-- CARD 1 -->
+        <!-- <div
+          class="p-8 bg-api-card rounded border border-w-100 border-opacity-[8%]"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <img
+            class="w-full mb-8"
+            src="assets/img/enhancing-card1img.png"
+            alt="img"
+          />
+          <h3 class="mb-3 text-3xl font-medium text-w-800">
+            Optimal Knowledge Architecture
+          </h3>
+          <p class="text-base text-w-100">
+            Our structure optimizes editing, generates Q&A efficiently for RAG
+            architecture and LLM fine-tuning.
+          </p>
+        </div> -->
+        <!-- CARD 2 -->
+        <!-- <div
+          class="p-8 bg-api-card rounded border border-w-100 border-opacity-[8%]"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <img
+            class="w-full mb-8"
+            src="assets/img/enhancing-card2img.png"
+            alt="img"
+          />
+          <h3 class="mb-3 text-3xl font-medium text-w-800">
+            Improved Knowledge Retrieval
+          </h3>
+          <p class="text-base text-w-100">
+            Improved knowledge recall is achieved through the structured storage
+            method of "Q&A," enhancing the accuracy of retrieval processes.
+          </p>
+        </div> -->
+        <!-- CARD 3 -->
+        <!-- <div
+          class="p-8 bg-api-card rounded border border-w-100 border-opacity-[8%]"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <img
+            class="w-full mb-8"
+            src="assets/img/enhancing-card3img.png"
+            alt="img"
+          />
+          <h3 class="mb-3 text-3xl font-medium text-w-800">
+            Streamlined Bot Training
+          </h3>
+          <p class="text-base text-w-100">
+            Refining Bot proficiency through chat history analysis and iterative
+            "Q&A" refinement drives continuous performance enhancement.
+          </p>
+        </div> -->
+        <!-- CARD 4 -->
+        <!-- <div
+          class="p-8 bg-api-card rounded border border-w-100 border-opacity-[8%]"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <img
+            class="w-full mb-8"
+            src="assets/img/enhancing-card4img.png"
+            alt="img"
+          />
+          <h3 class="mb-3 text-3xl font-medium text-w-800">
+            Simplify LLM Fine-Tuning
+          </h3>
+          <p class="text-base text-w-100">
+            Utilize the structured "Q&A" knowledge directly for LLM fine-tuning,
+            simplifying the fine-tuning process.
+          </p>
+        </div> -->
+      <!-- </div> -->
+    </div>
+
+        <div class="pt-12 pb-24 bg-effect overflow-hidden">
+      <div class="container mx-auto px-5 xl:px-0">
+        <h2
+          class="gd-title text-5xl font-semibold leading-[64px] text-center mx-auto mb-16"
+          data-aos="fade-up"
+        >
+          Популярные задачи
+        </h2>
+        <div class="grid md:grid-cols-3 gap-[30px]">
+          <!-- CARD 1 -->
+          <div
+            class="bg-api-card p-8 border border-w-100 border-opacity-[8%] rounded"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <!-- <img
+              class="w-full"
+              src="assets/img/efficientknowledgecard1.png"
+              alt="online-knowledge"
+            /> -->
+            <h4 class="mt-8 mb-3 text-2xl font-medium text-w-800">
+              Обзвон клиентской базы роботом
+            </h4>
+            <p class="text-base text-w-400">
+              Автообзвон с роботом-оператором позволяет быстро связаться с тысячами клиентов, увеличить число контактов и повысить качество обслуживания.
+            </p>
+          </div>
+          <!-- CARD 2 -->
+          <div
+            class="bg-api-card p-8 border border-w-100 border-opacity-[8%] rounded"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <!-- <img
+              class="w-full"
+              src="assets/img/efficientknowledgecard2.png"
+              alt="web-knowledge"
+            /> -->
+            <h4 class="mt-8 mb-3 text-2xl font-medium text-w-800">
+              Автоматизация колл-центров
+            </h4>
+            <p class="text-base text-w-400">
+              Снизьте нагрузку на колл-центр и расходы на операторов: боты работают 24/7, автоматически распределяют обращения и ускоряют обработку звонков.
+            </p>
+          </div>
+          <!-- CARD 3 -->
+          <div
+            class="bg-api-card p-8 border border-w-100 border-opacity-[8%] rounded"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <!-- <img
+              class="w-full"
+              src="assets/img/efficientknowledgecard3.png"
+              alt="knowledge-slice"
+            /> -->
+            <h4 class="mt-8 mb-3 text-2xl font-medium text-w-800">
+              Прием и сверка данных
+            </h4>
+            <p class="text-base text-w-400">
+              Многим организациям нужно быстро и недорого собирать и проверять большие объёмы данных — эту задачу можно эффективно автоматизировать.
+            </p>
+          </div>
+
+          <!-- CARD 4 -->
+          <div
+            class="bg-api-card p-8 border border-w-100 border-opacity-[8%] rounded"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <!-- <img
+              class="w-full"
+              src="assets/img/efficientknowledgecard1.png"
+              alt="online-knowledge"
+            /> -->
+            <h4 class="mt-8 mb-3 text-2xl font-medium text-w-800">
+              Опросы и обратная связь
+            </h4>
+            <p class="text-base text-w-400">
+              Регулярная обратная связь от клиентов важна для развития бизнеса — и массовые опросы можно проводить быстро и недорого с помощью автоматизации.
+            </p>
+          </div>
+          <!-- CARD 5 -->
+          <div
+            class="bg-api-card p-8 border border-w-100 border-opacity-[8%] rounded"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <!-- <img
+              class="w-full"
+              src="assets/img/efficientknowledgecard2.png"
+              alt="web-knowledge"
+            /> -->
+            <h4 class="mt-8 mb-3 text-2xl font-medium text-w-800">
+              Сервисная и техничесская поддержка
+            </h4>
+            <p class="text-base text-w-400">
+              Качественная поддержка клиентов важна для повторных продаж — и её можно автоматизировать, снизив затраты и нагрузку на команду.
+            </p>
+          </div>
+          <!-- CARD 6 -->
+          <div
+            class="bg-api-card p-8 border border-w-100 border-opacity-[8%] rounded"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <!-- <img
+              class="w-full"
+              src="assets/img/efficientknowledgecard3.png"
+              alt="knowledge-slice"
+            /> -->
+            <h4 class="mt-8 mb-3 text-2xl font-medium text-w-800">
+              Продажи
+            </h4>
+            <p class="text-base text-w-400">
+              Современные продажи требуют технологичных решений — Наши боты помогают продавать 24/7, вести диалоги с клиентами, принимать заказы и увеличивать объём продаж.
+            </p>
+          </div>
+
+          <!-- CARD 7 -->
+          <div
+            class="bg-api-card p-8 border border-w-100 border-opacity-[8%] rounded"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <!-- <img
+              class="w-full"
+              src="assets/img/efficientknowledgecard1.png"
+              alt="online-knowledge"
+            /> -->
+            <h4 class="mt-8 mb-3 text-2xl font-medium text-w-800">
+              Информирование клиентов
+            </h4>
+            <p class="text-base text-w-400">
+              Массовые коммуникации с клиентами можно упростить, удешевить и повысить их эффективность с помощью автоматизации.
+            </p>
+          </div>
+          <!-- CARD 8 -->
+          <div
+            class="bg-api-card p-8 border border-w-100 border-opacity-[8%] rounded"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <!-- <img
+              class="w-full"
+              src="assets/img/efficientknowledgecard2.png"
+              alt="web-knowledge"
+            /> -->
+            <h4 class="mt-8 mb-3 text-2xl font-medium text-w-800">
+              Маркетинг и реклама
+            </h4>
+            <p class="text-base text-w-400">
+              Маркетинг требует постоянной массовой коммуникации с рынком — и её можно автоматизировать, упростить и удешевить с помощью интеллектуальных ботов и решений нашей компании.
+            </p>
+          </div>
+          <!-- CARD 9 -->
+          <div
+            class="bg-api-card p-8 border border-w-100 border-opacity-[8%] rounded"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <!-- <img
+              class="w-full"
+              src="assets/img/efficientknowledgecard3.png"
+              alt="knowledge-slice"
+            /> -->
+            <h4 class="mt-8 mb-3 text-2xl font-medium text-w-800">
+              Лидогенерация по базе
+            </h4>
+            <p class="text-base text-w-400">
+              Лидогенерацию можно упростить, удешевить и автоматизировать с помощью интеллектуальных продуктов нашей компании.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- reviews -->
+    <section> 
+    <div class="py-24 bg-center bg-no-repeat bg-cover bg-trusted-bg overflow-hidden">
+    <div class="mx-auto px-5 xl:px-0 container">
+      <h2 class="gd-title mx-auto mb-8 text-center text-5xl font-semibold leading-[64px]">
+        Отзывы наших клиентов
+      </h2>
+
+      <div class="mb-10 flex justify-end">
+        <a
+          href="add-review.html"
+          class="add-review-btn inline-block mb-8 px-6 py-3 capitalize text-base font-semibold border border-solid border-w-900 rounded bg-w-800 text-b-800 hover:bg-transparent hover:text-w-800 transition-all duration-300"
+        >
+          Добавить отзыв
+        </a>
+      </div>
+
+      <div class="trusted-marquee overflow-hidden whitespace-nowrap">
+        <div class="trusted-track" id="reviews-container"></div>
+        <div class="trusted-track" id="reviews-container-duplicate" aria-hidden="true"></div>
+      </div>
+      </div>
+    </div>
+    </section>
+
+    <footer class="pt-24 pb-8 bg-footer-bg bg-cover bg-center bg-no-repeat">
+      <div class="container mx-auto px-5 xl:px-0">
+        <div class="mb-24 text-center">
+          <h2
+            class="gd-title text-5xl font-semibold leading-[64px] text-center mx-auto mb-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Создайте своего бота с ИИ уже сегодня
+          </h2>
+          <p
+            class="text-xl text-w-100 mb-[32px]"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            Отправьтесь вместе с нами в путешествие и испытайте беспрецедентную мощь искусственного интеллекта
+          </p>
+          <a
+            href="form.html"
+            class="inline-block px-6 py-3 capitalize text-base font-semibold border border-solid border-w-900 rounded bg-w-800 text-b-800 hover:bg-transparent hover:text-w-800 transition-all duration-300"
+            >Начать</a
+          >
+        </div>
+        <div
+          class="flex flex-col items-start justify-between py-24 md:flex-row"
+        >
+          <div>
+            <a href="index.html">
+              <img src="assets/img/footerlogo.png" alt="logo" />
+            </a>
+            <p class="mt-8 text-sm font-medium capitalize text-w-800">
+              Адрес:
+            </p>
+            <p class="mb-4 text-sm text-w-100">
+              просп. Ленина, 16А, Мурманск 183032
+            </p>
+            <p class="text-sm font-medium capitalize text-w-800">contact:</p>
+            <a class="inline-block text-sm text-w-100" href="tel:+319-270-8254"
+              >+7(921)-176-98-83</a
+            >
+            <br />
+            <a
+              class="inline-block text-sm text-w-100"
+              href="mailto:contact@synthmind.com"
+              >info@voxflowai.ru</a
+            >
+            <div class="flex items-center justify-start gap-4 my-8 text-w-100">
+              <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+                    <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+                <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+              </svg>
+
+                  </a>
+                  <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+                    <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+                <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+              </svg>
+
+                  </a>
+                  <a href="https://wa.me/79211769883" target="_blank" aria-label="WhatsApp">
+              <svg width="26" height="26" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <clipPath id="clip">
+                    <circle cx="128" cy="128" r="128"/>
+                  </clipPath>
+                </defs>
+                <circle cx="128" cy="128" r="128" fill="#25D366"/>
+                <g clip-path="url(#clip)">
+                  <path fill="#fff" d="M187.3 68.7C172.6 54 152 46 128.8 46c-46 0-83.2 37.2-83.2 83.1 0 14.6 3.8 28.9 11 41.5L46 210l41-10.7c12 6.6 25.6 10.1 39.8 10.1 46 0 83.2-37.2 83.2-83.1 0-23.2-8-43.8-22.7-58.6Zm-58.5 121c-12.4 0-24.6-3.4-35.1-9.8l-2.5-1.5-24.3 6.4 6.5-23.7-1.6-2.5c-6.7-10.5-10.2-22.5-10.2-34.9 0-36.3 29.6-65.9 65.9-65.9 17.6 0 34.1 6.8 46.5 19.2 12.4 12.5 19.2 29 19.1 46.5 0 36.3-29.6 65.9-65.9 65.9Zm39.1-48.9c-2.1-1-12.6-6.2-14.6-6.9-2-.8-3.5-1.2-5 1.2-1.5 2.3-5.8 6.9-7.1 8.3-1.3 1.5-2.6 1.7-4.7.8-12.8-5.4-21.2-9.6-29.7-21.7-2.2-3.1 2.2-2.9 6.2-11.4.7-1.5.4-2.7-.2-3.9-.6-1.2-5-12.1-6.9-16.6-1.8-4.3-3.7-3.7-5-3.8-1.3-.1-2.8-.1-4.3-.1-1.5 0-4 1-6 3-2 2-7.9 7.7-7.9 18.7s8.1 21.7 9.2 23.2c1.1 1.5 16 24.5 38.8 33.2 22.8 8.7 22.8 5.8 26.9 5.5 4.1-.3 13.2-5.3 15.1-10.4 1.9-5.1 1.9-9.5 1.3-10.4-.5-.9-1.8-1.5-3.9-2.5Z"/>
+                </g>
+              </svg>
+                  </a>
+            </div>
+          </div>
+          <div
+            class="flex md:flex-row flex-col justify-end items-start gap-[46px] lg:gap-[88px] capitalize"
+          >
+            <ul class="flex flex-col gap-4 text-base font-medium text-white">
+              <li>
+                <a href="index.html" class="inline-block hover:underline">Главная</a>
+              </li>
+              <li>
+                <a href="features.html" class="inline-block hover:underline">Решения</a>
+              </li>
+              <li>
+                <a href="products.html" class="inline-block hover:underline">Продукты</a>
+              </li>
+            </ul>
+            <ul class="flex flex-col gap-4 text-base font-medium text-white">
+              <li>
+                <a href="pricing.html" class="inline-block hover:underline">Тарифы</a>
+              </li>
+              <li>
+                <a href="blog.html" class="inline-block hover:underline">Блог</a>
+              </li>
+              <li>
+                <a href="contact.html" class="inline-block hover:underline">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center gap-3 pt-8 text-sm md:flex-row md:justify-between md:gap-0"
+        >
+          <p class="text-w-100">
+            Copyright © 2025 VoxFlowAI Все права защищены.
+          </p>
+          <ul class="flex gap-8">
+            <li>
+              <a class="text-w-100" href="privacy-policy.html"
+                >Политика конфиденциальности</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+<!--     <script src="assets/js/reviews_list.js"></script>-->
+    <script src="assets/js/reviews-test.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/players.js"></script>
+  </body>
+</html>

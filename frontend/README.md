@@ -1,0 +1,1 @@
+https://synthmind.vercel.app/

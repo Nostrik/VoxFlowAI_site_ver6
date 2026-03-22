@@ -1,0 +1,9 @@
+Как работать дальше:
+
+    Изменили модель (например, добавили поле в User).
+    Создали миграцию: poetry run alembic revision --autogenerate -m "add_column_to_user".
+    Проверили файл в versions/ (всегда проверяйте, что Alembic правильно понял ваши намерения).
+    Применили: poetry run alembic upgrade head.
+
+Совет по SQLite:
+Поскольку в таблице users у вас стоит ix_users_id на PrimaryKey, а SQLite и так индексирует первичные ключи, этот индекс не обязателен, но и не мешает.

@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/output.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>SynthMind</title>
+  </head>
+  <body class="font-normal bg-body overflow-x-hidden">
+    <header
+      class="absolute top-0 left-0 z-50 w-full border-b border-solid border-b-700"
+    >
+      <div
+        class="items-center justify-between hidden px-5 mx-auto desktop-header lg:flex"
+      >
+        <a href="/">
+          <img src="assets/img/navlogo.svg" alt="logo" />
+        </a>
+        <nav>
+          <ul class="flex items-center justify-center">
+            <li
+              class="relative h-full px-5 border-solid xl:px-10 py-7 border-x border-b-700"
+            >
+              <span
+                class="inline-block absolute bottom-0 left-0 w-full h-[1px] bg-w-800"
+              ></span>
+              <a
+                href="/"
+                class="inline-block text-base font-medium capitalize text-w-800"
+                >Home</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="features.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >features</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="products.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >products</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="pricing.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >pricing</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="blog.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >blog</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="contact.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="items-center hidden gap-3 lg:flex">
+          <a
+            href="sign-in.html"
+            class="inline-block py-3 text-base border border-transparent rounded text-w-100 lg:px-4 xl:px-7 hover:text-w-800"
+            >Sign In</a
+          >
+          <a
+            href="sign-up.html"
+            class="inline-block py-3 text-base font-semibold rounded bg-btn-bg text-w-800 lg:px-4 xl:px-7 border-w-100 hover:brightness-110"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+      <div
+        class="container flex items-center justify-between px-4 py-4 mx-auto mobile-header lg:hidden"
+      >
+        <a href="/">
+          <img src="assets/img/navlogo.svg" alt="logo" />
+        </a>
+        <span class="text-white cursor-pointer menu-open-icon lg:hidden">
+          <svg
+            class="block w-8 h-8 font-semibold"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </span>
+        <div
+          class="fixed top-0 left-0 flex flex-col items-start justify-start w-full h-screen transition-all duration-300 translate-x-full bg-black mobile-menu p-7"
+        >
+          <div class="flex items-start justify-between w-full">
+            <nav>
+              <ul class="mt-5">
+                <li>
+                  <a
+                    href="index.html"
+                    class="inline-block mb-5 text-base font-medium capitalize text-w-800"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="features.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >features</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="products.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >products</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="pricing.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >pricing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="blog.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <strong class="text-white cursor-pointer mobile-menu-close-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-x-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+                />
+              </svg>
+            </strong>
+          </div>
+          <div class="flex items-center justify-center w-full gap-2 mt-6">
+            <a
+              href="sign-in.html"
+              class="inline-block w-full py-3 text-base font-semibold text-center capitalize transition-all duration-300 bg-transparent border border-solid rounded px-7 border-w-100 text-w-100 hover:text-b-800 hover:bg-w-800"
+              >Sign In</a
+            >
+            <a
+              href="sign-in.html"
+              class="inline-block w-full py-3 text-base font-semibold text-center capitalize transition-all duration-300 rounded px-7 text-w-800 bg-btn-bg hover:brightness-105"
+              >Sign up</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="bg-primary-hero bg-cover bg-no-repeat pt-52 pb-32">
+      <div class="container px-5 xl:px-0 mx-auto">
+        <h1
+          class="pb-4 text-5xl font-semibold lg:text-8xl text-w-800"
+          data-aos="fade-up"
+        >
+          Terms of
+          <span class="gd-title">Service</span>
+        </h1>
+        <p class="pt-4 text-base text-w-100 lg:text-xl" data-aos="fade-up">
+          Published and effective on: April 30, 2023
+        </p>
+      </div>
+    </div>
+
+    <div class="mx-auto py-24 px-5 xl:px-0 container w-auto lg:max-w-[850px]">
+      <h2 class="mb-6 text-3xl leading-[42px] font-semibold text-w-800">
+        Welcome to SynthMind
+      </h2>
+      <p class="text-base mb-9 text-w-100">
+        This Service Agreement (including all of its updates, supplements, and
+        additional terms, the “Agreement”) is a binding agreement between you
+        (“you/your”) on one part and METAVERSE CLOUD PTE. LTD., SYNTHMIND Hong
+        Kong Limited, and affiliated companies (“we/our/us”) on the other part,
+        regarding your use of our products and services (including but not
+        limited to our programmable interfaces, software, tools, data, and
+        websites, hereinafter referred to as the "Services"). Please carefully
+        read and fully understand the terms of this Agreement before using the
+        services.
+      </p>
+      <p class="text-base mb-9 text-w-100">
+        By ticking “this Agreement” on the registration page, you have read all
+        terms of this Agreement, particularly the terms marked in bold, agreed
+        to be bound by this Agreement, and accurately understood the legal
+        meaning of the rights, obligations, or limitations or exclusions of
+        liability as provided in this Agreement. This Agreement will be formed
+        and become effective after you tick it. By using the services offered by
+        us, you have agreed to this Agreement. During your use of our services,
+        this Agreement will fully govern the rights and obligations between you
+        and us.
+      </p>
+      <p class="text-base mb-9 text-w-100">
+        In addition to this Agreement, the SYNTHMIND.AI (hereinafter referred to
+        as "SynthMind") platform will publish other rules and regulations, such
+        as the Privacy Policy that describes how we collect and use personal
+        information. Any provisions of other rules and regulations published by
+        the SYNTHMIND.AI platform shall be followed; for matters not mentioned
+        in such rules and regulations, this Agreement shall prevail. This
+        Agreement also includes other documents, guidelines, or policies that we
+        may provide.
+      </p>
+      <p class="text-base text-w-100">
+        The SYNTHMIND.AI platform only offers services to any individual aged 18
+        or older who has full civil capacity and any legal person or other
+        organization that is duly incorporated and validly existing pursuant to
+        the laws of its domicile and is able to fulfill its obligations under
+        this Agreement. If you do not qualify as a service object, please do not
+        continue to use our services, and we will have the right to cease
+        offering the services to you at any time. You shall guarantee the
+        authenticity of your identity information with which you provide us and
+        perform the verification of the true identity information conducted by
+        us from time to time.
+      </p>
+      <h2 class="mt-12 mb-6 text-3xl leading-[42px] font-semibold text-w-800">
+        1. Registration and Access
+      </h2>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">1.1 Registration:</h3>
+      <p class="text-base mb-9 text-w-100">
+        When you read and agree to this agreement, fill in the corresponding
+        information, and register successfully, you will become a user of
+        SynthMind. To provide you with corresponding services, you should
+        provide your name, email address, and mobile phone number truly,
+        accurately, and effectively as required by us so that we can communicate
+        with you.
+      </p>
+      <p class="text-base mb-9 text-w-100">
+        In order to ensure the validity of your information, you should promptly
+        update it when relevant information changes. In accordance with relevant
+        legal requirements, we will conduct corresponding verifications on the
+        information you provide to ensure its timeliness, authenticity, and
+        completeness. If we fail to contact you based on the information you
+        provided, you will be responsible for the adverse consequences.
+      </p>
+      <p class="text-base mb-9 text-w-100">
+        We are not responsible for any related problems caused by your
+        registration information being untrue or not updated in a timely manner.
+        You can query and correct your information through our account settings
+        page. You should authenticate and register an account with your real
+        identity information, and the account name, avatar, profile, and other
+        registration information you submit must not contain illegal or harmful
+        information.
+      </p>
+      <p class="text-base text-w-100">
+        After our review, if the above situation exists, we will not register;
+        at the same time, after registration, if we find that you used false
+        information to obtain an account name, or your account avatar, profile,
+        and other registration information contain illegal and harmful
+        information, we will have the right to unilaterally take measures such
+        as correction within a time limit, suspension of use, termination of
+        use, etc., without notice. When you fill in the information as prompted
+        on the registration page, read and agree to the terms of this agreement,
+        and complete the entire registration process, you can obtain a SynthMind
+        account and become a SynthMind user.
+      </p>
+      <h3 class="mt-8 text-xl font-semibold mb-9 text-w-800">
+        1.2 Account Use:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        You must meet the qualifications required by the SynthMind platform to
+        use the service. If you use the Services on behalf of another third
+        party or entity, you must have the authority to accept these Terms on
+        their behalf. You must provide accurate and complete information to
+        register for an account. You may not provide your ID or account to other
+        third parties, and you are responsible for all actions that occur using
+        your account.
+      </p>
+      <p class="text-base text-w-100">
+        You understand and agree: If you successfully register for the
+        SYNTHMIND.AI platform, your SYNTHMIND.AI account and password can log in
+        to the Botbeat platform (including but not limited to Botbeat APP) to
+        use the products/services of the Botbeat platform, and you agree to the
+        Botbeat platform's "Botbeat User Services Agreement."
+      </p>
+      <h3 class="mt-8 text-xl font-semibold mb-9 text-w-800">
+        1.3 Account Custody and Retrieval:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        The SynthMind account includes an account name and password. You can use
+        the set account name (including account ID, mobile phone number) and
+        password to log in. Please keep your account safe. You will be
+        responsible for any losses caused by your active disclosure or theft by
+        a third party. If your account is lost due to personal reasons, if you
+        need to retrieve your SynthMind account, please provide the
+        corresponding information according to the SynthMind account retrieval
+        process, and ensure that the information you provide is legal, true, and
+        valid. If the information you provide does not meet the requirements,
+        you will not be able to pass the security verification, and we have the
+        right to refuse to provide account recovery services.
+      </p>
+      <p class="text-base mb-9 text-w-100">
+        If the SynthMind account you are currently using is not the one you
+        initially applied for registration or obtained through other means
+        provided by SynthMind, but you know the current password of the
+        SynthMind account, you are not allowed to log in or perform any
+        operations with the SynthMind account, and please notify us or the
+        initial applicant for the SynthMind account as soon as possible.
+      </p>
+      <h3 class="mt-8 text-xl font-semibold mb-9 text-w-800">
+        1.4 Account Transfer:
+      </h3>
+      <p class="mb-[34px] text-base text-w-100">
+        <span class="font-semibold text-w-800">1.4.1:</span> You may use your
+        SynthMind account within the scope of this agreement. You may not
+        register a SynthMind account maliciously and may not donate, borrow,
+        rent, transfer or sell your SynthMind account with or without
+        compensation or otherwise allow non-initial applicants to use SynthMind
+        account. We have the right to independently judge and handle the
+        above-mentioned actions, and you shall bear any responsibilities arising
+        therefrom. At the same time, we reserve the right to pursue the legal
+        liability of the above-mentioned perpetrators, and all responsibilities
+        arising therefrom shall be borne by you.
+      </p>
+      <p class="mb-[34px] text-base text-w-100">
+        <span class="font-semibold text-w-800">1.4.2:</span> We have the right
+        to take the following measures against you in accordance with laws and
+        regulations:
+      </p>
+      <p class="mb-[34px] text-base text-w-100">
+        <span class="font-semibold text-w-800">1.4.2.1:</span> If you violate
+        laws, regulations, individual terms, or business rules of SynthMind, we
+        have the right to make independent judgments and take corrections within
+        a time limit, suspend use, terminate your use of SynthMind account at
+        any time, and decide whether to resume use based on the actual
+        situation.
+      </p>
+      <p class="text-base text-w-100">
+        <span class="font-semibold text-w-800">1.4.2.2:</span> In accordance
+        with these rules or relevant laws and regulations, we will correct,
+        suspend or terminate your use of SynthMind account within a time limit,
+        resulting in losses to you (including but not limited to service
+        interruption, clearing of user information, emails, and related data,
+        etc.). shall be borne by you.
+      </p>
+      <h3 class="mt-8 text-xl font-semibold mb-9 text-w-800">
+        1.5 Account Recovery:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        In order to prevent resource occupation, if you have not used your
+        SynthMind account for 24 consecutive months or have not logged in to
+        your account through other methods approved by SynthMind, we have the
+        right to cancel the account, and you will no longer be able to log in or
+        use the account. Related Services. If there are pending transactions or
+        balances associated with this account, we will assist you within a
+        reasonable range. Please operate according to the instructions of
+        SynthMind.
+      </p>
+      <h3 class="mt-8 text-xl font-semibold mb-9 text-w-800">
+        1.6 Account Security:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        Your account is set up by you and is kept by you. We will never
+        proactively ask you to provide your account password at any time. It is
+        recommended that you take specific measures to protect the security of
+        your account, including but not limited to installing anti-virus and
+        Trojan software, changing passwords regularly, and other measures.
+      </p>
+      <h3 class="mt-8 text-xl font-semibold mb-9 text-w-800">
+        1.7 Account Cancellation:
+      </h3>
+      <p class="mb-[34px] text-base text-w-100">
+        <span class="font-semibold text-w-800">1.7.1:</span> When you need to
+        terminate the use of SynthMind account services, you can apply to cancel
+        your SynthMind account if the following conditions are met:
+      </p>
+      <p class="mb-[34px] text-base text-w-100">
+        <span class="font-semibold text-w-800">1.7.1.1:</span> You can only
+        apply to cancel your own account and cancel according to SynthMind's
+        process;
+      </p>
+      <p class="mb-[34px] text-base text-w-100">
+        <span class="font-semibold text-w-800">1.7.1.2:</span> You can only
+        apply to cancel your own account and cancel according to SynthMind's
+        process;
+      </p>
+      <p class="mb-[34px] text-base text-w-100">
+        <span class="font-semibold text-w-800">1.7.1.3:</span> You can only
+        apply to cancel your own account and cancel according to SynthMind's
+        process;
+      </p>
+      <h2 class="mt-12 mb-6 text-3xl leading-[42px] font-semibold text-w-800">
+        2. Requirements for Use
+      </h2>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">
+        (a) Use of the Services:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        You may access the services in accordance with this Agreement, and we
+        will grant you a non-exclusive right to use the services. Our services
+        may involve access to third-party AI services, and you shall agree and
+        undertake to comply with the provisions of all corresponding agreements
+        (including but not limited to Terms of Use), use policies (including but
+        not limited to Usage Policies), and other applicable laws and
+        regulations with respect to such third-party AI services. We and our
+        affiliates have all rights, ownership, and interests in the services.
+      </p>
+      <p class="text-base mb-9 text-w-100">
+        If we discover that you have breached the aforementioned agreements, use
+        policies, or other applicable laws and regulations when you use the
+        services, we may request you to make necessary corrections. If you
+        repeatedly breach or materially breach them, we may take further
+        measures, including but not limited to restricting, suspending, or
+        terminating your account.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">(b) Feedback:</h3>
+      <p class="text-base mb-9 text-w-100">
+        We appreciate your feedback and suggestions for improvement. We will use
+        your feedback and suggestions to enhance our products or services and
+        for other reasonable business purposes.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">(c) Restrictions:</h3>
+      <p class="text-base mb-9 text-w-100">
+        You shall not: (i) use the services in a manner that infringes,
+        misappropriates, or violates the rights of any third party; (ii) attempt
+        to discover the models and algorithms of the services and the source
+        codes or underlying components of the systems through reverse
+        engineering, decompilation, disassembly, translation, or otherwise
+        (unless such restrictions violate applicable laws); (iii) use the
+        services to develop basic models or other large-scale models that
+        compete with us; (iv) extract data from the services using any methods,
+        including but not limited to web scraping, web harvesting, or web data
+        extraction; (v) represent that the output of the service is artificially
+        generated when, in fact, it is not; (vi) purchase, sell, or transfer API
+        keys without our prior consent; or (vii) provide us with any personal
+        information regarding minors. You shall comply with any rate limitation
+        and other requirements specified in our and third-party AI service
+        providers’ documentations.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">
+        (d) Third-party Services:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        Any third-party software, services, or other products you use in
+        connection with the services are subject to their own terms, and we will
+        not assume any responsibility or make any undertaking for third-party
+        products.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">(e) User Behavior:</h3>
+      <p class="text-base mb-9 text-w-100">
+        As a condition of use, you agree not to use the services for any purpose
+        prohibited by this Agreement or applicable laws. You shall not (and
+        shall not allow any third party to): (i) infringe any patents,
+        trademarks, trade secrets, copyrights, or other similar rights of any
+        third party; (ii) engage in threatening, abusive, harassing, defamatory,
+        libelous, deceptive, fraudulent, privacy-invading, infringing, obscene,
+        offensive, or disrespectful behavior; (iii) send or make unauthorized or
+        unsolicited advertising, spamming, or bulk emails, mass messaging, or
+        phone calls; (iv) disrupt or attempt to disrupt the normal operation of
+        the services or use the services in any manner not permitted by this
+        Agreement; or attempt to engage in or participate in any potentially
+        harmful behavior targeting the services, including but not limited to
+        violating or attempting to violate any security features of the
+        services, using manual or automated software or other methods to access,
+        “scrape” or “crawl” any pages contained in the services, introducing
+        viruses, worms, or similar harmful codes into the services, or
+        interfering with or attempting to interfere with the use of the services
+        by any other user, host or network through the ways including
+        overloading, “spamming,” “mail-bombing,” or “crashing.”
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">
+        (f) Monitoring and Execution:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        We will have the right, but no obligation, to monitor or review the
+        services and contents at any time and retain records of your use in
+        accordance with the law. We generally do not monitor user activities
+        related to the services or contents, but we reserve the rights to: (i)
+        at our sole discretion, delete or refuse to publish any of your contents
+        in accordance with applicable laws; (ii) take any actions we deem
+        necessary or appropriate regarding any of your content if we believe
+        that such content violates this Agreement, infringes the intellectual
+        property rights or other rights of any third party, threatens the
+        personal safety of service users or the public, or may cause us to incur
+        losses; (iii) disclose your identity or other information to any third
+        party who claims that materials posted by you infringe its rights,
+        including its intellectual property rights or privacy rights; (iv) take
+        appropriate legal actions against any illegal or unauthorized use of the
+        services, including but not limited to referring such matter to law
+        enforcement agencies; and/or (v) terminate or suspend your access to all
+        or part of the services for any violation of this Agreement or mandatory
+        requirements on the service use frequency or timing imposed by law.
+      </p>
+      <h2 class="mt-12 mb-6 text-3xl leading-[42px] font-semibold text-w-800">
+        3. Content
+      </h2>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">(a) Your Content:</h3>
+      <p class="text-base mb-9 text-w-100">
+        You may provide input content (“Input Content”) to the services and
+        receive output content (“Output Content”) generated and returned by the
+        services based on your input content. Both “Input Content” and “Output
+        Content” are referred to as the “Content”. You will have the right to
+        input the Content to the extent permitted by applicable laws. Subject to
+        all applicable laws and without infringement upon third-party rights,
+        you may exercise all rights in the Output Content, and you will be
+        responsible for the authenticity, accuracy, legality, and compliance of
+        the Output Content.
+      </p>
+      <p class="text-base mb-9 text-w-100">
+        By inputting the Content, you agree that we may collect your Input
+        Content, including your personal information, for the purpose of
+        providing the services. You shall guarantee that the Input Content,
+        including but not limited to information, data, images, fonts, audio,
+        video, materials, and codes, will be legal, compliant, true and
+        accurate, and will not infringe the legitimate interests or intellectual
+        property rights of any third party. You shall guarantee that the Input
+        Content will not contain personal information, personal privacy, trade
+        secrets, Confidential Information, or any other information that
+        infringes the rights of any third party. If the legitimate interests of
+        any third party are damaged or the Confidential Information or trade
+        secrets are disclosed thereby, you shall solely bear all consequences
+        and liability, and we will reserve the right to claim compensation from
+        you for any losses, if any, caused to us, including but not limited to
+        compensations to third parties.
+      </p>
+      <p class="text-base mb-9 text-w-100">
+        You shall be responsible for the Content, including ensuring that it
+        will not violate any applicable law and this Agreement. You are
+        prohibited from using the Output Content to generate discriminatory
+        content, harm the image or reputation of any third party, or damage
+        their lawful rights and interests, and from engaging in commercial
+        exploitation or improper marketing. You shall conduct appropriate manual
+        reviews of the Output Content, especially when it is used for automated
+        decision-making.
+      </p>
+      <p class="text-base mb-9 text-w-100">
+        When using the Output Content, you shall add a mark, clearly indicating
+        that the Output Content is generated by AI to avoid any misunderstanding
+        by your customers or any third party.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">
+        (b) Your Files and Data:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        You can upload your files and data to the servers designated by us based
+        on their size and type parameters. Information related to your query is
+        extracted from the uploaded data and files, and we will not interfere
+        with the data and files you have uploaded.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">
+        (c) Similarity of Content:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        Considering the inherent properties of machine learning, the Output
+        Content may not be unique among users, and the services may generate the
+        same or similar outputs for us or third parties. For example, you may
+        provide the Input Content to the model, such as “What color is the sky”?
+        and then receive the Input Content, such as “The sky is blue”. Other
+        users may ask similar questions and receive the same response. Requests
+        from other users and responses to them will not be considered as your
+        Content.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">(d) Use of Content:</h3>
+      <p class="text-base mb-9 text-w-100">
+        We will not use your content for purposes other than the purpose of the
+        service, and will only have access to those who have a need to know to
+        provide the service, and ensure that our personnel assume
+        confidentiality obligations
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">(e) Accuracy:</h3>
+      <p class="text-base mb-9 text-w-100">
+        Both AI and machine learning are rapidly evolving fields of research. We
+        keep trying our best to improve our services so that they become more
+        accurate, reliable, safe, and beneficial. Given the probabilistic
+        property of machine learning, the use of our services may generate
+        incorrect output that cannot accurately reflect real individuals,
+        locations, or facts in some cases. You shall assess the accuracy of any
+        Output Content based on your use case, including conducting manual
+        reviews of the Output Content.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">(f) Complaints:</h3>
+      <p class="text-base mb-9 text-w-100">
+        If you discover or become aware that any Output Content infringes any
+        third party's rights to likeness, reputation or personality, personal
+        privacy, trade secrets, or Confidential Information, please email
+        compliance@synthmind.cc. We will take measures, including but not
+        limited to notifying the infringer and making a reasonable judgment of
+        infringement, suspending or ceasing the generation of the aforementioned
+        infringing content, deleting or disabling the Content suspected of
+        infringement, and potentially terminating the account of the repeat
+        infringer. If there is a dispute with respect to infringement and you
+        disagree with our reasonable judgment, you may initiate a lawsuit
+        against the infringer with the court of competent jurisdiction in
+        accordance with the law. The written claim of infringement shall include
+        the following information
+      </p>
+      <h2 class="mt-12 mb-6 text-3xl leading-[42px] font-semibold text-w-800">
+        4. Fees and Payment
+      </h2>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">
+        (a) SynthMind Credits:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        SynthMind Credits are the virtual settlement unit of the SynthMind
+        platform. When you engage with the AI Bot on the SynthMind platform,
+        utilize AI speech recognition, knowledge vectorization indexing,
+        knowledge vectorization storage, etc., corresponding SynthMind Credits
+        will be deducted. SynthMind Credits are associated with your email
+        account. The pricing of SynthMind Credits is subject to the rates
+        displayed on the SynthMind platform.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">(b) Service Models:</h3>
+      <p class="text-base mb-9 text-w-100">
+        The SynthMind platform offers two service modes, each consuming
+        different amounts of SynthMind Credits. The specific charging standards
+        for these modes are subject to the pricing displayed on the SynthMind
+        platform.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">
+        (c) SynthMind Developer Package:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        The SynthMind platform provides developers with various subscription
+        plan packages. You can choose different subscription plans for paid
+        subscriptions to your designated development space based on current
+        business conditions. Four subscription plan packages are available:
+        Hobby, Growth, Standard, and Pro, with two subscription periods: monthly
+        and annual. The subscription plan package's price is subject to the
+        rates displayed on the SynthMind platform. After activating the relevant
+        rights and interests for your designated development space according to
+        the purchased subscription plan package, we do not support changing the
+        development space ID, closing the package, downgrading the package, or
+        issuing refunds.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">
+        (d) Pricing Changes:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        You acknowledge and agree that we have the right to change the pricing
+        displayed on the SynthMind platform at any time, and any pricing changes
+        will take effect from the date we publish them. If we propose changes to
+        our pricing, we will provide you with reasonable notice before the
+        pricing changes. Your continued use of the Services after a pricing
+        change becomes effective shall constitute your agreement to pay the
+        changed pricing.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">(e) Tax:</h3>
+      <p class="text-base mb-9 text-w-100">
+        The service fee does not include tax; all taxes related to your
+        SynthMind Credits recharge and paid subscription are your
+        responsibility.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">(f) Late Payment:</h3>
+      <p class="text-base mb-9 text-w-100">
+        For late payments, a penalty of 0.05% of the overdue payment amount will
+        be charged every day. If there are unpaid overdue fees, we may suspend
+        your use of the Services and send you a late payment notification.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">
+        (g) Free Service Offerings:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        Creating multiple accounts to exploit our free service offerings is
+        prohibited. If we determine that you have registered multiple accounts
+        with malicious intent to repeatedly obtain free service offerings, we
+        may charge you at the standard price or cease providing access to the
+        services.
+      </p>
+
+      <h2 class="mt-12 mb-6 text-3xl leading-[42px] font-semibold text-w-800">
+        5. Confidentiality, Security, and Data Protection
+      </h2>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">
+        (a) Confidentiality:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        You may gain access to Confidential Information owned by us, our
+        affiliates, and other third parties. You are permitted to use
+        Confidential Information solely for the purpose of using the services as
+        outlined in this Agreement. You must not disclose Confidential
+        Information to any third party and must safeguard it with a degree of
+        care equal to that applied to your similar information, but never less
+        than a reasonable level of care. Confidential Information includes
+        non-public information designated as confidential by us or our
+        affiliates, or information that should be treated as such. It excludes
+        information that: (i) has been made public before disclosure; (ii) was
+        disclosed to you before disclosure without fault on your part; (iii) is
+        lawfully disclosed by a third party without confidentiality obligations;
+        or (iv) is independently developed by you without using Confidential
+        Information. You may disclose Confidential Information as required by
+        law or valid orders of the court or other government authorities,
+        provided you give us advance notice and make reasonable efforts to limit
+        the disclosure scope, assisting us in challenging the request if needed.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">(b) Security:</h3>
+      <p class="text-base mb-9 text-w-100">
+        You are obligated to take reasonable and appropriate measures to ensure
+        the security of your access to and use of the services. If you discover
+        any vulnerabilities or violations related to your use of services, you
+        must promptly notify us, providing details of such vulnerabilities or
+        violations.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">
+        (c) Processing of Personal Data:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        If your use of the services involves the processing of personal data,
+        you must supply a legally adequate privacy statement and obtain
+        necessary consent for processing such data. You must confirm to us that
+        you are processing such data in compliance with applicable laws. If you
+        are subject to the Personal Information Protection Law of the PRC, the
+        General Data Protection Regulation (“GDPR”), the California Consumer
+        Privacy Act (“CCPA”), or other laws and plan to use our services to
+        process "personal data" or "personal information" as defined by these
+        laws or any other legal framework, please contact
+        compliance@synthmind.cc to execute the annex of our data processing.
+      </p>
+      <h2 class="mt-12 mb-6 text-3xl leading-[42px] font-semibold text-w-800">
+        6. Term and Termination
+      </h2>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">(a) Termination:</h3>
+      <p class="text-base mb-9 text-w-100">
+        This Agreement takes effect upon your initial use of the services and
+        remains in force until terminated. You have the right to terminate this
+        Agreement at any time by discontinuing the use of the services and
+        content, but any Fees paid are non-refundable. We reserve the right to
+        terminate this Agreement for any reason, providing advance notice.
+        Immediate termination may occur if you materially breach Section 2
+        (Requirements for Use), Section 5 (Confidentiality), Section 8 (Dispute
+        Resolution), or Section 9 (General Terms). Additionally, termination may
+        happen if our third-party AI service provider ends AI services, leading
+        to the cessation of our services, or for compliance with laws or
+        governmental requirements.
+      </p>
+      <p class="text-base mb-9 text-w-100">
+        In cases where we identify violations of applicable laws, regulations,
+        business ethics, or social morality in your use of the services—such as
+        online manipulation, malicious postings and comments, spam emails,
+        creation of malicious software, or unfair business marketing—we reserve
+        the right to suspend or terminate service provision without notice.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">
+        (b) Effects of Termination:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        Upon termination, you must cease using the services and promptly return
+        or, as directed by us, destroy any Confidential Information. Clauses in
+        this Agreement intended to survive expiration or termination, including
+        but not limited to Section 3 and Sections 5 through 8, shall remain
+        fully effective after expiration or termination.
+      </p>
+      <h2 class="mt-12 mb-6 text-3xl leading-[42px] font-semibold text-w-800">
+        7. Indemnification, Disclaimer, and Limitation of Liability
+      </h2>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">
+        (a) Indemnification:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        You are obligated to defend, indemnify, and hold SynthMind, our
+        affiliates, and our personnel harmless from any claims, losses, costs,
+        and expenses (including attorney’s fees) arising from or related to your
+        use of the services, including your Content, and the products or
+        services developed or provided by you in connection with our services,
+        or your breach of this Agreement or any applicable laws.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">(b) Disclaimer:</h3>
+      <p class="text-base mb-9 text-w-100">
+        You are obligated to defend, indemnify, and hold SynthMind, our
+        affiliates, and our personnel harmless from any claims, losses, costs,
+        and expenses (including attorney’s fees) arising from or related to your
+        use of the services, including your Content, and the products or
+        services developed or provided by you in connection with our services,
+        or your breach of this Agreement or any applicable laws.
+      </p>
+      <p class="text-base mb-9 text-w-100">
+        Our services utilize publicly available AI platforms, algorithms, and
+        models ("Third-party AI Service Providers") to generate Output Content
+        based on your Input Content. You expressly understand and agree that, to
+        the extent permitted by applicable laws, your use of the services is at
+        your own risk. The services are provided on an "as is" and "as
+        available" basis. SynthMind, our affiliates, and licensors disclaim any
+        warranties, whether express, implied, statutory, or otherwise, regarding
+        the services. This includes but is not limited to warranties of
+        accuracy, completeness, truthfulness, applicability, legality,
+        non-infringement, or utility. We do not guarantee that the services will
+        be uninterrupted, accurate, or error-free, nor do we warrant the safety
+        or non-alteration of any Content. Additionally, we shall not be liable
+        for any unavailability of our services due to the unavailability of
+        third-party AI services or the suspension or cessation of AI services by
+        Third-party AI Service Providers.
+      </p>
+      <p class="text-base mb-9 text-w-100">
+        (i) We make no warranties or guarantees that: (1) the services will meet
+        your requirements; (2) your use of the services will be uninterrupted,
+        timely, secure, or error-free; or (3) the results from the use of the
+        services will be accurate, reliable, or free from false information.
+      </p>
+      <p class="text-base mb-9 text-w-100">
+        (ii) You download Content from the services at your own risk and are
+        solely liable for any damage to your property or other losses incurred
+        as a result of accessing such Content.
+      </p>
+      <p class="text-base mb-9 text-w-100">
+        (iii) The services may experience delays, cancellations, or disruptions.
+        We make no warranties or guarantees regarding the quality,
+        effectiveness, and other characteristics of the services.
+      </p>
+      <p class="text-base mb-9 text-w-100">
+        (iv) Any advice or information provided by the Output Content generated
+        from the services does not constitute news publication information,
+        legal, financial, or medical advice. Before making significant
+        decisions, consult with relevant professionals for advice. You assume
+        all risks associated with reliance on the advice or information provided
+        through the services.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">
+        (c) Limitation of Liability:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        SynthMind, our affiliates, or licensors are not liable for any indirect,
+        incidental, special, consequential, or exemplary damages, including
+        compensation for lost profit, goodwill, data, or other losses, even if
+        advised of the possibility of such damages. Our aggregate liability
+        under this Agreement is limited to the total amount paid by you for the
+        services giving rise to the claim within 12 months prior to the
+        occurrence of liability. This limitation applies only to the greatest
+        extent permitted by applicable laws.
+      </p>
+      <h2 class="mt-12 mb-6 text-3xl leading-[42px] font-semibold text-w-800">
+        8. Dispute Resolution
+      </h2>
+      <p class="text-base mb-9 text-w-100">You agree to the following:</p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">
+        (a) Applicable Laws:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        The formation, validity, interpretation, performance, termination, and
+        modifications to this Agreement, as well as the settlement of any
+        dispute in connection herewith, shall be governed by the laws of
+        Singapore, without violating any mandatory provisions of other
+        applicable laws.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">
+        (b) Informal Dispute Resolution:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        Before resorting to formal legal action, you agree to attempt to resolve
+        any disputes informally. Provide notice of your concerns to us at
+        compliance@gptbots.cc, specifying your name, a description of the
+        dispute, and the remedies you seek. If the dispute remains unresolved
+        within 60 days, formal litigation may be initiated.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">
+        (c) No Class Actions:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        Disputes may only be raised on an individual basis and may not be raised
+        as a plaintiff or class member in any purported class, consolidated, or
+        representative action. Class actions and the consolidation of lawsuits
+        are not permitted, although this does not preclude any party from
+        participating in the resolution of class claims.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">(d) Jurisdiction:</h3>
+      <p class="text-base mb-9 text-w-100">
+        The parties will negotiate to resolve any dispute arising from the use
+        of the services. If a legal dispute cannot be resolved through
+        negotiation, either party has the right to refer the dispute to the
+        People’s Court of Nanshan District, Shenzhen, for resolution through
+        litigation.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">(e) Severability:</h3>
+      <p class="text-base mb-9 text-w-100">
+        If any part of this Section 8 is deemed illegal or unenforceable, the
+        remaining provisions shall remain in effect. However, if the
+        investigation result of the illegal or unenforceable part allows a class
+        action, this Section 8 will be entirely unenforceable.
+      </p>
+      <h2 class="mt-12 mb-6 text-3xl leading-[42px] font-semibold text-w-800">
+        9. General Terms
+      </h2>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">
+        (a) Relationship of the Two Parties:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        Nothing in this Agreement shall be interpreted as creating a
+        partnership, joint venture, or agency relationship between you and us or
+        any of our affiliates. Neither party has the right to bind the other or
+        represent the other party to assume obligations without prior written
+        consent.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">(b) Use of Brand:</h3>
+      <p class="text-base mb-9 text-w-100">
+        Without our prior written consent, you are prohibited from using our
+        name, logo, or trademark, or that of any of our affiliates.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">
+        (c) Transfer and Assignment:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        You may not transfer or assign any rights or obligations under this
+        Agreement, including those related to a change in control. Any attempt
+        to transfer or assign shall be void. We reserve the right to transfer
+        this Agreement during a merger, acquisition, sale of assets, or
+        corporate restructuring.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">(d) Modifications:</h3>
+      <p class="text-base mb-9 text-w-100">
+        We may modify this Agreement and our rules as needed based on legal
+        enactments, Internet developments, and adjustments to our operations and
+        business strategies. Notification of changes will be provided, and the
+        latest version can be viewed on relevant pages. Material changes
+        impacting your rights or obligations will be notified via message or
+        email, taking effect within 10 days. Other changes become effective
+        immediately upon publication. Continued use of the services after
+        changes indicates your consent.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">(e) Notice:</h3>
+      <p class="text-base mb-9 text-w-100">
+        Notices may be given via message or email using your registration
+        information related to service use. Email notices are considered
+        received on the date sent.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">
+        (f) Waiver and Severability:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        Failure to enforce this Agreement by either party and delayed actions
+        shall not be deemed a waiver of rights. Except as provided in Section 8,
+        if any provision is deemed illegal or unenforceable, it will be enforced
+        to the maximum extent possible, and the enforceability of other
+        provisions will not be affected.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">
+        (g) Export Controls:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        No services may be used in or exported to Embargoed Countries or any
+        other restricted parties list as defined by applicable laws. You
+        represent that you are not located in an Embargoed Country/region or on
+        any restricted parties list and agree to comply with all related laws.
+      </p>
+      <h3 class="text-xl font-semibold mb-9 text-w-800">
+        (h) Entire Agreement:
+      </h3>
+      <p class="text-base mb-9 text-w-100">
+        This Agreement and any policies herein constitute the entire agreement
+        between you and us regarding the use of the services, superseding any
+        prior agreements, except for specific service use terms or applicable
+        agreements.
+      </p>
+    </div>
+
+    <footer class="bg-footer-bg bg-cover bg-center bg-no-repeat pt-24 pb-8">
+      <div class="container mx-auto px-5 xl:px-0">
+        <div class="mb-24 text-center">
+          <h2
+            class="gd-title text-5xl font-semibold leading-[64px] text-center mx-auto mb-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Start Building Your AI Bot Today
+          </h2>
+          <p
+            class="text-xl text-w-100 mb-[32px]"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            Embark on a transformative journey with us and experience
+            unparalleled power in AI.
+          </p>
+          <a
+            data-aos="fade-up"
+            href="sign-up.html"
+            class="inline-block px-6 py-3 text-base font-semibold capitalize border rounded bg-w-800 text-b-800 hover:bg-transparent hover:text-w-800 border-inherit"
+            >get started</a
+          >
+        </div>
+        <div
+          class="flex flex-col items-start justify-between py-24 md:flex-row"
+        >
+          <div>
+            <a href="index.html">
+              <img src="assets/img/footerlogo.png" alt="logo" />
+            </a>
+            <p class="mt-8 text-sm font-medium capitalize text-w-800">
+              Address:
+            </p>
+            <p class="mb-4 text-sm text-w-100">
+              3760 West Drive, Chicago, IL 60606
+            </p>
+            <p class="text-sm font-medium capitalize text-w-800">contact:</p>
+            <a class="inline-block text-sm text-w-100" href="tel:+319-270-8254"
+              >319-270-8254</a
+            >
+            <br />
+            <a
+              class="inline-block text-sm text-w-100"
+              href="mailto:contact@synthmind.com"
+              >contact@synthmind.com</a
+            >
+            <div class="flex items-center justify-start gap-4 my-8 text-w-100">
+              <a href="#">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="hover:text-w-800"
+                >
+                  <path
+                    d="M20 3H4C3.73478 3 3.48043 3.10536 3.29289 3.29289C3.10536 3.48043 3 3.73478 3 4V20C3 20.2652 3.10536 20.5196 3.29289 20.7071C3.48043 20.8946 3.73478 21 4 21H12.615V14.04H10.277V11.315H12.615V9.315C12.615 6.99 14.035 5.723 16.115 5.723C16.814 5.721 17.514 5.757 18.21 5.83V8.25H16.775C15.647 8.25 15.427 8.788 15.427 9.575V11.31H18.124L17.774 14.035H15.426V21H20C20.2652 21 20.5196 20.8946 20.7071 20.7071C20.8946 20.5196 21 20.2652 21 20V4C21 3.73478 20.8946 3.48043 20.7071 3.29289C20.5196 3.10536 20.2652 3 20 3Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="hover:text-w-800"
+                >
+                  <path
+                    d="M20.9471 8.30545C20.937 7.54807 20.7952 6.79822 20.5281 6.08945C20.2964 5.4916 19.9426 4.94864 19.4892 4.49528C19.0359 4.04191 18.4929 3.6881 17.8951 3.45645C17.1954 3.1938 16.4562 3.05179 15.7091 3.03645C14.7471 2.99345 14.4421 2.98145 12.0001 2.98145C9.55807 2.98145 9.24507 2.98145 8.29007 3.03645C7.54323 3.0519 6.80442 3.19391 6.10507 3.45645C5.50713 3.68793 4.96409 4.04169 4.5107 4.49508C4.05732 4.94847 3.70356 5.4915 3.47207 6.08945C3.2089 6.78858 3.06719 7.52756 3.05307 8.27445C3.01007 9.23745 2.99707 9.54245 2.99707 11.9844C2.99707 14.4264 2.99707 14.7384 3.05307 15.6944C3.06807 16.4424 3.20907 17.1804 3.47207 17.8814C3.70395 18.4792 4.05797 19.022 4.51151 19.4752C4.96505 19.9284 5.50813 20.282 6.10607 20.5134C6.8035 20.7866 7.54244 20.9388 8.29107 20.9634C9.25407 21.0064 9.55907 21.0194 12.0011 21.0194C14.4431 21.0194 14.7561 21.0194 15.7111 20.9634C16.4582 20.9487 17.1974 20.807 17.8971 20.5444C18.4948 20.3125 19.0376 19.9586 19.4909 19.5053C19.9442 19.052 20.2982 18.5091 20.5301 17.9114C20.7931 17.2114 20.9341 16.4734 20.9491 15.7244C20.9921 14.7624 21.0051 14.4574 21.0051 12.0144C21.0031 9.57245 21.0031 9.26245 20.9471 8.30545ZM11.9941 16.6024C9.44007 16.6024 7.37107 14.5334 7.37107 11.9794C7.37107 9.42545 9.44007 7.35645 11.9941 7.35645C13.2202 7.35645 14.396 7.84351 15.263 8.71049C16.13 9.57747 16.6171 10.7533 16.6171 11.9794C16.6171 13.2055 16.13 14.3814 15.263 15.2484C14.396 16.1154 13.2202 16.6024 11.9941 16.6024ZM16.8011 8.26344C16.6595 8.26358 16.5192 8.23578 16.3884 8.18166C16.2575 8.12753 16.1386 8.04813 16.0385 7.948C15.9384 7.84787 15.859 7.72898 15.8049 7.59813C15.7507 7.46729 15.7229 7.32705 15.7231 7.18545C15.7231 7.04395 15.7509 6.90383 15.8051 6.7731C15.8592 6.64238 15.9386 6.52359 16.0387 6.42354C16.1387 6.32348 16.2575 6.24411 16.3882 6.18997C16.519 6.13582 16.6591 6.10795 16.8006 6.10795C16.9421 6.10795 17.0822 6.13582 17.2129 6.18997C17.3436 6.24411 17.4624 6.32348 17.5625 6.42354C17.6625 6.52359 17.7419 6.64238 17.7961 6.7731C17.8502 6.90383 17.8781 7.04395 17.8781 7.18545C17.8781 7.78145 17.3961 8.26344 16.8011 8.26344Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M11.9942 14.9816C13.6527 14.9816 14.9972 13.6371 14.9972 11.9786C14.9972 10.3201 13.6527 8.97559 11.9942 8.97559C10.3357 8.97559 8.99121 10.3201 8.99121 11.9786C8.99121 13.6371 10.3357 14.9816 11.9942 14.9816Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="hover:text-w-800"
+                >
+                  <path
+                    d="M19.633 7.99656C19.646 8.17156 19.646 8.34556 19.646 8.51956C19.646 13.8446 15.593 19.9806 8.186 19.9806C5.904 19.9806 3.784 19.3196 2 18.1716C2.324 18.2086 2.636 18.2216 2.973 18.2216C4.78599 18.2259 6.54765 17.6197 7.974 16.5006C7.13342 16.4853 6.31858 16.208 5.64324 15.7073C4.9679 15.2066 4.46578 14.5075 4.207 13.7076C4.456 13.7446 4.706 13.7696 4.968 13.7696C5.329 13.7696 5.692 13.7196 6.029 13.6326C5.11676 13.4484 4.29647 12.9539 3.70762 12.2332C3.11876 11.5126 2.79769 10.6102 2.799 9.67956V9.62956C3.336 9.92856 3.959 10.1156 4.619 10.1406C4.06609 9.77314 3.61272 9.27458 3.29934 8.68935C2.98596 8.10411 2.82231 7.45041 2.823 6.78656C2.823 6.03856 3.022 5.35256 3.371 4.75456C4.38314 5.99958 5.6455 7.01812 7.07634 7.74421C8.50717 8.47031 10.0746 8.88777 11.677 8.96956C11.615 8.66956 11.577 8.35855 11.577 8.04656C11.5767 7.51752 11.6807 6.99361 11.8831 6.5048C12.0854 6.01598 12.3821 5.57183 12.7562 5.19774C13.1303 4.82366 13.5744 4.52697 14.0632 4.32463C14.5521 4.1223 15.076 4.01829 15.605 4.01856C16.765 4.01856 17.812 4.50455 18.548 5.29056C19.4498 5.11617 20.3145 4.78698 21.104 4.31755C20.8034 5.24837 20.1738 6.03766 19.333 6.53756C20.1328 6.44633 20.9144 6.23601 21.652 5.91356C21.1011 6.71665 20.4185 7.4209 19.633 7.99656Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="hover:text-w-800"
+                >
+                  <path
+                    d="M4.98292 7.19729C6.19132 7.19729 7.17092 6.21769 7.17092 5.00929C7.17092 3.80089 6.19132 2.82129 4.98292 2.82129C3.77452 2.82129 2.79492 3.80089 2.79492 5.00929C2.79492 6.21769 3.77452 7.19729 4.98292 7.19729Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M9.23575 8.85469V20.9937H13.0047V14.9907C13.0047 13.4067 13.3027 11.8727 15.2667 11.8727C17.2037 11.8727 17.2277 13.6837 17.2277 15.0907V20.9947H20.9988V14.3377C20.9988 11.0677 20.2948 8.55469 16.4728 8.55469C14.6378 8.55469 13.4078 9.56169 12.9047 10.5147H12.8537V8.85469H9.23575ZM3.09375 8.85469H6.86875V20.9937H3.09375V8.85469Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="hover:text-w-800"
+                >
+                  <path
+                    d="M21.593 7.20301C21.4791 6.78041 21.2565 6.39501 20.9473 6.08518C20.6382 5.77534 20.2533 5.55187 19.831 5.43701C18.265 5.00701 12 5.00001 12 5.00001C12 5.00001 5.73596 4.99301 4.16896 5.40401C3.74689 5.52415 3.36279 5.75078 3.05353 6.06214C2.74427 6.3735 2.52025 6.75913 2.40296 7.18201C1.98996 8.74801 1.98596 11.996 1.98596 11.996C1.98596 11.996 1.98196 15.26 2.39196 16.81C2.62196 17.667 3.29696 18.344 4.15496 18.575C5.73696 19.005 11.985 19.012 11.985 19.012C11.985 19.012 18.25 19.019 19.816 18.609C20.2385 18.4943 20.6237 18.2714 20.9336 17.9622C21.2435 17.653 21.4673 17.2682 21.583 16.846C21.997 15.281 22 12.034 22 12.034C22 12.034 22.02 8.76901 21.593 7.20301ZM9.99596 15.005L10.001 9.00501L15.208 12.01L9.99596 15.005Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="flex md:flex-row flex-col justify-end items-start gap-[46px] lg:gap-[88px] capitalize"
+          >
+            <ul class="text-base font-medium text-w-800">
+              <li>
+                <a href="index.html" class="inline-block hover:underline"
+                  >Homepage</a
+                >
+              </li>
+              <li>
+                <a
+                  href="features.html"
+                  class="inline-block my-4 hover:underline"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a
+                  href="products.html"
+                  class="inline-block mb-4 hover:underline"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a href="pricing.html" class="hover:underline">Pricing</a>
+              </li>
+            </ul>
+            <ul class="text-base font-medium text-w-800">
+              <li>
+                <a href="blog.html" class="inline-block hover:underline"
+                  >Blog page</a
+                >
+              </li>
+              <li class="inline-block">
+                <a
+                  href="blog-details.html"
+                  class="inline-block my-4 hover:underline"
+                  >Blog Details</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="inline-block mb-4 hover:underline"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="text-capitalize hover:underline"
+                  >About</a
+                >
+              </li>
+            </ul>
+            <ul class="text-base font-medium text-w-800">
+              <li>
+                <a href="docs.html" class="inline-block hover:underline"
+                  >Docs</a
+                >
+              </li>
+              <li>
+                <a href="sign-in.html" class="inline-block my-4 hover:underline"
+                  >Sign in</a
+                >
+              </li>
+              <li>
+                <a href="sign-up.html" class="inline-block mb-4 hover:underline"
+                  >Sign Up</a
+                >
+              </li>
+              <li>
+                <a href="404.html" class="text-capitalize hover:underline"
+                  >404</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center gap-3 pt-8 text-sm md:flex-row md:justify-between md:gap-0"
+        >
+          <p class="text-w-100">
+            Copyright © 2024 SynthMind. All rights reserved.
+          </p>
+          <ul class="flex gap-8">
+            <li>
+              <a class="text-w-100" href="terms-of-service.html"
+                >Terms of Service</a
+              >
+            </li>
+            <li>
+              <a class="text-w-100" href="privacy-policy.html"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

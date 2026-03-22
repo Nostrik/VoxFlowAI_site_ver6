@@ -1,0 +1,137 @@
+          <!-- HERO RIGHT -->
+          <div
+            class="p-4 md:p-8 w-full lg:max-w-[474px] bg-home-card rounded-xl border border-solid border-[#1472FF29] overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            >
+            <div
+              class="bg-center bg-no-repeat bg-cover bg-home-card-bg rounded-xl"
+            >
+              <div
+                class="flex items-start justify-between p-4 border-b md:p-6 border-b-300"
+              >
+                <div class="flex items-start justify-start gap-3">
+                  <img
+                    src="assets/img/chatbot-avatar.png"
+                    alt="chatbot-avatar.png"
+                  />
+                  <div class="flex flex-col items-start justify-start">
+                    <span
+                      class="block mb-1 text-base font-medium lg:mb-0 text-w-800"
+                      >VoxBot</span
+                    >
+                    <span
+                      class="text-xs text-left md:text-sm lg:text-base text-w-300"
+                      >24/7 глобальная поддержка</span
+                    >
+                  </div>
+                </div>
+                <div class="flex items-start justify-end gap-4 pt-1">
+                  <strong class="cursor-pointer"
+                    ><svg
+                      width="30"
+                      height="22"
+                      viewBox="0 0 30 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.0647 21.3331C12.181 21.3331 9.72671 20.3297 7.70194 18.3229C5.67716 16.316 4.66477 13.875 4.66477 10.9998V9.9587L2.19807 12.4254L0.792969 11.0203L5.66474 6.14857L10.5365 11.0203L9.1314 12.4254L6.6647 9.9587V10.9998C6.6647 13.316 7.48009 15.284 9.11087 16.9037C10.7416 18.5233 12.7263 19.3332 15.0647 19.3332C15.6169 19.3332 16.1686 19.2729 16.7199 19.1524C17.2711 19.0319 17.8092 18.8511 18.334 18.6101L19.8339 20.11C19.0835 20.5135 18.3087 20.8182 17.5096 21.0241C16.7104 21.2301 15.8955 21.3331 15.0647 21.3331ZM24.3314 15.851L19.4596 10.9793L20.8647 9.5742L23.3314 12.0409V10.9998C23.3314 8.68356 22.516 6.7156 20.8853 5.09594C19.2545 3.47627 17.2699 2.66644 14.9314 2.66644C14.3793 2.66644 13.8276 2.72669 13.2763 2.8472C12.725 2.96772 12.187 3.14848 11.6622 3.3895L10.1622 1.88957C10.9126 1.48615 11.6874 1.18145 12.4865 0.975472C13.2857 0.769494 14.1006 0.666504 14.9314 0.666504C17.8152 0.666504 20.2694 1.66992 22.2942 3.67674C24.319 5.68358 25.3314 8.1246 25.3314 10.9998V12.0409L27.7981 9.5742L29.2032 10.9793L24.3314 15.851Z"
+                        fill="#3F4650"
+                      />
+                    </svg>
+                  </strong>
+                  <strong class="cursor-pointer">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.53401 17.872L0.128906 16.4669L7.59557 9.00019L0.128906 1.53352L1.53401 0.128418L9.00067 7.59508L16.4673 0.128418L17.8724 1.53352L10.4058 9.00019L17.8724 16.4669L16.4673 17.872L9.00067 10.4053L1.53401 17.872Z"
+                        fill="#3F4650"
+                      />
+                    </svg>
+                  </strong>
+                </div>
+              </div>
+              <div class="flex flex-col items-start gap-4 p-4 md:p-6">
+                <div class="flex items-end justify-end w-full gap-2">
+                  <p
+                    class="p-3 w-auto sm:max-w-[232px] text-left rounded rounded-br-none text-sm md:text-base bg-chat-primary text-w-300"
+                  >
+                    I'd like to track the status of my express delivery.
+                  </p>
+                  <img src="assets/img/chatuser1.svg" alt="chatuser1.svg" />
+                </div>
+                <div class="flex items-end justify-start gap-2">
+                  <img src="assets/img/chatuser2.svg" alt="chatuser2.svg" />
+                  <p
+                    class="p-3 w-auto sm:max-w-[216px] text-left rounded rounded-bl-none text-sm md:text-base bg-chat-secondary text-w-300"
+                  >
+                    Sure, may I have the tracking number, please?
+                  </p>
+                </div>
+                <div class="flex items-end justify-end w-full gap-2">
+                  <p
+                    class="p-3 text-sm text-left rounded rounded-br-none md:text-base bg-chat-primary text-w-300"
+                  >
+                    1A2B 3C1A 2B3C 1A3C
+                  </p>
+                  <img src="assets/img/chatuser1.svg" alt="chatuser1.svg" />
+                </div>
+                <div class="flex items-end justify-start gap-2">
+                  <img src="assets/img/chatuser2.svg" alt="chatuser2.svg" />
+                  <p
+                    class="p-3 text-sm text-left rounded rounded-bl-none md:text-base bg-chat-secondary text-w-300"
+                  >
+                    Great news! Your package has arrived in New York and is
+                    expected to be delivered tomorrow. number, please?
+                  </p>
+                </div>
+                <div
+                  class="relative flex justify-between items-center w-full mt-8 md:mt-[87px] rounded border border-input-brdr"
+                >
+                  <input
+                    class="w-full p-3 text-sm bg-transparent focus-visible:outline-none md:text-base text-w-700"
+                    type="text"
+                    placeholder="Message VoxBot..."
+                  />
+                  <div
+                    class="absolute flex items-center justify-end gap-2 top-50 right-2"
+                  >
+                    <strong class="cursor-pointer"
+                      ><svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M17.6733 15.6442C17.6733 17.2682 17.1082 18.6501 15.9781 19.7901C14.848 20.93 13.4724 21.5 11.8512 21.5C10.2301 21.5 8.85284 20.93 7.71951 19.7901C6.58619 18.6501 6.01953 17.2682 6.01953 15.6442V6.65383C6.01953 5.49999 6.42016 4.51923 7.22143 3.71155C8.02271 2.90385 9.00027 2.5 10.1541 2.5C11.308 2.5 12.2855 2.90385 13.0868 3.71155C13.8881 4.51923 14.2887 5.49999 14.2887 6.65383V15.1634C14.2887 15.8403 14.0529 16.4182 13.5814 16.8971C13.1099 17.3759 12.5352 17.6153 11.8574 17.6153C11.1796 17.6153 10.6012 17.3776 10.1224 16.9021C9.64356 16.4265 9.40413 15.847 9.40413 15.1634V6.38463H10.9041V15.1634C10.9041 15.4314 10.9942 15.657 11.1743 15.8404C11.3544 16.0237 11.5785 16.1154 11.8464 16.1154C12.1144 16.1154 12.3384 16.0237 12.5185 15.8404C12.6987 15.657 12.7887 15.4314 12.7887 15.1634V6.64423C12.7785 5.90576 12.522 5.28043 12.0193 4.76825C11.5166 4.25607 10.8949 3.99998 10.1541 3.99998C9.41642 3.99998 8.7929 4.25767 8.28353 4.77305C7.77416 5.28843 7.51948 5.91536 7.51948 6.65383V15.6442C7.50923 16.8532 7.92718 17.8814 8.77333 18.7288C9.6195 19.5763 10.6466 20 11.8547 20C13.0458 20 14.0582 19.5763 14.892 18.7288C15.7257 17.8814 16.1528 16.8532 16.1734 15.6442V6.38463H17.6733V15.6442Z"
+                          fill="#3F4650"
+                        />
+                      </svg>
+                    </strong>
+                    <strong class="cursor-pointer">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.5 19.2499V13.673L10.423 11.9999L3.5 10.3269V4.75L20.7114 11.9999L3.5 19.2499Z"
+                          fill="#3F4650"
+                        />
+                      </svg>
+                    </strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>

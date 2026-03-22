@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/output.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>VoxFlowAI</title>
+  </head>
+  <body class="font-normal bg-body overflow-x-hidden">
+    <header
+      class="absolute top-0 left-0 z-50 w-full border-b border-solid border-b-700"
+    >
+      <div
+        class="items-center justify-between hidden px-5 mx-auto desktop-header lg:flex"
+      >
+        <a href="/">
+          <img src="assets/img/navlogo.svg" alt="logo" />
+        </a>
+        <nav>
+          <ul class="flex items-center justify-center">
+            <li
+              class="relative h-full px-5 border-solid xl:px-10 py-7 border-b-700"
+            >
+              <a
+                href="/"
+                class="inline-block text-base font-medium capitalize text-w-100"
+                >главная</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="features.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >решения</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="products.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >продукты</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="pricing.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >тарифы</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="blog.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >блог</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="contact.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="items-center hidden gap-3 lg:flex">
+          <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+            <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+        <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+      </svg>
+
+          </a>
+          <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+            <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+        <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+      </svg>
+
+          </a>
+          <a href="https://wa.me/79211769883" target="_blank" aria-label="WhatsApp">
+      <svg width="26" height="26" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <clipPath id="clip">
+            <circle cx="128" cy="128" r="128"/>
+          </clipPath>
+        </defs>
+        <circle cx="128" cy="128" r="128" fill="#25D366"/>
+        <g clip-path="url(#clip)">
+          <path fill="#fff" d="M187.3 68.7C172.6 54 152 46 128.8 46c-46 0-83.2 37.2-83.2 83.1 0 14.6 3.8 28.9 11 41.5L46 210l41-10.7c12 6.6 25.6 10.1 39.8 10.1 46 0 83.2-37.2 83.2-83.1 0-23.2-8-43.8-22.7-58.6Zm-58.5 121c-12.4 0-24.6-3.4-35.1-9.8l-2.5-1.5-24.3 6.4 6.5-23.7-1.6-2.5c-6.7-10.5-10.2-22.5-10.2-34.9 0-36.3 29.6-65.9 65.9-65.9 17.6 0 34.1 6.8 46.5 19.2 12.4 12.5 19.2 29 19.1 46.5 0 36.3-29.6 65.9-65.9 65.9Zm39.1-48.9c-2.1-1-12.6-6.2-14.6-6.9-2-.8-3.5-1.2-5 1.2-1.5 2.3-5.8 6.9-7.1 8.3-1.3 1.5-2.6 1.7-4.7.8-12.8-5.4-21.2-9.6-29.7-21.7-2.2-3.1 2.2-2.9 6.2-11.4.7-1.5.4-2.7-.2-3.9-.6-1.2-5-12.1-6.9-16.6-1.8-4.3-3.7-3.7-5-3.8-1.3-.1-2.8-.1-4.3-.1-1.5 0-4 1-6 3-2 2-7.9 7.7-7.9 18.7s8.1 21.7 9.2 23.2c1.1 1.5 16 24.5 38.8 33.2 22.8 8.7 22.8 5.8 26.9 5.5 4.1-.3 13.2-5.3 15.1-10.4 1.9-5.1 1.9-9.5 1.3-10.4-.5-.9-1.8-1.5-3.9-2.5Z"/>
+        </g>
+      </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="container flex items-center justify-between px-4 py-4 mx-auto mobile-header lg:hidden"
+      >
+        <a href="/">
+          <img src="assets/img/navlogo.svg" alt="logo" />
+        </a>
+        <span class="text-white cursor-pointer menu-open-icon lg:hidden">
+          <svg
+            class="block w-8 h-8 font-semibold"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </span>
+        <div
+          class="fixed top-0 left-0 flex flex-col items-start justify-start w-full h-screen transition-all duration-300 translate-x-full bg-black mobile-menu p-7"
+        >
+          <div class="flex items-start justify-between w-full">
+            <nav>
+              <ul class="mt-5">
+                <li>
+                  <a
+                    href="index.html"
+                    class="inline-block mb-5 text-base font-medium capitalize text-w-100"
+                    >главная</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="features.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >решения</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="products.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >продукты</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="pricing.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >тарифы</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="blog.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >блог</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >контакты</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <strong class="text-white cursor-pointer mobile-menu-close-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-x-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+                />
+              </svg>
+            </strong>
+          </div>
+          <div class="flex items-center justify-start w-full gap-2 mt-6">
+          <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+            <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+        <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+      </svg>
+
+          </a>
+          <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+            <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+        <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+      </svg>
+
+          </a>
+          <a href="https://wa.me/79211769883" target="_blank" aria-label="WhatsApp">
+      <svg width="26" height="26" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <clipPath id="clip">
+            <circle cx="128" cy="128" r="128"/>
+          </clipPath>
+        </defs>
+        <circle cx="128" cy="128" r="128" fill="#25D366"/>
+        <g clip-path="url(#clip)">
+          <path fill="#fff" d="M187.3 68.7C172.6 54 152 46 128.8 46c-46 0-83.2 37.2-83.2 83.1 0 14.6 3.8 28.9 11 41.5L46 210l41-10.7c12 6.6 25.6 10.1 39.8 10.1 46 0 83.2-37.2 83.2-83.1 0-23.2-8-43.8-22.7-58.6Zm-58.5 121c-12.4 0-24.6-3.4-35.1-9.8l-2.5-1.5-24.3 6.4 6.5-23.7-1.6-2.5c-6.7-10.5-10.2-22.5-10.2-34.9 0-36.3 29.6-65.9 65.9-65.9 17.6 0 34.1 6.8 46.5 19.2 12.4 12.5 19.2 29 19.1 46.5 0 36.3-29.6 65.9-65.9 65.9Zm39.1-48.9c-2.1-1-12.6-6.2-14.6-6.9-2-.8-3.5-1.2-5 1.2-1.5 2.3-5.8 6.9-7.1 8.3-1.3 1.5-2.6 1.7-4.7.8-12.8-5.4-21.2-9.6-29.7-21.7-2.2-3.1 2.2-2.9 6.2-11.4.7-1.5.4-2.7-.2-3.9-.6-1.2-5-12.1-6.9-16.6-1.8-4.3-3.7-3.7-5-3.8-1.3-.1-2.8-.1-4.3-.1-1.5 0-4 1-6 3-2 2-7.9 7.7-7.9 18.7s8.1 21.7 9.2 23.2c1.1 1.5 16 24.5 38.8 33.2 22.8 8.7 22.8 5.8 26.9 5.5 4.1-.3 13.2-5.3 15.1-10.4 1.9-5.1 1.9-9.5 1.3-10.4-.5-.9-1.8-1.5-3.9-2.5Z"/>
+        </g>
+      </svg>
+          </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="bg-primary-hero bg-cover bg-center bg-no-repeat pt-52 pb-32 px-5 xl:px-0 text-center"
+    >
+      <a
+        data-aos="fade-up"
+        data-aos-delay="100"
+        href="products.html"
+        class="inline-block py-1.5 px-4 border border-w-100 border-opacity-[8%] text-b-150 text-sm font-semibold hover:bg-w-800 hover:text-b-800 bg-blog-tag rounded"
+        >Product Updates</a
+      >
+      <h2
+        class="block my-6 text-5xl font-semibold leading-tight text-w-800"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        Crafting AI Services A Guide to Building with Agents
+      </h2>
+      <div
+        class="flex items-center justify-center gap-2"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <div class="flex items-center justify-start gap-3">
+          <img src="assets/img/card1idimg.png" alt="img" />
+          <span class="text-sm font-semibold text-w-800">Amelia Stanton</span>
+        </div>
+        <div class="flex items-center justify-center gap-2 text-sm text-w-100">
+          &#8226;
+          <span>January 8, 2024</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container px-8 pt-24 pb-12 mx-auto">
+      <img
+        data-aos="fade-up-right"
+        class="w-full mb-12"
+        src="assets/img/ai service img.png"
+        alt="img"
+      />
+      <p class="text-base text-w-100 lg:px-28 md:px-0">
+        In the ever-evolving landscape of artificial intelligence, crafting
+        intelligent services is a dynamic and challenging endeavor. One approach
+        that has gained prominence is the use of agents - intelligent entities
+        that perceive their environment and take actions to achieve specific
+        goals. This comprehensive guide explores the process of crafting AI
+        services with a focus on building and leveraging agents for optimal
+        results.
+      </p>
+      <h3 class="mt-12 mb-6 text-3xl font-semibold text-w-800 lg:px-28 md:px-0">
+        Understanding Agents in AI
+      </h3>
+      <p class="mb-12 text-base text-w-100 lg:px-28 md:px-0">
+        Agents, in the context of AI, are entities that can perceive their
+        surroundings, process information, and act to achieve defined
+        objectives. This section delves into the fundamental concepts of agents,
+        exploring their types, characteristics, and how they form the backbone
+        of intelligent services.
+      </p>
+      <h3 class="mb-6 text-3xl font-semibold text-w-800 lg:px-28 md:px-0">
+        Key Components of AI Services
+      </h3>
+      <p class="mb-12 text-base text-w-100 lg:px-28 md:px-0">
+        Building effective AI services involves considering various components.
+        From defining goals and tasks to selecting appropriate algorithms, this
+        section provides insights into the essential elements that contribute to
+        the success of AI services leveraging agents.
+      </p>
+      <img
+        class="w-full mb-12"
+        src="assets/img/ai service img.png"
+        alt="img"
+        data-aos="fade-up-left"
+      />
+      <h3 class="mb-6 text-3xl font-semibold text-w-800 lg:px-28 md:px-0">
+        Choosing the Right Frameworks
+      </h3>
+      <p class="mb-12 text-base text-w-100 lg:px-28 md:px-0">
+        Selecting the right frameworks is crucial for developing AI services.
+        This guide discusses popular frameworks and tools that facilitate the
+        creation and deployment of agents, empowering developers to make
+        informed decisions based on project requirements.
+      </p>
+      <h3 class="mb-6 text-3xl font-semibold text-w-800 lg:px-28 md:px-0">
+        Development Process
+      </h3>
+      <p class="mb-12 text-base text-w-100 lg:px-28 md:px-0">
+        A step-by-step walkthrough of the development process guides readers
+        from conceptualization to deployment. From defining objectives and
+        designing agent architectures to training and fine-tuning, each phase is
+        explored in detail to ensure a comprehensive understanding.
+      </p>
+      <h3 class="mb-6 text-3xl font-semibold text-w-800 lg:px-28 md:px-0">
+        Fine-Tuning and Optimization
+      </h3>
+      <p class="mb-12 text-base text-w-100 lg:px-28 md:px-0">
+        Optimizing agent performance is a continuous process. This section
+        covers techniques for fine-tuning and optimizing agents to enhance their
+        capabilities, efficiency, and adaptability to evolving environments.
+      </p>
+      <h3 class="mb-6 text-3xl font-semibold text-w-800 lg:px-28 md:px-0">
+        Real-World Applications
+      </h3>
+      <p class="mb-12 text-base text-w-100 lg:px-28 md:px-0">
+        The guide doesn't stop at theory; it delves into real-world applications
+        of AI services built with agents. Case studies and examples showcase how
+        businesses and industries leverage these intelligent services to achieve
+        specific goals and solve complex problems.
+      </p>
+      <h3 class="mb-6 text-3xl font-semibold text-w-800 lg:px-28 md:px-0">
+        Challenges and Considerations
+      </h3>
+      <p class="mb-12 text-base text-w-100 lg:px-28 md:px-0">
+        No exploration of AI services is complete without addressing challenges
+        and considerations. This section highlights common pitfalls, ethical
+        considerations, and ongoing challenges in the realm of crafting AI
+        services with agents.
+      </p>
+      <h3 class="mb-6 text-3xl font-semibold text-w-800 lg:px-28 md:px-0">
+        Future Trends and Innovations
+      </h3>
+      <p class="mb-12 text-base text-w-100 lg:px-28 md:px-0">
+        Looking ahead, the guide concludes with a glimpse into future trends and
+        innovations in AI services. Emerging technologies, advancements in
+        agent-based systems, and potential breakthroughs are discussed,
+        providing readers with a forward-looking perspective.
+      </p>
+      <p class="mb-12 text-base text-w-100 lg:px-28 md:px-0">
+        In summary, "Crafting AI Services: A Guide to Building with Agents" is a
+        comprehensive resource for developers, data scientists, and AI
+        enthusiasts seeking to navigate the intricate landscape of building
+        intelligent services using agents. Whether you're a seasoned
+        professional or a newcomer to the field, this guide equips you with the
+        knowledge and insights needed to embark on a successful journey in AI
+        service development.
+      </p>
+      <div class="flex items-center justify-center gap-3 text-sm text-w-100">
+        <span>Share on social</span>
+        <div class="flex items-center justify-center gap-2">
+          <a href="https://www.facebook.com/" class="inline-block"
+            ><svg
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.5 3H4.5C4.23478 3 3.98043 3.10536 3.79289 3.29289C3.60536 3.48043 3.5 3.73478 3.5 4V20C3.5 20.2652 3.60536 20.5196 3.79289 20.7071C3.98043 20.8946 4.23478 21 4.5 21H13.115V14.04H10.777V11.315H13.115V9.315C13.115 6.99 14.535 5.723 16.615 5.723C17.314 5.721 18.014 5.757 18.71 5.83V8.25H17.275C16.147 8.25 15.927 8.788 15.927 9.575V11.31H18.624L18.274 14.035H15.926V21H20.5C20.7652 21 21.0196 20.8946 21.2071 20.7071C21.3946 20.5196 21.5 20.2652 21.5 20V4C21.5 3.73478 21.3946 3.48043 21.2071 3.29289C21.0196 3.10536 20.7652 3 20.5 3Z"
+                fill="#98A1AE"
+              />
+            </svg>
+          </a>
+          <a href="https://www.x.com/" class="inline-block"
+            ><svg
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.133 7.99656C20.146 8.17156 20.146 8.34556 20.146 8.51956C20.146 13.8446 16.093 19.9806 8.686 19.9806C6.404 19.9806 4.284 19.3196 2.5 18.1716C2.824 18.2086 3.136 18.2216 3.473 18.2216C5.28599 18.2259 7.04765 17.6197 8.474 16.5006C7.63342 16.4853 6.81858 16.208 6.14324 15.7073C5.4679 15.2066 4.96578 14.5075 4.707 13.7076C4.956 13.7446 5.206 13.7696 5.468 13.7696C5.829 13.7696 6.192 13.7196 6.529 13.6326C5.61676 13.4484 4.79647 12.9539 4.20762 12.2332C3.61876 11.5126 3.29769 10.6102 3.299 9.67956V9.62956C3.836 9.92856 4.459 10.1156 5.119 10.1406C4.56609 9.77314 4.11272 9.27458 3.79934 8.68935C3.48596 8.10411 3.32231 7.45041 3.323 6.78656C3.323 6.03856 3.522 5.35256 3.871 4.75456C4.88314 5.99958 6.1455 7.01812 7.57634 7.74421C9.00717 8.47031 10.5746 8.88777 12.177 8.96956C12.115 8.66956 12.077 8.35855 12.077 8.04656C12.0767 7.51752 12.1807 6.99361 12.3831 6.5048C12.5854 6.01598 12.8821 5.57183 13.2562 5.19774C13.6303 4.82366 14.0744 4.52697 14.5632 4.32463C15.0521 4.1223 15.576 4.01829 16.105 4.01856C17.265 4.01856 18.312 4.50455 19.048 5.29056C19.9498 5.11617 20.8145 4.78698 21.604 4.31755C21.3034 5.24837 20.6738 6.03766 19.833 6.53756C20.6328 6.44633 21.4144 6.23601 22.152 5.91356C21.6011 6.71665 20.9185 7.4209 20.133 7.99656Z"
+                fill="#98A1AE"
+              />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/" class="inline-block">
+            <svg
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.48292 7.19729C6.69132 7.19729 7.67092 6.21769 7.67092 5.00929C7.67092 3.80089 6.69132 2.82129 5.48292 2.82129C4.27452 2.82129 3.29492 3.80089 3.29492 5.00929C3.29492 6.21769 4.27452 7.19729 5.48292 7.19729Z"
+                fill="#98A1AE"
+              />
+              <path
+                d="M9.73575 8.85469V20.9937H13.5047V14.9907C13.5047 13.4067 13.8027 11.8727 15.7667 11.8727C17.7037 11.8727 17.7277 13.6837 17.7277 15.0907V20.9947H21.4988V14.3377C21.4988 11.0677 20.7948 8.55469 16.9728 8.55469C15.1378 8.55469 13.9078 9.56169 13.4047 10.5147H13.3537V8.85469H9.73575ZM3.59375 8.85469H7.36875V20.9937H3.59375V8.85469Z"
+                fill="#98A1AE"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="bg-[url('../img/exploreourblogsbg.png')] bg-cover bg-center bg-no-repeat pt-12 pb-24 overflow-hidden"
+    >
+      <div class="container mx-auto px-5 xl:px-0">
+        <h2
+          class="gd-title text-5xl font-semibold leading-[64px] text-center mx-auto mb-16"
+          data-aos="fade-up"
+        >
+          Related Blog Posts
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+          <!-- BLOG CARD 1 -->
+          <div
+            class="p-8 bg-blog-card rounded border border-w-100 border-opacity-[8%]"
+            data-aos="fade-right"
+          >
+            <img class="w-full mb-8" src="assets/img/blog1.png" alt="img" />
+            <a
+              href="products.html"
+              class="inline-block py-1.5 px-4 border border-w-100 border-opacity-[8%] text-b-150 text-sm font-semibold hover:bg-w-800 hover:text-b-800 rounded"
+              >Product Updates</a
+            >
+            <a
+              href="blog-details.html"
+              class="block my-6 text-2xl font-medium text-w-800 hover:underline"
+            >
+              Crafting AI Services A Guide to Building with Agents
+            </a>
+            <div class="flex items-center justify-start gap-2">
+              <div class="flex items-center justify-start gap-3">
+                <img src="assets/img/card1idimg.png" alt="img" />
+                <span class="text-sm font-semibold text-w-800"
+                  >Amelia Stanton</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-center gap-2 text-sm text-w-100"
+              >
+                &#8226;
+                <span>January 8, 2024</span>
+              </div>
+            </div>
+          </div>
+          <!-- BLOG CARD 2 -->
+          <div
+            class="p-8 bg-blog-card rounded border border-w-100 border-opacity-[8%]"
+            data-aos="fade-up"
+          >
+            <img class="w-full mb-8" src="assets/img/blog2.png" alt="img" />
+            <a
+              href="products.html"
+              class="py-1.5 px-4 border border-w-100 border-opacity-[8%] text-b-150 text-sm font-semibold hover:bg-w-800 hover:text-b-800 rounded"
+              >Technology Explorations</a
+            >
+            <a
+              href="blog-details.html"
+              class="block my-6 text-2xl font-medium text-w-800 hover:underline"
+            >
+              LLM Prompt Mastery: ChatGPT Interaction Tips
+            </a>
+            <div class="flex gap-2">
+              <div class="flex items-center justify-center gap-3">
+                <img src="assets/img/card2idimg.png" alt="img" />
+                <span class="text-sm font-semibold text-w-800"
+                  >Nathanial Mercer</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-center gap-2 text-sm text-w-100"
+              >
+                &#8226;
+                <span>January 16, 2024</span>
+              </div>
+            </div>
+          </div>
+          <!-- BLOG CARD 3 -->
+          <div
+            class="p-8 bg-blog-card rounded border border-w-100 border-opacity-[8%]"
+            data-aos="fade-left"
+          >
+            <img class="w-full mb-8" src="assets/img/blog3.png" alt="img" />
+            <a
+              href="products.html"
+              class="py-1.5 px-4 border border-w-100 border-opacity-[8%] text-b-150 text-sm font-semibold hover:bg-w-800 hover:text-b-800 rounded"
+              >Best Practices</a
+            >
+            <a
+              href="blog-details.html"
+              class="block my-6 text-2xl font-medium text-w-800 hover:underline"
+            >
+              AI-BOT Development Your Business Advantage
+            </a>
+            <div class="flex gap-2">
+              <div class="flex items-center justify-center gap-3">
+                <img src="assets/img/card3idimg.png" alt="img" />
+                <span class="text-sm font-semibold text-w-800"
+                  >Isabella Thornton</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-center gap-2 text-sm text-w-100"
+              >
+                &#8226;
+                <span>January 24, 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-footer-bg bg-cover bg-center bg-no-repeat pt-24 pb-8">
+      <div class="container mx-auto px-5 xl:px-0">
+        <div class="mb-24 text-center">
+          <h2
+            class="gd-title text-5xl font-semibold leading-[64px] text-center mx-auto mb-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Хотите регулярные обновления продуктов?
+          </h2>
+          <p
+            class="text-xl text-w-100 mb-[32px]"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            олучайте эксклюзивные обновления на свой почтовый ящик – подпишитесь на блог.
+          </p>
+
+          <form
+            action="#"
+            class="grid lg:flex items-center justify-center gap-2 transition-all duration-300"
+            data-aos-delay="300"
+            data-aos="fade-up"
+          >
+            <input
+              type="email"
+              placeholder="Укажите емейл"
+              class="w-full sm:w-64 border border-[#515A67] focus:outline-none bg-transparent py-3 px-4 rounded placeholder:text-[#515A67] text-w-100"
+              required
+            />
+            <button
+              type="submit"
+              class="w-full sm:w-auto px-6 py-3 capitalize text-base font-semibold border border-solid border-w-900 rounded bg-w-800 text-b-800 hover:bg-transparent hover:text-w-800 transition-colors duration-300"
+            >
+              Подписаться
+            </button>
+          </form>
+        </div>
+        <div
+          class="flex flex-col items-start justify-between py-24 md:flex-row"
+        >
+          <div>
+            <a href="index.html">
+              <img src="assets/img/footerlogo.png" alt="logo" />
+            </a>
+            <p class="mt-8 text-sm font-medium capitalize text-w-800">
+              Адрес:
+            </p>
+            <p class="mb-4 text-sm text-w-100">
+              просп. Ленина, 16А, Мурманск 183032
+            </p>
+            <p class="text-sm font-medium capitalize text-w-800">контакты:</p>
+            <a class="inline-block text-sm text-w-100" href="tel:+7921-176-98-83"
+              >+7(921)-176-98-83</a
+            >
+            <br />
+            <a
+              class="inline-block text-sm text-w-100"
+              href="mailto:info@voxflowai.ru"
+              >info@voxflowai.ru</a
+            >
+            <div class="flex items-center justify-start gap-4 my-8 text-w-100">
+                  <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+                    <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+                <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+              </svg>
+
+                  </a>
+                  <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+                    <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+                <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+              </svg>
+
+                  </a>
+                  <a href="https://wa.me/79211769883" target="_blank" aria-label="WhatsApp">
+              <svg width="26" height="26" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <clipPath id="clip">
+                    <circle cx="128" cy="128" r="128"/>
+                  </clipPath>
+                </defs>
+                <circle cx="128" cy="128" r="128" fill="#25D366"/>
+                <g clip-path="url(#clip)">
+                  <path fill="#fff" d="M187.3 68.7C172.6 54 152 46 128.8 46c-46 0-83.2 37.2-83.2 83.1 0 14.6 3.8 28.9 11 41.5L46 210l41-10.7c12 6.6 25.6 10.1 39.8 10.1 46 0 83.2-37.2 83.2-83.1 0-23.2-8-43.8-22.7-58.6Zm-58.5 121c-12.4 0-24.6-3.4-35.1-9.8l-2.5-1.5-24.3 6.4 6.5-23.7-1.6-2.5c-6.7-10.5-10.2-22.5-10.2-34.9 0-36.3 29.6-65.9 65.9-65.9 17.6 0 34.1 6.8 46.5 19.2 12.4 12.5 19.2 29 19.1 46.5 0 36.3-29.6 65.9-65.9 65.9Zm39.1-48.9c-2.1-1-12.6-6.2-14.6-6.9-2-.8-3.5-1.2-5 1.2-1.5 2.3-5.8 6.9-7.1 8.3-1.3 1.5-2.6 1.7-4.7.8-12.8-5.4-21.2-9.6-29.7-21.7-2.2-3.1 2.2-2.9 6.2-11.4.7-1.5.4-2.7-.2-3.9-.6-1.2-5-12.1-6.9-16.6-1.8-4.3-3.7-3.7-5-3.8-1.3-.1-2.8-.1-4.3-.1-1.5 0-4 1-6 3-2 2-7.9 7.7-7.9 18.7s8.1 21.7 9.2 23.2c1.1 1.5 16 24.5 38.8 33.2 22.8 8.7 22.8 5.8 26.9 5.5 4.1-.3 13.2-5.3 15.1-10.4 1.9-5.1 1.9-9.5 1.3-10.4-.5-.9-1.8-1.5-3.9-2.5Z"/>
+                </g>
+              </svg>
+                  </a>
+            </div>
+          </div>
+          <div
+            class="flex md:flex-row flex-col justify-end items-start gap-[46px] lg:gap-[88px] capitalize"
+          >
+            <ul class="flex flex-col gap-4 text-base font-medium text-white">
+              <li>
+                <a href="index.html" class="inline-block hover:underline">Главная</a>
+              </li>
+              <li>
+                <a href="features.html" class="inline-block hover:underline">Решения</a>
+              </li>
+              <li>
+                <a href="products.html" class="inline-block hover:underline">Продукты</a>
+              </li>
+            </ul>
+            <ul class="flex flex-col gap-4 text-base font-medium text-white">
+              <li>
+                <a href="pricing.html" class="inline-block hover:underline">Тарифы</a>
+              </li>
+              <li>
+                <a href="blog.html" class="inline-block hover:underline">Блог</a>
+              </li>
+              <li>
+                <a href="contact.html" class="inline-block hover:underline">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center gap-3 pt-8 text-sm md:flex-row md:justify-between md:gap-0"
+        >
+          <p class="text-w-100">
+            Copyright © 2025 VoxFlowAI Все права защищены.
+          </p>
+          <ul class="flex gap-8">
+            <li>
+              <a class="text-w-100" href="privacy-policy.html"
+                >Политика конфиденциальности</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

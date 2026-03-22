@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/output.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/reviews.css">
+    <title>VoxFlowAI</title>
+  </head>
+
+  <!-- 21.03.2026 16:50 -->
+  <body class="relative font-normal bg-body">
+    <header
+      class="absolute top-0 left-0 z-50 w-full border-b border-solid border-b-700"
+    >
+      <div
+        class="items-center justify-between hidden px-5 mx-auto desktop-header lg:flex"
+      >
+        <a href="/">
+          <img src="assets/img/navlogo.svg" alt="logo" />
+        </a>
+        <nav>
+          <ul class="flex items-center justify-center">
+            <li
+              class="relative h-full px-5 border-solid xl:px-10 py-7 border-x border-b-700"
+            >
+              <span
+                class="inline-block absolute bottom-0 left-0 w-full h-[1px] bg-w-800"
+              ></span>
+              <a
+                href="/"
+                class="inline-block text-base font-medium capitalize text-w-800"
+                >главная</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="features.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >решения</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="products.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >продукты</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="pricing.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >тарифы</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="blog.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >блог</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="contact.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="items-center hidden gap-3 lg:flex">
+          <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+            <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+        <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+      </svg>
+
+          </a>
+          <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+            <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+        <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+      </svg>
+
+          </a>
+          <a href="https://wa.me/79211769883" target="_blank" aria-label="WhatsApp">
+      <svg width="26" height="26" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <clipPath id="clip">
+            <circle cx="128" cy="128" r="128"/>
+          </clipPath>
+        </defs>
+        <circle cx="128" cy="128" r="128" fill="#25D366"/>
+        <g clip-path="url(#clip)">
+          <path fill="#fff" d="M187.3 68.7C172.6 54 152 46 128.8 46c-46 0-83.2 37.2-83.2 83.1 0 14.6 3.8 28.9 11 41.5L46 210l41-10.7c12 6.6 25.6 10.1 39.8 10.1 46 0 83.2-37.2 83.2-83.1 0-23.2-8-43.8-22.7-58.6Zm-58.5 121c-12.4 0-24.6-3.4-35.1-9.8l-2.5-1.5-24.3 6.4 6.5-23.7-1.6-2.5c-6.7-10.5-10.2-22.5-10.2-34.9 0-36.3 29.6-65.9 65.9-65.9 17.6 0 34.1 6.8 46.5 19.2 12.4 12.5 19.2 29 19.1 46.5 0 36.3-29.6 65.9-65.9 65.9Zm39.1-48.9c-2.1-1-12.6-6.2-14.6-6.9-2-.8-3.5-1.2-5 1.2-1.5 2.3-5.8 6.9-7.1 8.3-1.3 1.5-2.6 1.7-4.7.8-12.8-5.4-21.2-9.6-29.7-21.7-2.2-3.1 2.2-2.9 6.2-11.4.7-1.5.4-2.7-.2-3.9-.6-1.2-5-12.1-6.9-16.6-1.8-4.3-3.7-3.7-5-3.8-1.3-.1-2.8-.1-4.3-.1-1.5 0-4 1-6 3-2 2-7.9 7.7-7.9 18.7s8.1 21.7 9.2 23.2c1.1 1.5 16 24.5 38.8 33.2 22.8 8.7 22.8 5.8 26.9 5.5 4.1-.3 13.2-5.3 15.1-10.4 1.9-5.1 1.9-9.5 1.3-10.4-.5-.9-1.8-1.5-3.9-2.5Z"/>
+        </g>
+      </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="container flex items-center justify-between px-4 py-4 mx-auto mobile-header lg:hidden"
+      >
+        <a href="/">
+          <img src="assets/img/navlogo.svg" alt="logo" />
+        </a>
+        <span class="text-white cursor-pointer menu-open-icon lg:hidden">
+          <svg
+            class="block w-8 h-8 font-semibold"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </span>
+        <div
+          class="fixed top-0 left-0 flex flex-col items-start justify-start w-full h-screen transition-all duration-300 translate-x-full bg-black mobile-menu p-7"
+        >
+          <div class="flex items-start justify-between w-full">
+            <nav>
+              <ul class="mt-5">
+                <li>
+                  <a
+                    href="index.html"
+                    class="inline-block mb-5 text-base font-medium capitalize text-w-800"
+                    >главная</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="features.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >решения</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="products.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >продукты</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="pricing.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >тарифы</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="blog.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >блог</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >контакты</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <strong class="text-white cursor-pointer mobile-menu-close-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-x-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+                />
+              </svg>
+            </strong>
+          </div>
+          <div class="flex items-center justify-start w-full gap-2 mt-6">
+          <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+            <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+        <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+      </svg>
+
+          </a>
+          <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+            <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+        <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+      </svg>
+
+          </a>
+          <a href="https://wa.me/79211769883" target="_blank" aria-label="WhatsApp">
+      <svg width="26" height="26" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <clipPath id="clip">
+            <circle cx="128" cy="128" r="128"/>
+          </clipPath>
+        </defs>
+        <circle cx="128" cy="128" r="128" fill="#25D366"/>
+        <g clip-path="url(#clip)">
+          <path fill="#fff" d="M187.3 68.7C172.6 54 152 46 128.8 46c-46 0-83.2 37.2-83.2 83.1 0 14.6 3.8 28.9 11 41.5L46 210l41-10.7c12 6.6 25.6 10.1 39.8 10.1 46 0 83.2-37.2 83.2-83.1 0-23.2-8-43.8-22.7-58.6Zm-58.5 121c-12.4 0-24.6-3.4-35.1-9.8l-2.5-1.5-24.3 6.4 6.5-23.7-1.6-2.5c-6.7-10.5-10.2-22.5-10.2-34.9 0-36.3 29.6-65.9 65.9-65.9 17.6 0 34.1 6.8 46.5 19.2 12.4 12.5 19.2 29 19.1 46.5 0 36.3-29.6 65.9-65.9 65.9Zm39.1-48.9c-2.1-1-12.6-6.2-14.6-6.9-2-.8-3.5-1.2-5 1.2-1.5 2.3-5.8 6.9-7.1 8.3-1.3 1.5-2.6 1.7-4.7.8-12.8-5.4-21.2-9.6-29.7-21.7-2.2-3.1 2.2-2.9 6.2-11.4.7-1.5.4-2.7-.2-3.9-.6-1.2-5-12.1-6.9-16.6-1.8-4.3-3.7-3.7-5-3.8-1.3-.1-2.8-.1-4.3-.1-1.5 0-4 1-6 3-2 2-7.9 7.7-7.9 18.7s8.1 21.7 9.2 23.2c1.1 1.5 16 24.5 38.8 33.2 22.8 8.7 22.8 5.8 26.9 5.5 4.1-.3 13.2-5.3 15.1-10.4 1.9-5.1 1.9-9.5 1.3-10.4-.5-.9-1.8-1.5-3.9-2.5Z"/>
+        </g>
+      </svg>
+          </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="pt-[176px] pb-24 bg-hero bg-cover bg-center bg-no-repeat overflow-hidden"
+    >
+      <div class="mx-auto px-5 xl:px-0 container">
+        <div
+          class="flex justify-between items-start flex-col lg:flex-row gap-[38px] md:gap-[76px]"
+        >
+          <!-- HERO LEFT -->
+          <div class="w-full text-center lg:text-left xl:mt-[32px]">
+            <h1
+              class="pb-4 text-5xl font-semibold leading-tight lg:text-8xl text-w-800"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              Голосовые интерфейсы нового
+              <span class="gd-title">поколения</span>
+            </h1>
+            <p
+              class="w-full md:max-w-[560px] pt-4 pb-8 text-base text-w-100 lg:text-xl"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              Превратите общение с клиентами в круглосуточную машину продаж. Интеллектуальные чат-боты и голосовые помощники берут на себя рутину, чтобы ваш бизнес рос.
+            </p>
+            <div
+              class="flex items-center justify-center gap-4 lg:justify-start"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <a
+                href="form.html"
+                class="inline-block px-6 py-3 font-semibold border border-solid rounded border-w-100 text-b-800 hover:text-w-800 bg-w-800 hover:bg-transparent transition-all duration-300"
+                >Запросить демо</a
+              >
+            </div>
+          </div>
+           <!-- HERO RIGHT -->
+            <div
+              id="voxbot-card"
+              class="voxbot-card p-4 md:p-8 w-full lg:max-w-[474px] bg-home-card rounded-xl border border-solid border-[#1472FF29] overflow-hidden"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="voxbot-card-inner bg-center bg-no-repeat bg-cover bg-home-card-bg rounded-xl">
+                <div class="flex items-start justify-between p-4 border-b md:p-6 border-b-300">
+                  <div class="flex items-start justify-start gap-3">
+                    <img src="assets/img/chatbot-avatar.png" alt="chatbot-avatar.png" />
+                    <div class="flex flex-col items-start justify-start">
+                      <span class="block mb-1 text-base font-medium lg:mb-0 text-w-800">
+                        VoxBot
+                      </span>
+                      <span class="text-xs text-left md:text-sm lg:text-base text-w-300">
+                        24/7 глобальная поддержка
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start justify-end gap-4 pt-1">
+                    <strong id="refresh-chat" class="cursor-pointer">
+                      <svg
+                        width="30"
+                        height="22"
+                        viewBox="0 0 30 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.0647 21.3331C12.181 21.3331 9.72671 20.3297 7.70194 18.3229C5.67716 16.316 4.66477 13.875 4.66477 10.9998V9.9587L2.19807 12.4254L0.792969 11.0203L5.66474 6.14857L10.5365 11.0203L9.1314 12.4254L6.6647 9.9587V10.9998C6.6647 13.316 7.48009 15.284 9.11087 16.9037C10.7416 18.5233 12.7263 19.3332 15.0647 19.3332C15.6169 19.3332 16.1686 19.2729 16.7199 19.1524C17.2711 19.0319 17.8092 18.8511 18.334 18.6101L19.8339 20.11C19.0835 20.5135 18.3087 20.8182 17.5096 21.0241C16.7104 21.2301 15.8955 21.3331 15.0647 21.3331ZM24.3314 15.851L19.4596 10.9793L20.8647 9.5742L23.3314 12.0409V10.9998C23.3314 8.68356 22.516 6.7156 20.8853 5.09594C19.2545 3.47627 17.2699 2.66644 14.9314 2.66644C14.3793 2.66644 13.8276 2.72669 13.2763 2.8472C12.725 2.96772 12.187 3.14848 11.6622 3.3895L10.1622 1.88957C10.9126 1.48615 11.6874 1.18145 12.4865 0.975472C13.2857 0.769494 14.1006 0.666504 14.9314 0.666504C17.8152 0.666504 20.2694 1.66992 22.2942 3.67674C24.319 5.68358 25.3314 8.1246 25.3314 10.9998V12.0409L27.7981 9.5742L29.2032 10.9793L24.3314 15.851Z"
+                          fill="#3F4650"
+                        />
+                      </svg>
+                    </strong>
+                    <strong id="close-chat" class="cursor-pointer">
+                        <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.53401 17.872L0.128906 16.4669L7.59557 9.00019L0.128906 1.53352L1.53401 0.128418L9.00067 7.59508L16.4673 0.128418L17.8724 1.53352L10.4058 9.00019L17.8724 16.4669L16.4673 17.872L9.00067 10.4053L1.53401 17.872Z"
+                          fill="#3F4650"
+                        />
+                      </svg>
+                    </strong>
+                  </div>
+                </div>
+
+                <div class="voxbot-body flex flex-col items-start gap-4 p-4 md:p-6">
+                  <div
+                    id="chat-messages"
+                    class="voxbot-messages flex flex-col items-start gap-4 w-full pr-2"
+                    >
+                    <!-- -message- -->
+                    <div class="flex items-end justify-start gap-2">
+                      <img src="assets/img/chatuser2.svg" alt="chatuser2.svg" />
+                      <p
+                        class="p-3 w-auto sm:max-w-[216px] text-left rounded rounded-bl-none text-sm md:text-base bg-chat-secondary text-w-300"
+                      >
+                        Привет, я VoxBot! Чем могу помочь?
+                      </p>
+                    </div>
+
+                  </div>
+                  <div
+                    class="voxbot-input-wrap relative flex justify-between items-center w-full rounded border border-input-brdr"
+                  >
+                    <input
+                      id="chat-input"
+                      class="w-full pl-3 pr-16 py-3 text-sm bg-transparent focus-visible:outline-none md:text-base text-w-700"
+                      type="text"
+                      placeholder="Message VoxBot..."
+                    />
+
+                    <div
+                      class="absolute flex items-center justify-end gap-2 top-1/2 -translate-y-1/2 right-2 shrink-0 z-10"
+                    >
+                      <strong class="cursor-pointer">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M17.6733 15.6442C17.6733 17.2682 17.1082 18.6501 15.9781 19.7901C14.848 20.93 13.4724 21.5 11.8512 21.5C10.2301 21.5 8.85284 20.93 7.71951 19.7901C6.58619 18.6501 6.01953 17.2682 6.01953 15.6442V6.65383C6.01953 5.49999 6.42016 4.51923 7.22143 3.71155C8.02271 2.90385 9.00027 2.5 10.1541 2.5C11.308 2.5 12.2855 2.90385 13.0868 3.71155C13.8881 4.51923 14.2887 5.49999 14.2887 6.65383V15.1634C14.2887 15.8403 14.0529 16.4182 13.5814 16.8971C13.1099 17.3759 12.5352 17.6153 11.8574 17.6153C11.1796 17.6153 10.6012 17.3776 10.1224 16.9021C9.64356 16.4265 9.40413 15.847 9.40413 15.1634V6.38463H10.9041V15.1634C10.9041 15.4314 10.9942 15.657 11.1743 15.8404C11.3544 16.0237 11.5785 16.1154 11.8464 16.1154C12.1144 16.1154 12.3384 16.0237 12.5185 15.8404C12.6987 15.657 12.7887 15.4314 12.7887 15.1634V6.64423C12.7785 5.90576 12.522 5.28043 12.0193 4.76825C11.5166 4.25607 10.8949 3.99998 10.1541 3.99998C9.41642 3.99998 8.7929 4.25767 8.28353 4.77305C7.77416 5.28843 7.51948 5.91536 7.51948 6.65383V15.6442C7.50923 16.8532 7.92718 17.8814 8.77333 18.7288C9.6195 19.5763 10.6466 20 11.8547 20C13.0458 20 14.0582 19.5763 14.892 18.7288C15.7257 17.8814 16.1528 16.8532 16.1734 15.6442V6.38463H17.6733V15.6442Z"
+                            fill="#3F4650"
+                          />
+                        </svg>
+                      </strong>
+                      <strong id="send-message" class="cursor-pointer">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.5 19.2499V13.673L10.423 11.9999L3.5 10.3269V4.75L20.7114 11.9999L3.5 19.2499Z"
+                            fill="#3F4650"
+                          />
+                        </svg>
+                      </strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+        <!-- BRAND -->
+        <div class="mt-3 text-center lg:text-left">
+          <span
+            class="inline-block text-base font-medium text-w-800"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            >Наши клиенты</span
+          >
+          <div
+            class="hero-brand overflow-hidden whitespace-nowrap relative w-full lg:max-w-[724px] mt-8"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="inline-flex logo_items animate-slides">
+              <img src="assets/img/partrners/2GIS_logo.svg" alt="brand" class="mx-4" />              
+              <img src="assets/img/partrners/rostelecom-logo.svg" alt="brand" class="mx-4" />
+              <img src="assets/img/partrners/skolkovo-logo.svg" alt="brand" class="mx-4" />
+              <img src="assets/img/partrners/pek-logistic-logo-ru.svg" alt="brand" class="mx-4" />
+              <img src="assets/img/partrners/utkonos-logo.svg" alt="brand" class="mx-4" />
+              <img src="assets/img/partrners/X5Group.svg" alt="brand" class="mx-4" />
+            </div>
+            <div class="inline-flex logo_items animate-slides">
+              <img src="assets/img/partrners/2GIS_logo.svg" alt="brand" class="mx-4" />              
+              <img src="assets/img/partrners/rostelecom-logo.svg" alt="brand" class="mx-4" />
+              <img src="assets/img/partrners/skolkovo-logo.svg" alt="brand" class="mx-4" />
+              <img src="assets/img/partrners/pek-logistic-logo-ru.svg" alt="brand" class="mx-4" />
+              <img src="assets/img/partrners/utkonos-logo.svg" alt="brand" class="mx-4" />
+              <img src="assets/img/partrners/X5Group.svg" alt="brand" class="mx-4" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-auto container px-5 xl:px-0 py-24 overflow-hidden">
+      <h2
+        class="gd-title mx-auto mb-16 text-center text-5xl font-semibold leading-[64px]"
+        data-aos="fade-up"
+      >
+        Сделайте общение с вашими клиентами качественней и дешевле
+      </h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-[30px]"
+      >
+        <!-- CARD 1 -->
+        <div
+          class="p-8 bg-feature-card rounded border border-w-100 border-opacity-[8%]"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+<svg width="50" height="50" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="5" y="5" width="30" height="30" rx="4" stroke="#47A9FF" stroke-width="1.667"/>
+<path d="M10 26L16 20L22 23L30 14" stroke="#47A9FF" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30 14H26M30 14V18" stroke="#47A9FF" stroke-width="1.667" stroke-linecap="round"/>
+</svg>
+
+          <h3 class="mt-12 mb-3 text-2xl font-medium text-w-800">
+            Персонал
+          </h3>
+          <p class="text-base text-w-100">
+            Cократим расходы на персонал до 50% без потери качества обслуживания.
+          </p>
+        </div>
+        <!-- CARD 2 -->
+        <div
+          class="p-8 bg-feature-card rounded border border-w-100 border-opacity-[8%]"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+<svg width="50" height="50" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="5" y="7" width="20" height="16" rx="3" stroke="#47A9FF" stroke-width="1.667"/>
+<path d="M11 23L9 28L16 23" stroke="#47A9FF" stroke-width="1.667" stroke-linecap="round"/>
+<circle cx="29" cy="23" r="6" stroke="#47A9FF" stroke-width="1.667"/>
+<path d="M29 20V23L31 25" stroke="#47A9FF" stroke-width="1.667" stroke-linecap="round"/>
+</svg>
+
+          <h3 class="mt-12 mb-3 text-2xl font-medium text-w-800">
+            Лояльность
+          </h3>
+          <p class="text-base text-w-100">
+            Повысим лояльность клиентов, обеспечивая мгновенные ответы 24/7.
+          </p>
+        </div>
+        <!-- CARD 3 -->
+        <div
+          class="p-8 bg-feature-card rounded border border-w-100 border-opacity-[8%]"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+<svg width="50" height="50" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="20" cy="13" r="4" stroke="#47A9FF" stroke-width="1.667"/>
+<path d="M10 30C10 25.5 14 23 20 23C26 23 30 25.5 30 30" stroke="#47A9FF" stroke-width="1.667" stroke-linecap="round"/>
+<path d="M7 9H12M7 9L10 6M7 9L10 12" stroke="#47A9FF" stroke-width="1.667" stroke-linecap="round"/>
+</svg>
+
+
+          <h3 class="mt-12 mb-3 text-2xl font-medium text-w-800">
+            Эффективность
+          </h3>
+          <p class="text-base text-w-100">
+            Мы собираем лиды даже когда ваши менеджеры отдыхают.
+          </p>
+        </div>
+        <!-- CARD 4 -->
+        <div
+          class="p-8 bg-feature-card rounded border border-w-100 border-opacity-[8%]"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+<svg width="50" height="50" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="6" y="10" width="8" height="8" rx="2" stroke="#47A9FF" stroke-width="1.667"/>
+<rect x="26" y="10" width="8" height="8" rx="2" stroke="#47A9FF" stroke-width="1.667"/>
+<rect x="16" y="22" width="8" height="8" rx="2" stroke="#47A9FF" stroke-width="1.667"/>
+<path d="M14 14H26M20 18V22" stroke="#47A9FF" stroke-width="1.667" stroke-linecap="round"/>
+</svg>
+
+
+          <h3 class="mt-12 mb-3 text-2xl font-medium text-w-800">
+            Гибкость
+          </h3>
+          <p class="text-base text-w-100">
+            Интеграция с CRM и другими бизнес-ПО.
+          </p>
+        </div>
+        <!-- CARD 5 -->
+        <div
+          class="p-8 bg-feature-card rounded border border-w-100 border-opacity-[8%]"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+<svg width="50" height="50" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="8" y="6" width="24" height="18" rx="6" stroke="#47A9FF" stroke-width="1.667"/>
+<path d="M16 24L13 30L21 24" stroke="#47A9FF" stroke-width="1.667" stroke-linecap="round"/>
+<path d="M15 13H25M15 17H22" stroke="#47A9FF" stroke-width="1.667" stroke-linecap="round"/>
+</svg>
+
+
+          <h3 class="mt-12 mb-3 text-2xl font-medium text-w-800">
+            Инновации
+          </h3>
+          <p class="text-base text-w-100">
+            NLU - технологии для естественной коммуникации и понимая контекста.
+          </p>
+        </div>
+        <!-- CARD 6 -->
+        <div
+          class="p-8 bg-feature-card rounded border border-w-100 border-opacity-[8%]"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+<svg width="50" height="50" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="5" y="5" width="30" height="30" rx="4" stroke="#47A9FF" stroke-width="1.667"/>
+<path d="M12 26V18M20 26V14M28 26V10" stroke="#47A9FF" stroke-width="1.667" stroke-linecap="round"/>
+</svg>
+
+
+          <h3 class="mt-12 mb-3 text-2xl font-medium text-w-800">
+            Аналитика
+          </h3>
+          <p class="text-base text-w-100">
+            Сквозная история диалогов, аналитика и отчеты.
+          </p>
+        </div>
+        <!-- CARD 7 -->
+        <div
+          class="p-8 bg-feature-card rounded border border-w-100 border-opacity-[8%]"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+<svg width="50" height="50" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="5" y="6" width="30" height="28" rx="4" stroke="#47A9FF" stroke-width="1.667"/>
+<path d="M5 14H35" stroke="#47A9FF" stroke-width="1.667"/>
+<rect x="10" y="18" width="8" height="8" rx="1.5" stroke="#47A9FF" stroke-width="1.667"/>
+<path d="M22 20H30M22 24H28" stroke="#47A9FF" stroke-width="1.667" stroke-linecap="round"/>
+</svg>
+
+
+          <h3 class="mt-12 mb-3 text-2xl font-medium text-w-800">
+            Омниканальность
+          </h3>
+          <p class="text-base text-w-100">
+            Единый интерфейс и личный кабинет.
+          </p>
+        </div>
+        <!-- CARD 8 -->
+        <div
+          class="p-8 bg-feature-card rounded border border-w-100 border-opacity-[8%]"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+<svg width="50" height="50" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<!-- контейнер -->
+<rect x="5" y="5" width="30" height="30" rx="4" stroke="#47A9FF" stroke-width="1.667"/>
+
+<!-- шестерёнка -->
+<circle cx="18" cy="20" r="4" stroke="#47A9FF" stroke-width="1.667"/>
+<path d="M18 12V14M18 26V28M10 20H12M24 20H26M13.5 15.5L14.8 16.8M21.2 23.2L22.5 24.5M22.5 15.5L21.2 16.8M14.8 23.2L13.5 24.5"
+stroke="#47A9FF"
+stroke-width="1.667"
+stroke-linecap="round"/>
+
+<!-- стрелка ускорения -->
+<path d="M24 14L30 20L24 26" stroke="#47A9FF" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>
+
+          <h3 class="mt-12 mb-3 text-2xl font-medium text-w-800">Оптимизация</h3>
+          <p class="text-base text-w-100">
+            Автоматизация рутины и ускорение бизнес-процессов.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-24 pb-12 bg-feature-card overflow-hidden">
+      <div class="mx-auto px-5 xl:px-0 container">
+        <h2
+          class="gd-title text-5xl font-semibold leading-[64px] text-center mx-auto mb-16"
+          data-aos="fade-up"
+        >
+          Использование наших продуктов
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
+          <!-- API CARD 1 -->
+          <div
+            class="p-8 rounded border border-w-100 border-opacity-[8%] bg-api-card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img
+              class="w-full"
+              src="assets/img/ai-int1.png"
+              alt="ai-int1.png"
+            />
+            <h4 class="mt-8 mb-3 text-3xl font-medium text-w-800">
+              Входящие вызовы
+            </h4>
+            <p class="mb-6 text-base text-w-100">
+              Тратите много ресурсов на колл-центр, а операторы всё равно не справляются с нагрузкой? Выгорание сотрудников и текучка только растут.
+              Решение — наши виртуальные помощники. Они работают 24/7, ускоряют обработку обращений, автоматически распределяют звонки и снижают расходы, повышая эффективность операторов.
+            </p>
+            <a
+              href="features.html"
+              class="inline-block px-8 py-3 text-base font-semibold border border-solid border-b-100 rounded text-w-800 hover:text-b-800 hover:bg-w-800 transition-all duration-300"
+              >Подробнее</a
+            >
+          </div>
+          <!-- API CARD 2 -->
+          <div
+            class="p-8 rounded border border-w-100 border-opacity-[8%] bg-api-card"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              class="w-full"
+              src="assets/img/ai-int2.png"
+              alt="ai-int2.png"
+            />
+            <h4 class="mt-8 mb-3 text-3xl font-medium text-w-800">
+              Бронирование
+            </h4>
+            <p class="mb-6 text-base text-w-100">
+              Маркетинг и реклама требуют постоянной коммуникации с клиентами: информировать о предложениях и получать обратную связь. Но это часто требует больших затрат на людей, время и ресурсы.
+              Решение — интеллектуальные боты, которые автоматизируют общение с клиентами, снижая расходы и повышая эффективность маркетинга
+            </p>
+            <a
+              href="features.html"
+              class="inline-block px-8 py-3 text-base font-semibold border border-solid rounded border-b-100 text-w-800 hover:text-b-800 hover:bg-w-800 transition-all duration-300"
+              >Подробнее</a
+            >
+          </div>
+          <!-- API CARD 3 -->
+          <div
+            class="p-8 rounded border border-w-100 border-opacity-[8%] bg-api-card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img
+              class="w-full"
+              src="assets/img/ai-int3.png"
+              alt="ai-int3.png"
+            />
+            <h4 class="mt-8 mb-3 text-3xl font-medium text-w-800">
+              Продажи
+            </h4>
+            <p class="mb-6 text-base text-w-100">
+              Продажи — ключевой процесс любого бизнеса. Усильте их с помощью интеллектуальных ботов: они общаются с клиентами 24/7, ведут десятки диалогов одновременно, принимают заказы и автоматически обрабатывают их, увеличивая объём и качество продаж.
+            </p>
+            <a
+              href="features.html"
+              class="inline-block px-8 py-3 text-base font-semibold border border-solid rounded border-b-100 text-w-800 hover:text-b-800 hover:bg-w-800 transition-all duration-300"
+              >Подробнее</a
+            >
+          </div>
+          <!-- API CARD 4 -->
+          <div
+            class="p-8 rounded border border-w-100 border-opacity-[8%] bg-api-card"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              class="w-full"
+              src="assets/img/ai-int4.png"
+              alt="ai-int4.png"
+            />
+            <h4 class="mt-8 mb-3 text-3xl font-medium text-w-800">
+              Информирование клиентов
+            </h4>
+            <p class="mb-6 text-base text-w-100">
+              По мере роста бизнеса растёт и потребность быстро информировать клиентов о новостях, акциях и важных обновлениях. Ручные коммуникации требуют много времени и ресурсов.
+              Автоматизация позволяет делать оповещения быстрее, дешевле и значительно эффективнее.
+            </p>
+            <a
+              href="features.html"
+              class="inline-block px-8 py-3 text-base font-semibold border border-solid rounded border-b-100 text-w-800 hover:text-b-800 hover:bg-w-800 transition-all duration-300"
+              >Подробнее</a
+            >
+          </div>
+          <!-- API CARD 5 -->
+          <div
+            class="p-8 rounded border border-w-100 border-opacity-[8%] bg-api-card"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              class="w-full"
+              src="assets/img/ai-int5.png"
+              alt="ai-int5.png"
+            />
+            <h4 class="mt-8 mb-3 text-3xl font-medium text-w-800">
+              Сервисная и техническая поддержка
+            </h4>
+            <p class="mb-6 text-base text-w-100">
+              Продать клиенту — только половина дела. Чтобы он возвращался снова, нужна быстрая и качественная поддержка.
+              Но её содержание требует больших затрат. Как автоматизировать поддержку и снизить расходы?
+            </p>
+            <a
+              href="features.html"
+              class="inline-block px-8 py-3 text-base font-semibold border border-solid rounded border-b-100 text-w-800 hover:text-b-800 hover:bg-w-800 transition-all duration-300"
+              >Подробнее</a
+            >
+          </div>
+                    <!-- API CARD 6 -->
+          <div
+            class="p-8 rounded border border-w-100 border-opacity-[8%] bg-api-card"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              class="w-full"
+              src="assets/img/ai-int6.png"
+              alt="ai-int6.png"
+            />
+            <h4 class="mt-8 mb-3 text-3xl font-medium text-w-800">
+              Обратная связь
+            </h4>
+            <p class="mb-6 text-base text-w-100">
+              Чтобы бизнес развивался, важно регулярно получать обратную связь от клиентов: узнавать их мнение о продуктах, предложениях и качестве сервиса.
+              Но массовые опросы часто требуют времени и ресурсов. Как сделать их быстрыми, регулярными и недорогими?
+            </p>
+            <a
+              href="features.html"
+              class="inline-block px-8 py-3 text-base font-semibold border border-solid rounded border-b-100 text-w-800 hover:text-b-800 hover:bg-w-800 transition-all duration-300"
+              >Подробнее</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="pt-12 pb-24 bg-center bg-no-repeat bg-cover bg-guide-card overflow-hidden"
+    >
+      <div class="mx-auto px-5 xl:px-0 container">
+        <h2
+          class="gd-title mx-auto mb-16 text-center text-5xl font-semibold leading-[64px]"
+          data-aos="fade-up"
+        >
+          Интеграция
+        </h2>
+        <div class="flex flex-col gap-[30px]">
+          <!-- GUIDE CARD 1 -->
+          <div
+            class="flex flex-col lg:flex-row gap-0 lg:gap-[30px] rounded border border-guide-border bg-guide-card"
+            data-aos="fade-up-right"
+          >
+            <div class="w-full p-8 lg:w-1/2">
+              <img
+                class="w-full"
+                src="assets/img/guide-card1.png"
+                alt="guide-card1"
+              />
+            </div>
+            <div
+              class="flex flex-col items-start justify-center w-full px-8 pb-8 lg:pb-0 lg:px-16 lg:w-1/2"
+            >
+              <h3 class="pb-3 text-3xl font-medium text-w-800">
+                Подключайте ко всему
+              </h3>
+              <p class="text-base text-w-100">
+                Все наши продукты имеют лёгкую интеграцию со всеми популярными интернет-мессенджерами, социальными сетями, CRM-системами, чат-платформами, решениями для корпоративной телефонии и многими другими площадками для общения бизнеса со своими клиентами.
+              </p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- reviews -->
+<section>
+  <div class="py-24 bg-center bg-no-repeat bg-cover bg-trusted-bg overflow-hidden">
+    <div class="mx-auto px-5 xl:px-0 container">
+      <h2 class="gd-title mx-auto mb-8 text-center text-5xl font-semibold leading-[64px]">
+        Отзывы наших клиентов
+      </h2>
+
+      <div class="mb-10 flex justify-end">
+        <a
+          href="add-review.html"
+          class="add-review-btn inline-block mb-8 px-6 py-3 capitalize text-base font-semibold border border-solid border-w-900 rounded bg-w-800 text-b-800 hover:bg-transparent hover:text-w-800 transition-all duration-300"
+        >
+          Добавить отзыв
+        </a>
+      </div>
+
+      <div class="trusted-marquee overflow-hidden whitespace-nowrap">
+        <div class="trusted-track" id="reviews-container"></div>
+        <div class="trusted-track" id="reviews-container-duplicate" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Шаблон карточки -->
+<template id="review-template">
+  <div class="trusted-card p-8 rounded border border-solid border-w-100 border-opacity-[8%] bg-trust-card whitespace-normal flex flex-col justify-between min-h-[400px]">
+    <div>
+      <p class="review-text mt-8 mb-24 text-base text-w-100 text-fix"></p>
+    </div>
+
+    <div class="mt-10">
+      <h3 class="reviewer-name mt-3 mb-1 text-sm font-semibold text-w-800"></h3>
+      <h3 class="reviewer-location text-sm font-normal text-w-100"></h3>
+    </div>
+  </div>
+</template>
+
+    <div class="py-24 overflow-hidden">
+      <div class="mx-auto px-5 xl:px-0 container">
+        <h2
+          class="gd-title text-5xl font-semibold leading-[64px] text-center mx-auto mb-16"
+          data-aos="fade-up"
+        >
+          Выберите удобный тариф
+        </h2>
+        <div
+          id="plansGrid"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px]"
+        >
+          <!-- PRICING CARD 2 -->
+          <div
+            class="p-8 border border-solid border-w-100 border-opacity-[8%] rounded bg-transparent hover:bg-api-card"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <h3 class="text-2xl font-semibold capitalize text-w-800">Базовый</h3>
+            <p class="mt-2 mb-8 text-base text-w-100">
+              Малый бизнес и стартапы, начинающие использовать роботов для автоматизации.
+            </p>
+            <a
+              href="#"
+              class="block mt-4 mb-4 py-3 border-[1px] border-solid border-w-100 border-opacity-[8%] rounded w-full capitalize text-center text-base font-semibold text-w-800 hover:bg-w-800 hover:text-b-800 transition-all duration-300"
+              >Получить</a
+            >
+            <span class="inline-block w-full h-[1px] bg-b-700"></span>
+            <ul class="mt-6">
+              <li
+                class="flex items-start justify-start gap-2 text-sm text-w-100"
+              >
+                <img src="assets/img/plus.png" alt="check" />Создание скрипта
+              </li>
+              <li
+                class="flex items-start justify-start gap-2 my-4 text-sm text-w-100"
+              >
+                <img src="assets/img/plus.png" alt="check" />Сборка сценария
+              </li>
+              <li
+                class="flex items-start justify-start gap-2 text-sm text-w-100"
+              >
+                <img src="assets/img/plus.png" alt="check" />Одна задача в диалоге
+              </li>
+              <li
+                class="flex items-start justify-start gap-2 my-4 text-sm text-w-100"
+              >
+                <img src="assets/img/plus.png" alt="check" />До 15 входящих вопросов
+              </li>
+              <li
+                class="flex items-start justify-start gap-2 text-sm text-w-100"
+              >
+                <img src="assets/img/plus.png" alt="check" />Обучение по платформе
+              </li>
+            </ul>
+          </div>
+          <!-- PRICING CARD 3 -->
+          <div
+            class="p-8 border border-solid border-w-100 border-opacity-[8%] rounded bg-transparent bg-api-card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <h3 class="text-2xl font-semibold capitalize text-w-800">
+              Стандарт
+            </h3>
+            <p class="mt-2 mb-8 text-base text-w-100">
+              Средний бизнес, сложные сценарии с двумя и более задачами в диалоге.
+            </p>
+            <a
+              href="#"
+              class="block mt-4 mb-4 py-3 border-[1px] border-solid border-w-100 border-opacity-[8%] rounded w-full capitalize text-center text-base font-semibold bg-w-800 text-b-800 transition-all duration-300"
+              >Получить</a
+            >
+            <span class="inline-block w-full h-[1px] bg-b-700"></span>
+            <ul class="mt-6">
+              <li
+                class="flex items-start justify-start gap-2 text-sm text-w-100"
+              >
+                <img src="assets/img/check.png" alt="check" />Создание скрипта
+              </li>
+              <li
+                class="flex items-start justify-start gap-2 my-4 text-sm text-w-100"
+              >
+                <img src="assets/img/check.png" alt="check" />Сборка сценария
+              </li>
+              <li
+                class="flex items-start justify-start gap-2 text-sm text-w-100"
+              >
+                <img src="assets/img/plus.png" alt="check" />Пилотный запуск
+              </li>
+              <li
+                class="flex items-start justify-start gap-2 my-4 text-sm text-w-100"
+              >
+                <img src="assets/img/plus.png" alt="check" />До 2х задач в диалоге
+              </li>
+              <li
+                class="flex items-start justify-start gap-2 text-sm text-w-100"
+              >
+                <img src="assets/img/plus.png" alt="check" />До 35 входящих вопросов
+              </li>
+              <li
+                class="flex items-start justify-start gap-2 my-4 text-sm text-w-100"
+              >
+                <img src="assets/img/check.png" alt="check" />Обучение по платформе
+              </li>
+            </ul>
+          </div>
+          <!-- PRICING CARD 4 -->
+          <div
+            class="p-8 border border-solid border-w-100 border-opacity-[8%] rounded bg-transparent hover:bg-api-card"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <h3 class="text-2xl font-semibold capitalize text-w-800">
+              Максимальный
+            </h3>
+            <p class="mt-2 mb-8 text-base text-w-100">
+              Крупный бизнес с высокими требованиями к функциональности.
+            </p>
+            <a
+              href="#"
+              class="block mt-4 mb-4 py-3 border-[1px] border-solid border-w-100 border-opacity-[8%] rounded w-full capitalize text-center text-base font-semibold text-w-800 hover:bg-w-800 hover:text-b-800 transition-all duration-300"
+              >Получить</a
+            >
+            <span class="inline-block w-full h-[1px] bg-b-700"></span>
+            <ul class="mt-6">
+              <li
+                class="flex items-start justify-start gap-2 text-sm text-w-100"
+              >
+                <img src="assets/img/check.png" alt="check" />Создание скрипта
+              </li>
+              <li
+                class="flex items-start justify-start gap-2 my-4 text-sm text-w-100"
+              >
+                <img src="assets/img/check.png" alt="check" />Сборка сценария
+              </li>
+              <li
+                class="flex items-start justify-start gap-2 text-sm text-w-100"
+              >
+                <img src="assets/img/plus.png" alt="check" />Создание детальной статус-модели
+              </li>
+              <li
+                class="flex items-start justify-start gap-2 my-4 text-sm text-w-100"
+              >
+                <img src="assets/img/plus.png" alt="check" />Мультиканал
+              </li>
+              <li
+                class="flex items-start justify-start gap-2 text-sm text-w-100"
+              >
+                <img src="assets/img/plus.png" alt="check" />Вопросы не ограничены
+              </li>
+              <li
+                class="flex items-start justify-start gap-2 my-4 text-sm text-w-100"
+              >
+                <img src="assets/img/plus.png" alt="check" />Скидки на обучение сотрудников
+              </li>
+                <li
+                class="flex items-start justify-start gap-2 my-4 text-sm text-w-100"
+              >
+                <img src="assets/img/check.png" alt="check" />Обучение по платформе
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="pt-12 pb-24 bg-blog-bg bg-cover bg-center bg-no-repeat overflow-hidden"
+    >
+      <div class="mx-auto px-5 xl:px-0 container">
+        <h2
+          class="gd-title text-5xl font-semibold leading-[64px] text-center mx-auto mb-16"
+          data-aos="fade-up"
+        >
+          Следите за обновлениями в наших блогах
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+          <!-- BLOG CARD 1 -->
+          <div
+            class="p-8 bg-blog-card rounded border border-w-100 border-opacity-[8%]"
+            data-aos="fade-right"
+          >
+            <img class="w-full mb-8" src="assets/img/blog/1_346x200.png" alt="img" />
+            <a
+              href="products.html"
+              class="inline-block py-1.5 px-4 border border-w-100 border-opacity-[8%] text-b-150 text-sm font-semibold hover:bg-w-800 hover:text-b-800 rounded"
+              >Продажи и автоматизация</a
+            >
+            <a
+              href="blog-details1.html"
+              class="block my-6 text-2xl font-medium text-w-800 hover:underline"
+            >
+              Зачем бизнесу чат-бот для продаж
+            </a>
+            <div class="flex items-center justify-start gap-2">
+              <div class="flex items-center justify-start gap-3">
+                <img src="assets/img/card1idimg.png" alt="img" />
+                <span class="text-sm font-semibold text-w-800"
+                  >Редакция VF Blog</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-center gap-2 text-sm text-w-100"
+              >
+                &#8226;
+                <span>15 января 2026</span>
+              </div>
+            </div>
+          </div>
+          <!-- BLOG CARD 2 -->
+          <div
+            class="p-8 bg-blog-card rounded border border-w-100 border-opacity-[8%]"
+            data-aos="fade-up"
+          >
+            <img class="w-full mb-8" src="assets/img/blog/3_346x200.png" alt="img" />
+            <a
+              href="products.html"
+              class="py-1.5 px-4 border border-w-100 border-opacity-[8%] text-b-150 text-sm font-semibold hover:bg-w-800 hover:text-b-800 rounded"
+              >Технологии</a
+            >
+            <a
+              href="blog-details2.html"
+              class="block my-6 text-2xl font-medium text-w-800 hover:underline"
+            >
+              Как ИИ меняет бизнес-процессы в 2025
+            </a>
+            <div class="flex gap-2">
+              <div class="flex items-center justify-center gap-3">
+                <img src="assets/img/card2idimg.png" alt="img" />
+                <span class="text-sm font-semibold text-w-800"
+                  >Редакция VF Blog</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-center gap-2 text-sm text-w-100"
+              >
+                &#8226;
+                <span>20 февраля 2026</span>
+              </div>
+            </div>
+          </div>
+          <!-- BLOG CARD 3 -->
+          <div
+            class="p-8 bg-blog-card rounded border border-w-100 border-opacity-[8%]"
+            data-aos="fade-left"
+          >
+            <img class="w-full mb-8" src="assets/img/blog/5_346x200.png" alt="img" />
+            <a
+              href="products.html"
+              class="py-1.5 px-4 border border-w-100 border-opacity-[8%] text-b-150 text-sm font-semibold hover:bg-w-800 hover:text-b-800 rounded"
+              >Интеграция</a
+            >
+            <a
+              href="blog-details3.html"
+              class="block my-6 text-2xl font-medium text-w-800 hover:underline"
+            >
+              Нейросети для автоматизации и роста продаж
+            </a>
+            <div class="flex gap-2">
+              <div class="flex items-center justify-center gap-3">
+                <img src="assets/img/card3idimg.png" alt="img" />
+                <span class="text-sm font-semibold text-w-800"
+                  >Редакция VF Blog</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-center gap-2 text-sm text-w-100"
+              >
+                &#8226;
+                <span>20 марта 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frequently Asked Questions -->
+    <div class="my-24 overflow-hidden">
+      <div class="mx-auto px-5 xl:px-0 container">
+        <h2
+          class="gd-title text-5xl font-semibold leading-[64px] text-center mx-auto mb-16"
+          data-aos="fade-up"
+        >
+          Часто задаваемые вопросы
+        </h2>
+        <div class="max-w-[850px] mx-auto" data-aos="fade-up">
+          <!-- FAQ CARD 1 -->
+          <div
+            class="accordion mb-4 p-8 rounded border-[1px] border-w-100 border-opacity-[8%] bg-transparent bg-faq-card-item"
+          >
+            <div
+              class="flex items-start justify-between text-xl font-medium cursor-pointer accordion-header text-w-800"
+              onclick="toggleAccordion(0)"
+            >
+              Что умеет голосовой ИИ-агент&quest;
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-[50px]"
+              >
+                <path
+                  d="M14 17.5448L7.40387 10.9487L8.63333 9.71924L14 15.0859L19.3667 9.71924L20.5961 10.9487L14 17.5448Z"
+                  fill="#E8EAED"
+                />
+              </svg>
+            </div>
+            <div class="accordion-content">
+              <p class="pt-3 text-base text-w-100">
+      Использование голосового ИИ-агента позволяет решать большое количество рутинных задач. 
+      Что умеет и для каких задач будет эффективен голосовой агент:
+              </p>
+              <ul class="pt-3 text-base text-w-100">
+                <li>- проведет опросы</li>
+                <li>- направит предложение на почту</li>
+                <li>- получит согласие на обработку персональных данных</li>
+                <li>- может вести диалог с учетом настроения собеседника, ИИ-агент распознает его потребности</li>
+                <li>- ИИ-агент помогает собеседнику определиться с выбором, предлагая возможные доступные варианты</li>
+              </ul>
+              <p class="pt-3 text-base text-w-100">Помимо этого, голосовой ИИ-агент способен выполнять такие задачи как:</p>
+              <ul class="pt-3 text-base text-w-100">
+                <li>- быстрая обработка входящих вызовов</li>
+                <li>- формирование базы данных</li>
+                <li>и многое другое..</li>
+              </ul>
+            </div>
+          </div>
+          <!-- FAQ CARD 2 -->
+          <div
+            class="accordion mb-4 p-8 rounded border-[1px] border-w-100 border-opacity-[8%] bg-transparent"
+          >
+            <div
+              class="flex items-start justify-between text-xl font-medium cursor-pointer accordion-header text-w-800"
+              onclick="toggleAccordion(1)"
+            >
+              Чем отличается автоответчик от робота&quest;
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-[50px]"
+              >
+                <path
+                  d="M14 17.5448L7.40387 10.9487L8.63333 9.71924L14 15.0859L19.3667 9.71924L20.5961 10.9487L14 17.5448Z"
+                  fill="#E8EAED"
+                />
+              </svg>
+            </div>
+            <div class="accordion-content">
+              <p class="pt-3 text-base text-w-100">
+                Примерно тем же, чем деревянные счёты отличаются от современного компьютера.
+              </p>
+              <p class="pt-3 text-base text-w-100">
+                В первом случае, автоответчик — это просто воспроизведение заранее записанного фиксированного сообщения и сохранение ответа абонента, записанного после этого сообщения. Простая механика, не более.
+              </p>
+              <p class="pt-3 text-base text-w-100">
+                Голосовые роботы, в особенности, современные ИИ-агенты с использованием технологий искусственного интеллекта, это инструмент автоматизации общения, способный заменить оператора, – ИИ-агенты могут вести с абонентом полноценный диалог. Диалог настолько похож на “живой” , что звонящий нередко даже не понимает, что его собеседником является робот. Это достигается самыми современными технологиями: гибкими сценариями разговоров, распознаванием речи (ИИ-агент понимает и распознает речь в том числе, в условиях шумов), распознаванием намерений абонента (одно и то же намерение может быть выражено совсем разными словами, но преследует одну цель), и даже распознаванием эмоционального состояния звонящего и подстраиванием под него.
+              </p>
+            </div>
+          </div>
+          <!-- FAQ CARD 3 -->
+          <div
+            class="accordion mb-4 p-8 rounded border-[1px] border-w-100 border-opacity-[8%] bg-transparent"
+          >
+            <div
+              class="flex items-start justify-between text-xl font-medium cursor-pointer accordion-header text-w-800"
+              onclick="toggleAccordion(2)"
+            >
+              Могут ли лиды от звонков ИИ-агента попадать в воронку продаж в CRM&quest;
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-[50px]"
+              >
+                <path
+                  d="M14 17.5448L7.40387 10.9487L8.63333 9.71924L14 15.0859L19.3667 9.71924L20.5961 10.9487L14 17.5448Z"
+                  fill="#E8EAED"
+                />
+              </svg>
+            </div>
+            <div class="accordion-content">
+              <p class="pt-3 text-base text-w-100">
+                Разумеется, современные технологично спроектированные голосовые помощники — такие как ИИ-агенты TWIN, например, — способны не только совершать звонки и вести диалоги по гибким сценариям, но и сохранять их результаты. Это сохранение может быть как в самые простые хранилища, вроде таблиц Google, так и в CRM-системы. Предусмотрена интеграция со всеми популярными CRM — такими как Битрикс24, amoCRM, YClients, Salesforce, Мегаплан и т.д.
+              </p>
+            </div>
+          </div>
+          <!-- FAQ CARD 4 -->
+          <div
+            class="accordion mb-4 p-8 rounded border-[1px] border-w-100 border-opacity-[8%] bg-transparent"
+          >
+            <div
+              class="flex items-start justify-between text-xl font-medium cursor-pointer accordion-header text-w-800"
+              onclick="toggleAccordion(3)"
+            >
+              Сценарии телефонных звонков стандартные или прорабатываются для каждой аудитории&quest;
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-[50px]"
+              >
+                <path
+                  d="M14 17.5448L7.40387 10.9487L8.63333 9.71924L14 15.0859L19.3667 9.71924L20.5961 10.9487L14 17.5448Z"
+                  fill="#E8EAED"
+                />
+              </svg>
+            </div>
+            <div class="accordion-content">
+              <p class="pt-3 text-base text-w-100">
+                Каждая целевая аудитория и каждый бизнес уникальны, и, конечно же, уникальными должны быть и коммуникации между ними. Конечно, вы можете составлять сценарий диалога бота с абонентом при телефонном звонке с нуля, а можете опереться и на уже существующие разработки и примеры. Гибкость конструктора сценариев позволит вам учесть в диалоге с клиентом как и наиболее результативные типовые приёмы продаж или работы с возражениями, так и специфику вашего торгового предложения.
+              </p>
+            </div>
+          </div>
+          <!-- FAQ CARD 5 -->
+          <div
+            class="accordion mb-4 p-8 rounded border-[1px] border-w-100 border-opacity-[8%] bg-transparent"
+          >
+            <div
+              class="flex items-start justify-between text-xl font-medium cursor-pointer accordion-header text-w-800"
+              onclick="toggleAccordion(4)"
+            >
+              Из чего формируется стоимость звонка, как оплачиваются минуты разговора и какие доступны тарифы&quest;
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-[50px]"
+              >
+                <path
+                  d="M14 17.5448L7.40387 10.9487L8.63333 9.71924L14 15.0859L19.3667 9.71924L20.5961 10.9487L14 17.5448Z"
+                  fill="#E8EAED"
+                />
+              </svg>
+            </div>
+            <div class="accordion-content">
+              <p class="pt-3 text-base text-w-100">
+                Стоимость минуты разговора имеет две составляющих — телефония, которая используется для дозвона клиентам, и плата за голосовое взаимодействие робота с распознаванием речи абонента. Округлений никаких нет, тарификация идет посекундная, т.е если человек поговорил с ботом только 30 сек — вы платите только половину цены от минуты.
+              </p>
+              <p class="pt-3 text-base text-w-100">
+                Если хотите внедрить голосового робота в ваши коммуникации — оставьте ваши контактные данные и мы свяжемся с вами, чтобы уточнить необходимую информацию для оценки объема работ.
+              </p>
+            </div>
+          </div>
+          <!-- FAQ CARD 6 -->
+          <div
+            class="accordion p-8 rounded border-[1px] border-w-100 border-opacity-[8%] bg-transparent"
+          >
+            <div
+              class="flex items-start justify-between text-xl font-medium cursor-pointer accordion-header text-w-800"
+              onclick="toggleAccordion(5)"
+            >
+              Ваши специалисты помогут мне создать голосового агента, бота или чат-бота&quest;
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-[50px]"
+              >
+                <path
+                  d="M14 17.5448L7.40387 10.9487L8.63333 9.71924L14 15.0859L19.3667 9.71924L20.5961 10.9487L14 17.5448Z"
+                  fill="#E8EAED"
+                />
+              </svg>
+            </div>
+            <div class="accordion-content">
+              <p class="pt-3 text-base text-w-100">
+                Да, наши сотрудники помогут на любой этапе с учетом каждой ситуации индивидуально:
+              </p>
+              <p class="pt-3 text-base text-w-100">
+                - бесплатно проконсультируют по возможностям сервиса после регистрации и проведут анализ вашей ситуации при получении запроса;
+              </p>
+              <p class="pt-3 text-base text-w-100">
+                - помогут устранить сложности на этапе выбора, создания или внедрения наиболее подходящих вашему бизнесу готовых решений;
+              </p>
+              <p class="pt-3 text-base text-w-100">
+                - помогут настроить агента или бота перед подключением к чат-каналам;
+              </p>
+              <p class="pt-3 text-base text-w-100">
+                - подскажут, как произвести оплату, и помогут выбрать выгодные тарифы.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="pt-24 pb-8 bg-footer-bg bg-cover bg-center bg-no-repeat">
+      <div class="container mx-auto px-5 xl:px-0">
+        <div class="mb-24 text-center">
+          <h2
+            class="gd-title text-5xl font-semibold leading-[64px] text-center mx-auto mb-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Создайте своего бота с ИИ уже сегодня
+          </h2>
+          <p
+            class="text-xl text-w-100 mb-[32px]"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            Отправьтесь вместе с нами в путешествие и испытайте беспрецедентную мощь искусственного интеллекта
+          </p>
+          <a
+            href="form.html"
+            class="inline-block px-6 py-3 capitalize text-base font-semibold border border-solid border-w-900 rounded bg-w-800 text-b-800 hover:bg-transparent hover:text-w-800 transition-all duration-300"
+            >Начать</a
+          >
+        </div>
+        <div
+          class="flex flex-col items-start justify-between py-24 md:flex-row"
+        >
+          <div>
+            <a href="index.html">
+              <img src="assets/img/footerlogo.png" alt="logo" />
+            </a>
+            <p class="mt-8 text-sm font-medium capitalize text-w-800">
+              Адрес:
+            </p>
+            <p class="mb-4 text-sm text-w-100">
+              просп. Ленина, 16А, Мурманск 183032
+            </p>
+            <p class="text-sm font-medium capitalize text-w-800">контакты:</p>
+            <a class="inline-block text-sm text-w-100" href="tel:+7(921)-176-98-83"
+              >+7(921)-176-98-83</a
+            >
+            <br />
+            <a
+              class="inline-block text-sm text-w-100"
+              href="info@voxflowai.ru"
+              >info@voxflowai.ru</a
+            >
+            <div class="flex items-center justify-start gap-4 my-8 text-w-100">
+                  <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+                    <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+                <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+              </svg>
+
+                  </a>
+                  <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+                    <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+                <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+              </svg>
+
+                  </a>
+                  <a href="https://wa.me/79211769883" target="_blank" aria-label="WhatsApp">
+              <svg width="26" height="26" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <clipPath id="clip">
+                    <circle cx="128" cy="128" r="128"/>
+                  </clipPath>
+                </defs>
+                <circle cx="128" cy="128" r="128" fill="#25D366"/>
+                <g clip-path="url(#clip)">
+                  <path fill="#fff" d="M187.3 68.7C172.6 54 152 46 128.8 46c-46 0-83.2 37.2-83.2 83.1 0 14.6 3.8 28.9 11 41.5L46 210l41-10.7c12 6.6 25.6 10.1 39.8 10.1 46 0 83.2-37.2 83.2-83.1 0-23.2-8-43.8-22.7-58.6Zm-58.5 121c-12.4 0-24.6-3.4-35.1-9.8l-2.5-1.5-24.3 6.4 6.5-23.7-1.6-2.5c-6.7-10.5-10.2-22.5-10.2-34.9 0-36.3 29.6-65.9 65.9-65.9 17.6 0 34.1 6.8 46.5 19.2 12.4 12.5 19.2 29 19.1 46.5 0 36.3-29.6 65.9-65.9 65.9Zm39.1-48.9c-2.1-1-12.6-6.2-14.6-6.9-2-.8-3.5-1.2-5 1.2-1.5 2.3-5.8 6.9-7.1 8.3-1.3 1.5-2.6 1.7-4.7.8-12.8-5.4-21.2-9.6-29.7-21.7-2.2-3.1 2.2-2.9 6.2-11.4.7-1.5.4-2.7-.2-3.9-.6-1.2-5-12.1-6.9-16.6-1.8-4.3-3.7-3.7-5-3.8-1.3-.1-2.8-.1-4.3-.1-1.5 0-4 1-6 3-2 2-7.9 7.7-7.9 18.7s8.1 21.7 9.2 23.2c1.1 1.5 16 24.5 38.8 33.2 22.8 8.7 22.8 5.8 26.9 5.5 4.1-.3 13.2-5.3 15.1-10.4 1.9-5.1 1.9-9.5 1.3-10.4-.5-.9-1.8-1.5-3.9-2.5Z"/>
+                </g>
+              </svg>
+                  </a>
+            </div>
+          </div>
+          <div
+            class="flex md:flex-row flex-col justify-end items-start gap-[46px] lg:gap-[88px] capitalize"
+          >
+            <ul class="flex flex-col gap-4 text-base font-medium text-white">
+              <li>
+                <a href="index.html" class="inline-block hover:underline">Главная</a>
+              </li>
+              <li>
+                <a href="features.html" class="inline-block hover:underline">Решения</a>
+              </li>
+              <li>
+                <a href="products.html" class="inline-block hover:underline">Продукты</a>
+              </li>
+            </ul>
+            <ul class="flex flex-col gap-4 text-base font-medium text-white">
+              <li>
+                <a href="pricing.html" class="inline-block hover:underline">Тарифы</a>
+              </li>
+              <li>
+                <a href="blog.html" class="inline-block hover:underline">Блог</a>
+              </li>
+              <li>
+                <a href="contact.html" class="inline-block hover:underline">Контакты</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center gap-3 pt-8 text-sm md:flex-row md:justify-between md:gap-0"
+        >
+          <p class="text-w-100">
+            Copyright © 2025 VoxFlowAI Все права защищены.
+          </p>
+            <li>
+              <a class="text-w-100" href="privacy-policy.html"
+                >Политика конфиденциальности</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- <script>
+      document.addEventListener('DOMContentLoaded', async () => {
+        const api = new ChatApi({
+          baseUrl: '/api/chat'
+        });
+
+        const chat = new ChatWidget({
+          api,
+          rootId: 'voxbot-card',
+          messagesId: 'chat-messages',
+          formId: 'chat-form',
+          inputId: 'chat-input',
+          sendBtnId: 'send-message',
+          stopBtnId: 'stop-message',
+          refreshBtnId: 'refresh-chat',
+          closeBtnId: 'close-chat'
+        });
+
+        await chat.init();
+      });
+    </script> -->
+    <script src="./assets/js/chat.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("playBtn")
+          .addEventListener("click", toggleVideo);
+        document
+          .getElementById("closeBtn")
+          .addEventListener("click", toggleVideo);
+        function toggleVideo(event) {
+          event.preventDefault();
+          var video = document.getElementById("video");
+          if (video) {
+            if (event.target.id === "playBtn") {
+              video.play();
+            } else if (event.target.id === "closeBtn") {
+              video.pause();
+            }
+            document
+              .getElementById("videoContainer")
+              .classList.toggle("hidden");
+          } else {
+            console.error("Video element not found.");
+          }
+        }
+      });
+    </script>
+<!--     <script src="assets/js/reviews_list.js"></script>-->
+    <script src="assets/js/reviews-test.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

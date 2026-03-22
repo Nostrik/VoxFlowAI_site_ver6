@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/output.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>VoxFlowAI</title>
+  </head>
+
+  <body class="font-normal bg-body">
+    <div
+      class="flex items-center justify-center h-screen bg-sign-in bg-cover bg-center bg-no-repeat"
+    >
+      <div
+        id="form-card"
+        style="max-width: 500px; width: 100%;"
+        class="w-full max-w-md mx-4 px-5 sm:px-8 py-8 bg-trust-card border border-w-100 border-opacity-[8%] rounded"
+        data-aos="zoom-in"
+      >
+        <button
+          id="close-message"
+          type="button"
+          style="position: absolute; top: 29px; right: 34px; font-size: 20px;"
+          class="text-w-100 hover:text-w-800 text-xl"
+        >
+          ✕
+        </button>
+        <a href="/"><img class="mb-6" src="assets/img/navlogo.svg" alt="img" /></a>
+
+        <h4 class="mb-3 text-2xl font-semibold text-w-800">Ваш отзыв</h4>
+        <span class="text-w-100">Пожалуйста, заполните форму</span>
+
+        <form id="review-form">
+          <h5 class="mt-6 mb-3 font-semibold text-w-800">Имя</h5>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            class="w-full px-4 py-3 focus:outline-none sm:text-sm bg-transparent border border-w-100 border-opacity-[8%] placeholder:text-b-100 text-w-800 rounded"
+            placeholder="Имя"
+            required
+          />
+
+          <h5 class="mt-4 mb-3 font-semibold text-w-800">Компания</h5>
+          <input
+            id="company"
+            type="text"
+            name="company"
+            class="w-full px-4 py-3 focus:outline-none sm:text-sm bg-transparent border border-w-100 border-opacity-[8%] placeholder:text-b-100 text-w-800 rounded"
+            placeholder="Компания"
+          />
+
+          <h5 class="mt-4 mb-3 font-semibold text-w-800">Email</h5>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            class="w-full px-4 py-3 focus:outline-none sm:text-sm bg-transparent border border-w-100 border-opacity-[8%] placeholder:text-b-100 text-w-800 rounded"
+            placeholder="Email"
+          />
+
+          <h5 class="mt-4 mb-3 font-semibold text-w-800">Телефон</h5>
+          <input
+            id="phone"
+            type="tel"
+            name="phone"
+            class="w-full px-4 py-3 focus:outline-none sm:text-sm bg-transparent border border-w-100 border-opacity-[8%] placeholder:text-b-100 text-w-800 rounded"
+            placeholder="Телефон"
+            required
+          />
+
+          <h5 class="mt-4 mb-3 font-semibold text-w-800">Текст отзыва</h5>
+          <textarea
+            id="review"
+            name="review"
+            placeholder="Текст отзыва*"
+            cols="30"
+            rows="10"
+            style="height: 200px;"
+            class="placeholder:text-b-100 px-4 py-3 w-full rounded focus:outline-none border border-w-100 border-opacity-[8%] text-base bg-transparent text-w-800"
+            required
+          ></textarea>
+
+          <div class="flex items-center justify-start gap-2 mb-6 sm:flex md:flex lg:flex">
+            <input type="checkbox" required />
+            <span class="flex items-center justify-center gap-1 text-sm text-w-100">
+              Я согласен с
+              <u class="text-sm text-b-150">
+                <a href="terms-of-service.html">политикой конфиденциальности</a>
+              </u>
+            </span>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full flex items-center justify-center px-5 py-3 font-semibold rounded text-b-800 bg-w-800"
+          >
+            Отправить
+          </button>
+          <button 
+          type="button" 
+          class="w-full flex items-center justify-center mt-4 px-5 py-3 font-semibold rounded text-b-800 bg-w-800" 
+          onclick="fillTestData(this)">
+          Тест
+        </button>
+        <span id="form-message" class="block text-sm mt-4"></span>
+        </form>
+      </div>
+    </div>
+
+    <!-- success-modal -->
+    <div
+      id="success-modal"
+      class="fixed inset-0 z-[9999] hidden flex items-center justify-center bg-black/60"
+    >
+      <div
+        style="max-width: 500px; width: 100%;"
+        class="max-w-md mx-4 px-5 sm:px-8 py-8 bg-trust-card border border-w-100 border-opacity-[8%] rounded"
+        data-aos="zoom-in"
+      >
+        <!-- КРЕСТИК -->
+        <button
+          id="close-success"
+          type="button"
+          style="position: absolute; top: 29px; right: 34px; font-size: 20px;"
+          class="text-w-100 hover:text-w-800 text-xl"
+        >
+          ✕
+        </button>
+        <!-- чек -->
+        <div class="text-4xl mb-4">✅</div>
+
+        <!-- логотип -->
+        <img class="mb-6" src="assets/img/navlogo.svg" alt="logo" />
+
+        <!-- заголовок -->
+        <h3 class="mb-3 text-2xl font-semibold text-w-800">
+          Отзыв отправлен на проверку
+        </h3>
+
+        <!-- текст -->
+        <p class="text-w-100 mb-3">
+          Связаться по вопросам публикации:
+        </p>
+        <p class="text-w-100 mb-3">
+          +7(921)-176-98-83
+        </p>
+        <p class="text-w-100">
+          info@voxflowai.ru
+        </p>
+      </div>
+    </div>
+
+    <!-- error-modal -->
+    <div
+      id="error-modal"
+      class="fixed inset-0 z-[9999] hidden flex items-center justify-center bg-black/60"
+      >
+      <div
+        style="max-width: 500px; width: 100%; position: relative;"
+        class="max-w-md mx-4 px-5 sm:px-8 py-8 bg-trust-card border border-w-100 border-opacity-[8%] rounded"
+        data-aos="zoom-in"
+      >
+        <!-- КРЕСТИК закрытия -->
+        <button
+          id="close-error"
+          type="button"
+          style="position: absolute; top: 29px; right: 34px; font-size: 20px;"
+          class="text-w-100 hover:text-w-800"
+        >
+          ✕
+        </button>
+
+        <!-- ИКОНКА ошибки -->
+        <div class="text-4xl mb-4">❌</div>
+
+        <!-- логотип -->
+        <img class="mb-6" src="assets/img/navlogo.svg" alt="logo" />
+
+        <!-- заголовок -->
+        <h3 class="mb-3 text-2xl font-semibold text-w-800">
+          Ошибка отправки
+        </h3>
+
+        <!-- текст -->
+        <p id="error-message" class="text-w-100 mb-3">
+          Не удалось отправить отзыв. Попробуйте ещё раз.
+        </p>
+
+        <p class="text-w-100 mb-3">
+          Если проблема повторяется, свяжитесь с нами:
+        </p>
+
+        <p class="text-w-100 mb-3">
+          +7(921)-176-98-83
+        </p>
+
+        <p class="text-w-100">
+          info@voxflowai.ru
+        </p>
+      </div>
+    </div>
+    
+
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/sent_reviews.js"></script>
+    <script>
+      function fillTestData(button) {
+        const form = button.closest('form');
+
+        const testData = {
+          name: "Тест Имя",
+          email: "test@example.com",
+          company: "Тестовая компания ООО",
+          phone: "+79991234567",
+          review: "Тестовый отзыв для проверки работы формы"
+        };
+
+        form.querySelector('[name="name"]').value = testData.name;
+        form.querySelector('[name="email"]').value = testData.email;
+        form.querySelector('[name="company"]').value = testData.company;
+        form.querySelector('[name="phone"]').value = testData.phone;
+        form.querySelector('[name="review"]').value = testData.review;
+      }
+    </script>
+  </body>
+</html>

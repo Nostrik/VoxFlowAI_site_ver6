@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/output.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>SynthMind</title>
+  </head>
+  <body class="font-normal bg-body">
+    <header
+      class="absolute top-0 left-0 z-50 w-full border-b border-solid border-b-700"
+    >
+      <div
+        class="items-center justify-between hidden px-5 mx-auto desktop-header lg:flex"
+      >
+        <a href="/">
+          <img src="assets/img/navlogo.svg" alt="logo" />
+        </a>
+        <nav>
+          <ul class="flex items-center justify-center">
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="/"
+                class="inline-block text-base font-medium capitalize text-w-100"
+                >Home</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="features.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >features</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="products.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >products</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="pricing.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >pricing</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="blog.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >blog</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="contact.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="items-center hidden gap-3 lg:flex">
+          <a
+            href="sign-in.html"
+            class="inline-block py-3 text-base border border-transparent rounded text-w-100 lg:px-4 xl:px-7 hover:text-w-800"
+            >Sign In</a
+          >
+          <a
+            href="sign-up.html"
+            class="inline-block py-3 text-base font-semibold rounded bg-btn-bg text-w-800 lg:px-4 xl:px-7 border-w-100 hover:brightness-110"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+      <div
+        class="container flex items-center justify-between px-4 py-4 mx-auto mobile-header lg:hidden"
+      >
+        <a href="/">
+          <img src="assets/img/navlogo.svg" alt="logo" />
+        </a>
+        <span class="text-white cursor-pointer menu-open-icon lg:hidden">
+          <svg
+            class="block w-8 h-8 font-semibold"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </span>
+        <div
+          class="fixed top-0 left-0 flex flex-col items-start justify-start w-full h-screen transition-all duration-300 translate-x-full bg-black mobile-menu p-7"
+        >
+          <div class="flex items-start justify-between w-full">
+            <nav>
+              <ul class="mt-5">
+                <li>
+                  <a
+                    href="index.html"
+                    class="inline-block mb-5 text-base font-medium capitalize text-w-800"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="features.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >features</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="products.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >products</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="pricing.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >pricing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="blog.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <strong class="text-white cursor-pointer mobile-menu-close-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-x-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+                />
+              </svg>
+            </strong>
+          </div>
+          <div class="flex items-center justify-center w-full gap-2 mt-6">
+            <a
+              href="sign-in.html"
+              class="inline-block w-full py-3 text-base font-semibold text-center capitalize transition-all duration-300 bg-transparent border border-solid rounded px-7 border-w-100 text-w-100 hover:text-b-800 hover:bg-w-800"
+              >Sign In</a
+            >
+            <a
+              href="sign-in.html"
+              class="inline-block w-full py-3 text-base font-semibold text-center capitalize transition-all duration-300 rounded px-7 text-w-800 bg-btn-bg hover:brightness-105"
+              >Sign up</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="pt-52 pb-32 bg-primary-hero bg-cover bg-center bg-no-repeat">
+      <div class="container px-5 xl:px-0 mx-auto">
+        <h1
+          class="pb-4 text-5xl font-semibold lg:text-8xl text-w-800"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Documentation
+          <span class="gd-title">Center</span>
+        </h1>
+        <p
+          class="pt-4 text-base text-w-100 lg:text-xl"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          Published and effective on: May 17, 2023
+        </p>
+      </div>
+    </div>
+
+    <div class="container w-auto py-24 mx-auto">
+      <div class="container px-5 xl:px-0 mx-auto">
+        <div class="lg:flex md:block gap-[30px]">
+          <!-- LEFT CARD -->
+          <div class="lg:w-[610px]">
+            <h3 class="text-sm font-semibold text-w-800">Getting Started</h3>
+            <h4 class="mt-3 mb-2 text-sm font-normal text-w-800">
+              Introduction
+            </h4>
+            <h5 class="text-sm font-normal text-w-100">
+              How To Develop AI Bot
+            </h5>
+            <h5 class="my-2 text-sm font-normal text-w-100">
+              Subscription Plan
+            </h5>
+            <h5 class="text-sm font-normal text-w-100">Service Pricing</h5>
+            <h3 class="mt-6 mb-3 text-sm font-semibold text-w-800">Tutorial</h3>
+            <h5 class="mb-2 text-sm font-normal text-w-100">Bot</h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">Overview</h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">Create</h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">Knowledge Base</h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">Plugin</h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">Debug</h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">Debug</h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">Overview</h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">Flow Bot</h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">Bot Training</h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">Bot Integration</h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">LLMs</h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">Plugin</h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">Organization</h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">Workspace</h5>
+            <h3 class="mt-6 mb-3 text-sm font-semibold text-w-800">API Doc</h3>
+            <h5 class="mb-2 text-sm font-normal text-w-100">Overview</h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">Bot API</h5>
+            <h3 class="mt-6 mb-3 text-sm font-semibold text-w-800">
+              Best Practice
+            </h3>
+            <h5 class="mb-2 text-sm font-normal text-w-100">Overview</h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">
+              AI Bot Development for Business
+            </h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">
+              Solving Business Problems with Flow
+            </h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">
+              Optimizing LLM Prompts for ChatGPT
+            </h5>
+            <h3 class="mt-6 mb-3 text-sm font-semibold text-w-800">
+              Change Log
+            </h3>
+            <h5 class="mb-2 text-sm font-normal text-w-100">2024-01-12</h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">2023-12-13</h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">2023-11-23</h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">2023-10-25</h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">2023-10-11</h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">2023-08-30</h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">2023-08-15</h5>
+            <h5 class="mb-2 text-sm font-normal text-w-100">2023-07-30</h5>
+          </div>
+          <!-- RIGHT CARD -->
+          <div>
+            <h2 class="mb-6 text-3xl leading-[42px] font-semibold text-w-800">
+              Introduction
+            </h2>
+            <p class="text-base mb-9 text-w-100">
+              SynthMind seamlessly connects LLM with enterprise data and service
+              capabilities, efficiently building AI Bot services. It can easily
+              integrate AI Bot capabilities deeply into actual business
+              operations, driving business growth and efficiency improvement
+              through AI.
+            </p>
+            <h2
+              class="mb-6 text-[24px] leading-[42px] font-semibold text-w-800"
+            >
+              SynthMind Product Features
+            </h2>
+            <p class="text-base mb-9 text-w-100">
+              SynthMind product has the following advantages and features:
+            </p>
+            <h2
+              class="mb-6 text-[20px] leading-[42px] font-semibold text-w-800"
+            >
+              LLMs
+            </h2>
+            <ul class="px-5 mb-6 list-disc text-w-100">
+              <li>
+                Supports out-of-the-box mainstream commercial large models,
+                open-source large models, professional domain models, and
+                customized models with fine-tuning.
+              </li>
+              <li>
+                Eliminates the need to invest significant effort in LLM
+                deployment and fine-tuning, allowing developers to focus more on
+                core enterprise business.
+              </li>
+              <li>
+                Regardless of commercial or open-source models, it can quickly
+                generate the data needed for model fine-tuning based on
+                knowledge base data and user dialogue data.
+              </li>
+            </ul>
+            <h2
+              class="mb-6 text-[20px] leading-[42px] font-semibold text-w-800"
+            >
+              Knowledge Base
+            </h2>
+            <ul class="px-5 mb-6 list-disc text-w-100">
+              <li>
+                Supports out-of-the-box mainstream commercial large models,
+                open-source large models, professional domain models, and
+                customized models with fine-tuning.
+              </li>
+              <li>
+                Supports various types of knowledge data such as doc/docx, pdf,
+                txt, markdown, csv, xls/xlsx, web crawling, Q&A, etc.
+              </li>
+              <li>
+                Utilizes different data parsing and segmentation schemes for
+                different types of data to improve data quality and
+                completeness.
+              </li>
+              <li>
+                Supports a mixed search scheme of sparse vectors and dense
+                vectors to improve knowledge retrieval accuracy.
+              </li>
+              <li>
+                Supports the management, editing, and updating of knowledge
+                documents in sliced dimensions.
+              </li>
+            </ul>
+            <h2
+              class="mb-6 text-[20px] leading-[42px] font-semibold text-w-800"
+            >
+              Plugins
+            </h2>
+            <ul class="px-5 mb-6 list-disc text-w-100">
+              <li>
+                For specific domain requirements, developers can obtain
+                excellent solutions through Plugins (e.g., investment analysis,
+                output files, product recommendations, service reservations,
+                etc.).
+              </li>
+              <li>
+                Developers can seamlessly connect with enterprise data and
+                service capabilities through plugins while ensuring the security
+                of enterprise data.
+              </li>
+              <li>
+                SynthMind not only provides official plugins but also supports
+                third-party developers to publicly release plugins based on
+                their own service capabilities.
+              </li>
+            </ul>
+
+            <h2
+              class="mb-6 text-[20px] leading-[42px] font-semibold text-w-800"
+            >
+              Flow Bot
+            </h2>
+            <ul class="px-5 mb-6 list-disc text-w-100">
+              <li>
+                When facing complex requirements and issues, developers can use
+                Flow to visualize the orchestration of multiple LLMs.
+              </li>
+              <li>
+                Defines single-function, clearly defined "vertical LLMs" to
+                improve quality and stability.
+              </li>
+              <li>
+                Multiple "vertical LLMs" and "functional components" work
+                serially or in parallel through Flow to solve complex problems.
+              </li>
+            </ul>
+
+            <h2
+              class="mb-6 text-[20px] leading-[42px] font-semibold text-w-800"
+            >
+              Bot Training
+            </h2>
+            <ul class="px-5 mb-6 list-disc text-w-100">
+              <li>
+                Chat records support quality scoring, keywords, and topic
+                summarization, making it easier for developers to understand
+                user interests.
+              </li>
+              <li>
+                Supports summarizing, summarizing, and categorizing user
+                questions to help developers understand high-frequency user
+                questions and optimize and supplement relevant knowledge in a
+                targeted manner.
+              </li>
+              <li>
+                Bot training mode supports real-time correction of "dialogue
+                content" to continuously train the Bot for better
+                responsiveness.
+              </li>
+            </ul>
+
+            <h2 class="mb-6 text-2xl leading-[42px] font-semibold text-w-800">
+              How does SynthMind product solve the challenges of LLM landing in
+              enterprises?
+            </h2>
+            <p class="text-base mb-9 text-w-100">
+              SynthMind’s product has the following advantages and features:
+            </p>
+
+            <h2
+              class="mb-6 text-[20px] leading-[42px] font-semibold text-w-800"
+            >
+              LLM Illusion Problem
+            </h2>
+            <ul class="px-5 mb-6 list-disc text-w-100">
+              <li>Accurate knowledge supplementation of context.</li>
+              <li>Bot training and LLM fine-tuning to correct the model.</li>
+              <li>
+                Designing reflection mechanisms and verification tools for LLM.
+              </li>
+              <li>Optimizing Prompt to limit the range of responses.</li>
+            </ul>
+
+            <h2
+              class="mb-6 text-[20px] leading-[42px] font-semibold text-w-800"
+            >
+              General LLM lacks domain knowledge
+            </h2>
+            <ul class="px-5 mb-6 list-disc text-w-100">
+              <li>
+                Supports various types of knowledge data such as doc/docx, pdf,
+                txt, markdown, csv, xls/xlsx, web crawling, Q&A, etc.
+              </li>
+              <li>
+                Utilizes different data parsing and segmentation schemes for
+                different types of data to improve data quality and
+                completeness.
+              </li>
+              <li>
+                Supports a mixed search scheme of sparse vectors and dense
+                vectors to improve knowledge retrieval accuracy.
+              </li>
+              <li>
+                Supports the management, editing, and updating of knowledge
+                documents in sliced dimensions.
+              </li>
+            </ul>
+
+            <h2
+              class="mb-6 text-[20px] leading-[42px] font-semibold text-w-800"
+            >
+              Single LLM cannot solve complex tasks in enterprise business
+              scenarios
+            </h2>
+            <ul class="px-5 mb-6 list-disc text-w-100">
+              <li>Break down complex problems into multiple branches.</li>
+              <li>
+                Flow supports the collaboration of multiple versions of LLM.
+              </li>
+              <li>
+                LLM has capabilities such as long short-term memory, plugins,
+                and knowledge base.
+              </li>
+              <li>
+                Incorporate external feedback and information into the LLM
+                response process.
+              </li>
+            </ul>
+
+            <h2
+              class="mb-6 text-[20px] leading-[42px] font-semibold text-w-800"
+            >
+              LLM cannot solve complex tasks in enterprise business scenarios
+            </h2>
+            <ul class="px-5 mb-6 list-disc text-w-100">
+              <li>Provides a simple and efficient LLMOps platform.</li>
+              <li>
+                Solves the challenges of knowledge data loading and retrieval.
+              </li>
+              <li>Provides out-of-the-box AI Bot building capabilities.</li>
+              <li>Rich and comprehensive API and SDK.</li>
+            </ul>
+
+            <h2
+              class="mb-6 text-[20px] leading-[42px] font-semibold text-w-800"
+            >
+              Enterprises lack talent reserves in the AI field
+            </h2>
+            <ul class="px-5 mb-6 list-disc text-w-100">
+              <li>Nearly zero-threshold use of SynthMind.</li>
+              <li>
+                Bot training and fine-tuning LLM capabilities for product
+                operation personnel.
+              </li>
+              <li>
+                No need for extensive AI domain knowledge; enterprise business
+                personnel can also train and optimize the Bot.
+              </li>
+              <li>
+                Developers can complete integration through API interfaces.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-footer-bg bg-cover bg-center bg-no-repeat pt-24 pb-8">
+      <div class="container mx-auto px-5 xl:px-0">
+        <div class="mb-24 text-center">
+          <h2
+            class="gd-title text-5xl font-semibold leading-[64px] text-center mx-auto mb-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Start Building Your AI Bot Today
+          </h2>
+          <p
+            class="text-xl text-w-100 mb-[32px]"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            Embark on a transformative journey with us and experience
+            unparalleled power in AI.
+          </p>
+          <a
+            data-aos="fade-up"
+            href="sign-up.html"
+            class="inline-block px-6 py-3 capitalize text-base font-semibold border border-solid border-w-900 rounded bg-w-800 text-b-800 hover:bg-transparent hover:text-w-800 transition-all duration-300"
+            >get started</a
+          >
+        </div>
+        <div
+          class="flex flex-col items-start justify-between py-24 md:flex-row"
+        >
+          <div>
+            <a href="index.html">
+              <img src="assets/img/footerlogo.png" alt="logo" />
+            </a>
+            <p class="mt-8 text-sm font-medium capitalize text-w-800">
+              Address:
+            </p>
+            <p class="mb-4 text-sm text-w-100">
+              3760 West Drive, Chicago, IL 60606
+            </p>
+            <p class="text-sm font-medium capitalize text-w-800">contact:</p>
+            <a class="inline-block text-sm text-w-100" href="tel:+319-270-8254"
+              >319-270-8254</a
+            >
+            <br />
+            <a
+              class="inline-block text-sm text-w-100"
+              href="mailto:contact@synthmind.com"
+              >contact@synthmind.com</a
+            >
+            <div class="flex items-center justify-start gap-4 my-8 text-w-100">
+              <a href="#">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="hover:text-w-800"
+                >
+                  <path
+                    d="M20 3H4C3.73478 3 3.48043 3.10536 3.29289 3.29289C3.10536 3.48043 3 3.73478 3 4V20C3 20.2652 3.10536 20.5196 3.29289 20.7071C3.48043 20.8946 3.73478 21 4 21H12.615V14.04H10.277V11.315H12.615V9.315C12.615 6.99 14.035 5.723 16.115 5.723C16.814 5.721 17.514 5.757 18.21 5.83V8.25H16.775C15.647 8.25 15.427 8.788 15.427 9.575V11.31H18.124L17.774 14.035H15.426V21H20C20.2652 21 20.5196 20.8946 20.7071 20.7071C20.8946 20.5196 21 20.2652 21 20V4C21 3.73478 20.8946 3.48043 20.7071 3.29289C20.5196 3.10536 20.2652 3 20 3Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="hover:text-w-800"
+                >
+                  <path
+                    d="M20.9471 8.30545C20.937 7.54807 20.7952 6.79822 20.5281 6.08945C20.2964 5.4916 19.9426 4.94864 19.4892 4.49528C19.0359 4.04191 18.4929 3.6881 17.8951 3.45645C17.1954 3.1938 16.4562 3.05179 15.7091 3.03645C14.7471 2.99345 14.4421 2.98145 12.0001 2.98145C9.55807 2.98145 9.24507 2.98145 8.29007 3.03645C7.54323 3.0519 6.80442 3.19391 6.10507 3.45645C5.50713 3.68793 4.96409 4.04169 4.5107 4.49508C4.05732 4.94847 3.70356 5.4915 3.47207 6.08945C3.2089 6.78858 3.06719 7.52756 3.05307 8.27445C3.01007 9.23745 2.99707 9.54245 2.99707 11.9844C2.99707 14.4264 2.99707 14.7384 3.05307 15.6944C3.06807 16.4424 3.20907 17.1804 3.47207 17.8814C3.70395 18.4792 4.05797 19.022 4.51151 19.4752C4.96505 19.9284 5.50813 20.282 6.10607 20.5134C6.8035 20.7866 7.54244 20.9388 8.29107 20.9634C9.25407 21.0064 9.55907 21.0194 12.0011 21.0194C14.4431 21.0194 14.7561 21.0194 15.7111 20.9634C16.4582 20.9487 17.1974 20.807 17.8971 20.5444C18.4948 20.3125 19.0376 19.9586 19.4909 19.5053C19.9442 19.052 20.2982 18.5091 20.5301 17.9114C20.7931 17.2114 20.9341 16.4734 20.9491 15.7244C20.9921 14.7624 21.0051 14.4574 21.0051 12.0144C21.0031 9.57245 21.0031 9.26245 20.9471 8.30545ZM11.9941 16.6024C9.44007 16.6024 7.37107 14.5334 7.37107 11.9794C7.37107 9.42545 9.44007 7.35645 11.9941 7.35645C13.2202 7.35645 14.396 7.84351 15.263 8.71049C16.13 9.57747 16.6171 10.7533 16.6171 11.9794C16.6171 13.2055 16.13 14.3814 15.263 15.2484C14.396 16.1154 13.2202 16.6024 11.9941 16.6024ZM16.8011 8.26344C16.6595 8.26358 16.5192 8.23578 16.3884 8.18166C16.2575 8.12753 16.1386 8.04813 16.0385 7.948C15.9384 7.84787 15.859 7.72898 15.8049 7.59813C15.7507 7.46729 15.7229 7.32705 15.7231 7.18545C15.7231 7.04395 15.7509 6.90383 15.8051 6.7731C15.8592 6.64238 15.9386 6.52359 16.0387 6.42354C16.1387 6.32348 16.2575 6.24411 16.3882 6.18997C16.519 6.13582 16.6591 6.10795 16.8006 6.10795C16.9421 6.10795 17.0822 6.13582 17.2129 6.18997C17.3436 6.24411 17.4624 6.32348 17.5625 6.42354C17.6625 6.52359 17.7419 6.64238 17.7961 6.7731C17.8502 6.90383 17.8781 7.04395 17.8781 7.18545C17.8781 7.78145 17.3961 8.26344 16.8011 8.26344Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M11.9942 14.9816C13.6527 14.9816 14.9972 13.6371 14.9972 11.9786C14.9972 10.3201 13.6527 8.97559 11.9942 8.97559C10.3357 8.97559 8.99121 10.3201 8.99121 11.9786C8.99121 13.6371 10.3357 14.9816 11.9942 14.9816Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="hover:text-w-800"
+                >
+                  <path
+                    d="M19.633 7.99656C19.646 8.17156 19.646 8.34556 19.646 8.51956C19.646 13.8446 15.593 19.9806 8.186 19.9806C5.904 19.9806 3.784 19.3196 2 18.1716C2.324 18.2086 2.636 18.2216 2.973 18.2216C4.78599 18.2259 6.54765 17.6197 7.974 16.5006C7.13342 16.4853 6.31858 16.208 5.64324 15.7073C4.9679 15.2066 4.46578 14.5075 4.207 13.7076C4.456 13.7446 4.706 13.7696 4.968 13.7696C5.329 13.7696 5.692 13.7196 6.029 13.6326C5.11676 13.4484 4.29647 12.9539 3.70762 12.2332C3.11876 11.5126 2.79769 10.6102 2.799 9.67956V9.62956C3.336 9.92856 3.959 10.1156 4.619 10.1406C4.06609 9.77314 3.61272 9.27458 3.29934 8.68935C2.98596 8.10411 2.82231 7.45041 2.823 6.78656C2.823 6.03856 3.022 5.35256 3.371 4.75456C4.38314 5.99958 5.6455 7.01812 7.07634 7.74421C8.50717 8.47031 10.0746 8.88777 11.677 8.96956C11.615 8.66956 11.577 8.35855 11.577 8.04656C11.5767 7.51752 11.6807 6.99361 11.8831 6.5048C12.0854 6.01598 12.3821 5.57183 12.7562 5.19774C13.1303 4.82366 13.5744 4.52697 14.0632 4.32463C14.5521 4.1223 15.076 4.01829 15.605 4.01856C16.765 4.01856 17.812 4.50455 18.548 5.29056C19.4498 5.11617 20.3145 4.78698 21.104 4.31755C20.8034 5.24837 20.1738 6.03766 19.333 6.53756C20.1328 6.44633 20.9144 6.23601 21.652 5.91356C21.1011 6.71665 20.4185 7.4209 19.633 7.99656Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="hover:text-w-800"
+                >
+                  <path
+                    d="M4.98292 7.19729C6.19132 7.19729 7.17092 6.21769 7.17092 5.00929C7.17092 3.80089 6.19132 2.82129 4.98292 2.82129C3.77452 2.82129 2.79492 3.80089 2.79492 5.00929C2.79492 6.21769 3.77452 7.19729 4.98292 7.19729Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M9.23575 8.85469V20.9937H13.0047V14.9907C13.0047 13.4067 13.3027 11.8727 15.2667 11.8727C17.2037 11.8727 17.2277 13.6837 17.2277 15.0907V20.9947H20.9988V14.3377C20.9988 11.0677 20.2948 8.55469 16.4728 8.55469C14.6378 8.55469 13.4078 9.56169 12.9047 10.5147H12.8537V8.85469H9.23575ZM3.09375 8.85469H6.86875V20.9937H3.09375V8.85469Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="hover:text-w-800"
+                >
+                  <path
+                    d="M21.593 7.20301C21.4791 6.78041 21.2565 6.39501 20.9473 6.08518C20.6382 5.77534 20.2533 5.55187 19.831 5.43701C18.265 5.00701 12 5.00001 12 5.00001C12 5.00001 5.73596 4.99301 4.16896 5.40401C3.74689 5.52415 3.36279 5.75078 3.05353 6.06214C2.74427 6.3735 2.52025 6.75913 2.40296 7.18201C1.98996 8.74801 1.98596 11.996 1.98596 11.996C1.98596 11.996 1.98196 15.26 2.39196 16.81C2.62196 17.667 3.29696 18.344 4.15496 18.575C5.73696 19.005 11.985 19.012 11.985 19.012C11.985 19.012 18.25 19.019 19.816 18.609C20.2385 18.4943 20.6237 18.2714 20.9336 17.9622C21.2435 17.653 21.4673 17.2682 21.583 16.846C21.997 15.281 22 12.034 22 12.034C22 12.034 22.02 8.76901 21.593 7.20301ZM9.99596 15.005L10.001 9.00501L15.208 12.01L9.99596 15.005Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="flex md:flex-row flex-col justify-end items-start gap-[46px] lg:gap-[88px] capitalize"
+          >
+            <ul class="text-base font-medium text-w-800">
+              <li>
+                <a href="index.html" class="inline-block hover:underline"
+                  >Homepage</a
+                >
+              </li>
+              <li>
+                <a
+                  href="features.html"
+                  class="inline-block my-4 hover:underline"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a
+                  href="products.html"
+                  class="inline-block mb-4 hover:underline"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a href="pricing.html" class="hover:underline">Pricing</a>
+              </li>
+            </ul>
+            <ul class="text-base font-medium text-w-800">
+              <li>
+                <a href="blog.html" class="inline-block hover:underline"
+                  >Blog page</a
+                >
+              </li>
+              <li class="inline-block">
+                <a
+                  href="blog-details.html"
+                  class="inline-block my-4 hover:underline"
+                  >Blog Details</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="inline-block mb-4 hover:underline"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="text-capitalize hover:underline"
+                  >About</a
+                >
+              </li>
+            </ul>
+            <ul class="text-base font-medium text-w-800">
+              <li>
+                <a href="docs.html" class="inline-block hover:underline"
+                  >Docs</a
+                >
+              </li>
+              <li>
+                <a href="sign-in.html" class="inline-block my-4 hover:underline"
+                  >Sign in</a
+                >
+              </li>
+              <li>
+                <a href="sign-up.html" class="inline-block mb-4 hover:underline"
+                  >Sign Up</a
+                >
+              </li>
+              <li>
+                <a href="404.html" class="text-capitalize hover:underline"
+                  >404</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center gap-3 pt-8 text-sm md:flex-row md:justify-between md:gap-0"
+        >
+          <p class="text-w-100">
+            Copyright © 2024 SynthMind. All rights reserved.
+          </p>
+          <ul class="flex gap-8">
+            <li>
+              <a class="text-w-100" href="terms-of-service.html"
+                >Terms of Service</a
+              >
+            </li>
+            <li>
+              <a class="text-w-100" href="privacy-policy.html"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

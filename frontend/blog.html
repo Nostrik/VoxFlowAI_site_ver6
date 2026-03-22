@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/output.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>VoxFlowAI</title>
+  </head>
+  <body class="font-normal bg-body overflow-x-hidden">
+    <header
+      class="absolute top-0 left-0 z-50 w-full border-b border-soid border-b-700"
+    >
+      <div
+        class="items-center justify-between hidden px-5 mx-auto desktop-header lg:flex"
+      >
+        <a href="/">
+          <img src="assets/img/navlogo.svg" alt="logo" />
+        </a>
+        <nav>
+          <ul class="flex items-center justify-center">
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="/"
+                class="inline-block text-base font-medium capitalize text-w-100"
+                >главная</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="features.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >решения</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="products.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >продукты</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="pricing.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >тарифы</a
+              >
+            </li>
+
+            <li
+              class="relative h-full px-5 border-solid xl:px-10 py-7 border-x border-b-700"
+            >
+              <span
+                class="inline-block absolute bottom-0 left-0 w-full h-[1px] bg-w-800"
+              ></span>
+              <a
+                href="blog.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-800 hover:text-w-800"
+                >блог</a
+              >
+            </li>
+            <li class="px-5 xl:px-10 py-7">
+              <a
+                href="contact.html"
+                class="inline-block text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                >контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="items-center hidden gap-3 lg:flex">
+          <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+            <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+        <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+      </svg>
+
+          </a>
+          <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+            <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+        <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+      </svg>
+
+          </a>
+          <a href="https://wa.me/79211769883" target="_blank" aria-label="WhatsApp">
+      <svg width="26" height="26" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <clipPath id="clip">
+            <circle cx="128" cy="128" r="128"/>
+          </clipPath>
+        </defs>
+        <circle cx="128" cy="128" r="128" fill="#25D366"/>
+        <g clip-path="url(#clip)">
+          <path fill="#fff" d="M187.3 68.7C172.6 54 152 46 128.8 46c-46 0-83.2 37.2-83.2 83.1 0 14.6 3.8 28.9 11 41.5L46 210l41-10.7c12 6.6 25.6 10.1 39.8 10.1 46 0 83.2-37.2 83.2-83.1 0-23.2-8-43.8-22.7-58.6Zm-58.5 121c-12.4 0-24.6-3.4-35.1-9.8l-2.5-1.5-24.3 6.4 6.5-23.7-1.6-2.5c-6.7-10.5-10.2-22.5-10.2-34.9 0-36.3 29.6-65.9 65.9-65.9 17.6 0 34.1 6.8 46.5 19.2 12.4 12.5 19.2 29 19.1 46.5 0 36.3-29.6 65.9-65.9 65.9Zm39.1-48.9c-2.1-1-12.6-6.2-14.6-6.9-2-.8-3.5-1.2-5 1.2-1.5 2.3-5.8 6.9-7.1 8.3-1.3 1.5-2.6 1.7-4.7.8-12.8-5.4-21.2-9.6-29.7-21.7-2.2-3.1 2.2-2.9 6.2-11.4.7-1.5.4-2.7-.2-3.9-.6-1.2-5-12.1-6.9-16.6-1.8-4.3-3.7-3.7-5-3.8-1.3-.1-2.8-.1-4.3-.1-1.5 0-4 1-6 3-2 2-7.9 7.7-7.9 18.7s8.1 21.7 9.2 23.2c1.1 1.5 16 24.5 38.8 33.2 22.8 8.7 22.8 5.8 26.9 5.5 4.1-.3 13.2-5.3 15.1-10.4 1.9-5.1 1.9-9.5 1.3-10.4-.5-.9-1.8-1.5-3.9-2.5Z"/>
+        </g>
+      </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="container flex items-center justify-between px-4 py-4 mx-auto mobile-header lg:hidden"
+      >
+        <a href="/">
+          <img src="assets/img/navlogo.svg" alt="logo" />
+        </a>
+        <span class="text-white cursor-pointer menu-open-icon lg:hidden">
+          <svg
+            class="block w-8 h-8 font-semibold"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </span>
+        <div
+          class="fixed top-0 left-0 flex flex-col items-start justify-start w-full h-screen transition-all duration-300 translate-x-full bg-black mobile-menu p-7"
+        >
+          <div class="flex items-start justify-between w-full">
+            <nav>
+              <ul class="mt-5">
+                <li>
+                  <a
+                    href="index.html"
+                    class="inline-block mb-5 text-base font-medium capitalize text-w-100"
+                    >главная</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="features.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >решения</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="products.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >продукты</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="pricing.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >тарифы</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="blog.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-800 hover:text-w-800"
+                    >блог</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="inline-block mb-5 text-base font-medium capitalize transition-all text-w-100 hover:text-w-800"
+                    >контакты</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <strong class="text-white cursor-pointer mobile-menu-close-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-x-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+                />
+              </svg>
+            </strong>
+          </div>
+          <div class="flex items-center justify-center w-full gap-2 mt-6">
+              <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+                <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+            <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+          </svg>
+
+              </a>
+              <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+                <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+            <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+          </svg>
+
+              </a>
+              <a href="https://wa.me/79211769883" target="_blank" aria-label="WhatsApp">
+          <svg width="26" height="26" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <clipPath id="clip">
+                <circle cx="128" cy="128" r="128"/>
+              </clipPath>
+            </defs>
+            <circle cx="128" cy="128" r="128" fill="#25D366"/>
+            <g clip-path="url(#clip)">
+              <path fill="#fff" d="M187.3 68.7C172.6 54 152 46 128.8 46c-46 0-83.2 37.2-83.2 83.1 0 14.6 3.8 28.9 11 41.5L46 210l41-10.7c12 6.6 25.6 10.1 39.8 10.1 46 0 83.2-37.2 83.2-83.1 0-23.2-8-43.8-22.7-58.6Zm-58.5 121c-12.4 0-24.6-3.4-35.1-9.8l-2.5-1.5-24.3 6.4 6.5-23.7-1.6-2.5c-6.7-10.5-10.2-22.5-10.2-34.9 0-36.3 29.6-65.9 65.9-65.9 17.6 0 34.1 6.8 46.5 19.2 12.4 12.5 19.2 29 19.1 46.5 0 36.3-29.6 65.9-65.9 65.9Zm39.1-48.9c-2.1-1-12.6-6.2-14.6-6.9-2-.8-3.5-1.2-5 1.2-1.5 2.3-5.8 6.9-7.1 8.3-1.3 1.5-2.6 1.7-4.7.8-12.8-5.4-21.2-9.6-29.7-21.7-2.2-3.1 2.2-2.9 6.2-11.4.7-1.5.4-2.7-.2-3.9-.6-1.2-5-12.1-6.9-16.6-1.8-4.3-3.7-3.7-5-3.8-1.3-.1-2.8-.1-4.3-.1-1.5 0-4 1-6 3-2 2-7.9 7.7-7.9 18.7s8.1 21.7 9.2 23.2c1.1 1.5 16 24.5 38.8 33.2 22.8 8.7 22.8 5.8 26.9 5.5 4.1-.3 13.2-5.3 15.1-10.4 1.9-5.1 1.9-9.5 1.3-10.4-.5-.9-1.8-1.5-3.9-2.5Z"/>
+            </g>
+          </svg>
+              </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="bg-primary-hero bg-cover bg-no-repeat pt-52 pb-32">
+      <div class="container mx-auto px-5 xl:px-0">
+        <h1
+          class="pb-4 text-5xl font-semibold lg:text-8xl text-w-800"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Наш
+          <span class="gd-title">Блог</span>
+        </h1>
+        <p
+          class="mt-4 text-xl text-w-100"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          Идеи и технологии, которые помогают зарабатывать больше.
+          <span class="inline-block lg:block"></span>
+          Читайте о стратегиях, инструментах и трендах, превращающих знания в прибыль.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="bg-[url('../img/exploreourblogsbg.png')] bg-cover bg-center bg-no-repeat pt-12 pb-24 overflow-hidden"
+    >
+      <div class="container mx-auto px-5 xl:px-0">
+        <h2
+          class="gd-title text-5xl font-semibold leading-[64px] text-center mx-auto mb-4"
+          data-aos="fade-up"
+        >
+          Следите за обновлениями в наших блогах
+        </h2>
+        <p
+            class="text-xl text-w-100 mb-[32px] text-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            Узнайте о новых технологиях искусственного интеллекта и о том, как компании используют ИИ-агентов и ботов для автоматизации общения с клиентами.
+          </p>
+        <!-- BUTTONS FOR FILTERING BLOG CARD  -->
+        <!-- <div class="flex flex-wrap items-center justify-center gap-2">
+          <a
+            href="#"
+            class="py-1.5 px-4 border border-transparent border-opacity-[8%] rounded text-b-100 hover:text-b-150 duration-300 blog-category-link b-active"
+            onclick="showAllCategories(event)"
+            >Все категории</a
+          >
+          <a
+            href="#"
+            class="py-1.5 px-4 border border-transparent border-opacity-[8%] rounded text-b-100 hover:text-b-150 duration-300 blog-category-link"
+            data-category="product-update"
+            onclick="showCategory(event, 'product-update')"
+            >Автоматизация</a
+          >
+          <a
+            href="#"
+            class="py-1.5 px-4 border border-transparent border-opacity-[8%] rounded text-b-100 hover:text-b-150 duration-300 blog-category-link"
+            data-category="technology-exploration"
+            onclick="showCategory(event, 'technology-exploration')"
+            >Продажи</a
+          >
+          <a
+            href="#"
+            class="py-1.5 px-4 border border-transparent border-opacity-[8%] rounded text-b-100 hover:text-b-150 duration-300 blog-category-link"
+            data-category="best-practices"
+            onclick="showCategory(event, 'best-practices')"
+            >Best Practices</a
+          >
+        </div> -->
+        <div
+          class="grid grid-cols-1 mt-12 sm:grid-cols-2 lg:grid-cols-3 gap-[30px]"
+          id="blog-cards"
+        >
+<!-- BLOG CARD 1 -->
+          <div
+            class="p-8 bg-blog-card rounded border border-w-100 border-opacity-[8%]"
+            data-aos="fade-right"
+          >
+            <img class="w-full mb-8" src="assets/img/blog/1_346x200.png" alt="img" />
+            <a
+              href="products.html"
+              class="inline-block py-1.5 px-4 border border-w-100 border-opacity-[8%] text-b-150 text-sm font-semibold hover:bg-w-800 hover:text-b-800 rounded"
+              >Продажи и автоматизация</a
+            >
+            <a
+              href="blog-details1.html"
+              class="block my-6 text-2xl font-medium text-w-800 hover:underline"
+            >
+              Зачем бизнесу чат-бот для продаж
+            </a>
+            <div class="flex items-center justify-start gap-2">
+              <div class="flex items-center justify-start gap-3">
+                <img src="assets/img/card1idimg.png" alt="img" />
+                <span class="text-sm font-semibold text-w-800"
+                  >Редакция VF Blog</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-center gap-2 text-sm text-w-100"
+              >
+                &#8226;
+                <span>15 января 2026</span>
+              </div>
+            </div>
+          </div>
+          <!-- BLOG CARD 2 -->
+          <div
+            class="p-8 bg-blog-card rounded border border-w-100 border-opacity-[8%]"
+            data-aos="fade-up"
+          >
+            <img class="w-full mb-8" src="assets/img/blog/3_346x200.png" alt="img" />
+            <a
+              href="products.html"
+              class="py-1.5 px-4 border border-w-100 border-opacity-[8%] text-b-150 text-sm font-semibold hover:bg-w-800 hover:text-b-800 rounded"
+              >Технологии</a
+            >
+            <a
+              href="blog-details2.html"
+              class="block my-6 text-2xl font-medium text-w-800 hover:underline"
+            >
+              Как ИИ меняет бизнес-процессы в 2025
+            </a>
+            <div class="flex gap-2">
+              <div class="flex items-center justify-center gap-3">
+                <img src="assets/img/card2idimg.png" alt="img" />
+                <span class="text-sm font-semibold text-w-800"
+                  >Редакция VF Blog</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-center gap-2 text-sm text-w-100"
+              >
+                &#8226;
+                <span>20 февраля 2026</span>
+              </div>
+            </div>
+          </div>
+          <!-- BLOG CARD 3 -->
+          <div
+            class="p-8 bg-blog-card rounded border border-w-100 border-opacity-[8%]"
+            data-aos="fade-left"
+          >
+            <img class="w-full mb-8" src="assets/img/blog/5_346x200.png" alt="img" />
+            <a
+              href="products.html"
+              class="py-1.5 px-4 border border-w-100 border-opacity-[8%] text-b-150 text-sm font-semibold hover:bg-w-800 hover:text-b-800 rounded"
+              >Интеграция</a
+            >
+            <a
+              href="blog-details3.html"
+              class="block my-6 text-2xl font-medium text-w-800 hover:underline"
+            >
+              Нейросети для автоматизации и роста продаж
+            </a>
+            <div class="flex gap-2">
+              <div class="flex items-center justify-center gap-3">
+                <img src="assets/img/card3idimg.png" alt="img" />
+                <span class="text-sm font-semibold text-w-800"
+                  >Редакция VF Blog</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-center gap-2 text-sm text-w-100"
+              >
+                &#8226;
+                <span>20 марта 2026</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-footer-bg bg-cover bg-center bg-no-repeat pt-24 pb-8">
+      <div class="container mx-auto px-5 xl:px-0">
+        <div class="mb-24 text-center">
+          <h2
+            class="gd-title text-5xl font-semibold leading-[64px] text-center mx-auto mb-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Хотите регулярные обновления продуктов?
+          </h2>
+          <p
+            class="text-xl text-w-100 mb-[32px]"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            Получайте эксклюзивные обновления на свой почтовый ящик – подпишитесь на блог.
+          </p>
+
+          <form
+            action="#"
+            class="grid lg:flex items-center justify-center gap-2 transition-all duration-300"
+            data-aos-delay="300"
+            data-aos="fade-up"
+          >
+            <input
+              type="email"
+              placeholder="Укажите емейл"
+              class="w-full sm:w-64 border border-[#515A67] focus:outline-none bg-transparent py-3 px-4 rounded placeholder:text-[#515A67] text-w-100"
+              required
+            />
+            <button
+              type="submit"
+              class="w-full sm:w-auto px-6 py-3 capitalize text-base font-semibold border border-solid border-w-900 rounded bg-w-800 text-b-800 hover:bg-transparent hover:text-w-800 transition-colors duration-300"
+            >
+              Подписаться
+            </button>
+          </form>
+        </div>
+        <div
+          class="flex flex-col items-start justify-between py-24 md:flex-row"
+        >
+          <div>
+            <a href="index.html">
+              <img src="assets/img/footerlogo.png" alt="logo" />
+            </a>
+            <p class="mt-8 text-sm font-medium capitalize text-w-800">
+              Адрес:
+            </p>
+            <p class="mb-4 text-sm text-w-100">
+              просп. Ленина, 16А, Мурманск 183032
+            </p>
+            <p class="text-sm font-medium capitalize text-w-800">контакты:</p>
+            <a class="inline-block text-sm text-w-100" href="tel:+7(921)-176-98-83"
+              >+7(921)-176-98-83</a
+            >
+            <br />
+            <a
+              class="inline-block text-sm text-w-100"
+              href="mailto:info@voxflowai.ru"
+              >info@voxflowai.ru</a
+            >
+            <div class="flex items-center justify-start gap-4 my-8 text-w-100">
+                  <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+                    <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+                <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+              </svg>
+
+                  </a>
+                  <a href="https://t.me/maksimfalev" target="_blank" aria-label="Telegram">
+                    <svg width="26" height="26" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
+                <path d="M180.6 67.2L157.7 176.4c-1.7 7.6-6.2 9.5-12.5 5.9l-34.6-25.5-16.7 16.1c-1.9 1.9-3.4 3.4-6.9 3.4l2.5-35 63.7-57.5c2.8-2.5-0.6-3.9-4.3-1.4l-78.7 49.5-33.9-10.6c-7.4-2.3-7.6-7.4 1.6-11L170 61.1c6.1-2.3 11.4 1.4 10.6 6.1z" fill="#fff"/>
+              </svg>
+
+                  </a>
+                  <a href="https://wa.me/79211769883" target="_blank" aria-label="WhatsApp">
+              <svg width="26" height="26" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <clipPath id="clip">
+                    <circle cx="128" cy="128" r="128"/>
+                  </clipPath>
+                </defs>
+                <circle cx="128" cy="128" r="128" fill="#25D366"/>
+                <g clip-path="url(#clip)">
+                  <path fill="#fff" d="M187.3 68.7C172.6 54 152 46 128.8 46c-46 0-83.2 37.2-83.2 83.1 0 14.6 3.8 28.9 11 41.5L46 210l41-10.7c12 6.6 25.6 10.1 39.8 10.1 46 0 83.2-37.2 83.2-83.1 0-23.2-8-43.8-22.7-58.6Zm-58.5 121c-12.4 0-24.6-3.4-35.1-9.8l-2.5-1.5-24.3 6.4 6.5-23.7-1.6-2.5c-6.7-10.5-10.2-22.5-10.2-34.9 0-36.3 29.6-65.9 65.9-65.9 17.6 0 34.1 6.8 46.5 19.2 12.4 12.5 19.2 29 19.1 46.5 0 36.3-29.6 65.9-65.9 65.9Zm39.1-48.9c-2.1-1-12.6-6.2-14.6-6.9-2-.8-3.5-1.2-5 1.2-1.5 2.3-5.8 6.9-7.1 8.3-1.3 1.5-2.6 1.7-4.7.8-12.8-5.4-21.2-9.6-29.7-21.7-2.2-3.1 2.2-2.9 6.2-11.4.7-1.5.4-2.7-.2-3.9-.6-1.2-5-12.1-6.9-16.6-1.8-4.3-3.7-3.7-5-3.8-1.3-.1-2.8-.1-4.3-.1-1.5 0-4 1-6 3-2 2-7.9 7.7-7.9 18.7s8.1 21.7 9.2 23.2c1.1 1.5 16 24.5 38.8 33.2 22.8 8.7 22.8 5.8 26.9 5.5 4.1-.3 13.2-5.3 15.1-10.4 1.9-5.1 1.9-9.5 1.3-10.4-.5-.9-1.8-1.5-3.9-2.5Z"/>
+                </g>
+              </svg>
+                  </a>
+            </div>
+          </div>
+          <div
+            class="flex md:flex-row flex-col justify-end items-start gap-[46px] lg:gap-[88px] capitalize"
+          >
+            <ul class="flex flex-col gap-4 text-base font-medium text-white">
+              <li>
+                <a href="index.html" class="inline-block hover:underline">Главная</a>
+              </li>
+              <li>
+                <a href="features.html" class="inline-block hover:underline">Решения</a>
+              </li>
+              <li>
+                <a href="products.html" class="inline-block hover:underline">Продукты</a>
+              </li>
+            </ul>
+            <ul class="flex flex-col gap-4 text-base font-medium text-white">
+              <li>
+                <a href="pricing.html" class="inline-block hover:underline">Тарифы</a>
+              </li>
+              <li>
+                <a href="blog.html" class="inline-block hover:underline">Блог</a>
+              </li>
+              <li>
+                <a href="contact.html" class="inline-block hover:underline">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center gap-3 pt-8 text-sm md:flex-row md:justify-between md:gap-0"
+        >
+          <p class="text-w-100">
+            Copyright © 2025 VoxFlowAI Все права защищены.
+          </p>
+          <ul class="flex gap-8">
+            <li>
+              <a class="text-w-100" href="privacy-policy.html"
+                >Политика конфиденциальности</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
