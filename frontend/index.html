@@ -18,10 +18,11 @@
     <link rel="stylesheet" href="assets/css/output.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/reviews.css">
+    <link rel="stylesheet" href="assets/css/chat.css">
     <title>VoxFlowAI</title>
   </head>
 
-  <!-- 28.03.2026 20:29 -->
+  <!-- 31.03.2026 01:06 -->
   <body class="relative font-normal bg-body">
     <header
       class="absolute top-0 left-0 z-50 w-full border-b border-solid border-b-700"
@@ -1455,6 +1456,22 @@ stroke-linecap="round"/>
         </div>
       </div>
     </footer>
+    <!-- twin widjet -->
+    <!-- <div id="chat-client" style="z-index: 1000000;"></div>
+    <script src="https://twin24.ai/app/chat-client/widget.js" charset="utf-8"></script>
+    <script>
+      appChatClient({
+        chatId: '3584817c-13f7-426d-afa8-c6acb1788a79',
+      }, {
+        host: document.getElementById('chat-client'),
+        injectStyles: `
+          [data-id=chat-host] {
+            bottom: 8px;
+            right: 8px;
+            align-items: end;
+          }`,    
+      })
+    </script> -->
     <!-- <script>
       document.addEventListener('DOMContentLoaded', async () => {
         const api = new ChatApi({
@@ -1476,8 +1493,9 @@ stroke-linecap="round"/>
         await chat.init();
       });
     </script> -->
-    <script src="./assets/js/chat.js"></script>
-    <script>
+    <!-- <script src="./assets/js/chat.js"></script> -->
+    <script src="./assets/js/chat_twin.js"></script>
+    <!-- <script>
       document.addEventListener("DOMContentLoaded", function () {
         document
           .getElementById("playBtn")
@@ -1502,7 +1520,7 @@ stroke-linecap="round"/>
           }
         }
       });
-    </script>
+    </script> -->
     <!-- <script src="assets/js/reviews_list.js"></script> -->
     <script src="assets/js/reviews-test.js"></script>
     <script src="assets/js/aos.js"></script>
