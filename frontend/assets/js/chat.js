@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const messageWrapper = document.createElement('div');
     messageWrapper.className = 'flex items-end justify-end w-full gap-2';
     messageWrapper.innerHTML = `
-      <p class="p-3 w-auto sm:max-w-[232px] text-left rounded rounded-br-none text-sm md:text-base bg-chat-primary text-w-300">
+      <p class="p-3 w-auto sm:max-w-[270px] text-left rounded rounded-br-none text-sm md:text-base bg-chat-primary text-w-300">
         ${escapeHtml(text)}
       </p>
       <img src="assets/img/chatuser1.svg" alt="chatuser1.svg" />
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
     messageWrapper.className = 'flex items-end justify-start gap-2';
     messageWrapper.innerHTML = `
       <img src="assets/img/chatuser2.svg" alt="chatbot-avatar" />
-      <p class="p-3 w-auto sm:max-w-[216px] text-left rounded rounded-bl-none text-sm md:text-base bg-chat-secondary text-w-300">
+      <p class="p-3 w-auto sm:max-w-[220px] text-left rounded rounded-bl-none text-sm md:text-base bg-chat-secondary text-w-300">
         ${escapeHtml(text)}
       </p>
     `;
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     typingWrapper.innerHTML = `
       <img src="assets/img/chatuser2.svg" alt="chatbot-avatar" />
-      <p id="typing-text" class="p-3 w-auto sm:max-w-[216px] text-left rounded rounded-bl-none text-sm md:text-base bg-chat-secondary text-w-300 italic">
+      <p id="typing-text" class="p-3 w-auto sm:max-w-[220px] text-left rounded rounded-bl-none text-sm md:text-base bg-chat-secondary text-w-300 italic">
         .
       </p>
     `;
