@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   const TWIN_CONFIG = {
-    chatId: '3584817c-13f7-426d-afa8-c6acb1788a79',
+    chatId: 'e7538e3b-93d1-488c-a8c9-22a325ca5aa5',
     companyId: '15778',
     baseUrl: 'https://twin24.ai',
     widgetQuery: 'x_widget=1',
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
     chatMessages.appendChild(messageWrapper);
   }
 
-  function addBotMessage(text) {
+  function addBotMessageDep(text) {
     const messageWrapper = document.createElement('div');
     messageWrapper.className = 'flex items-end justify-start gap-2';
     messageWrapper.innerHTML = `
@@ -69,6 +69,26 @@ document.addEventListener('DOMContentLoaded', function () {
         ${(text)}
       </p>
     `;
+    chatMessages.appendChild(messageWrapper);
+  }
+
+  function addBotMessage(text) {
+    const messageWrapper = document.createElement('div');
+    messageWrapper.className = 'flex items-end justify-start gap-2';
+
+    const avatar = document.createElement('img');
+    avatar.src = 'assets/img/chatuser2.svg';
+    avatar.alt = 'chatbot-avatar';
+
+    const bubble = document.createElement('div');
+    bubble.className = 'p-3 w-auto sm:max-w-[240px] text-left rounded rounded-bl-none text-sm md:text-base bg-chat-secondary text-w-300 break-words';
+    bubble.style.whiteSpace = 'pre-line';
+    bubble.style.lineHeight = '1.6';
+
+    bubble.textContent = text;
+
+    messageWrapper.appendChild(avatar);
+    messageWrapper.appendChild(bubble);
     chatMessages.appendChild(messageWrapper);
   }
 
@@ -281,6 +301,7 @@ document.addEventListener('DOMContentLoaded', function () {
       log('Рендерим сообщение бота:', item.id, item.body);
 
       removeTypingIndicator();
+      console.log('BOT RAW MESSAGE:', JSON.stringify(item.body));
       addBotMessage(item.body);
       renderedMessageIds.add(item.id);
       rendered++;
