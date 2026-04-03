@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     companyId: '15778',
     baseUrl: 'https://twin24.ai',
     widgetQuery: 'x_widget=1',
-    debug: true,
+    debug: false,
   };
 
   let typingInterval = null;
@@ -301,7 +301,7 @@ document.addEventListener('DOMContentLoaded', function () {
       log('Рендерим сообщение бота:', item.id, item.body);
 
       removeTypingIndicator();
-      console.log('BOT RAW MESSAGE:', JSON.stringify(item.body));
+      // console.log('BOT RAW MESSAGE:', JSON.stringify(item.body));
       addBotMessage(item.body);
       renderedMessageIds.add(item.id);
       rendered++;
