@@ -27,9 +27,7 @@ async def send_new_lead_notification(lead: Lead):
     message_text = (
         f"🚀 <b>Новая заявка №{lead.id} ({date_time_display})</b>\n\n"
         f"📧 Email: {lead.email}\n"
-        f"🏢 Компания: {lead.company}\n"
         f"📞 Телефон: {lead.phone}\n"
-        f"📝 Описание: {lead.description}"
     )
 
     try:

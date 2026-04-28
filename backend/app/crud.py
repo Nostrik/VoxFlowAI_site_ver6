@@ -14,9 +14,7 @@ async def create_lead(db: AsyncSession, lead_data: LeadCreate) -> Lead:
     """
     db_lead = Lead(
         email=lead_data.email,
-        company=lead_data.company,
         phone=lead_data.phone,
-        description=lead_data.description
     )
 
     db.add(db_lead)
