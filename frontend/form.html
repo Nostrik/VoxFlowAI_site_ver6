@@ -52,22 +52,6 @@
         <span class="text-w-100">Пожалуйста, заполните форму</span>
         <h5 class="mt-6 mb-3 font-semibold text-w-800">Имя</h5>
         <input
-          type="text"
-          name="name"
-          id="name"
-          class="w-full px-4 py-3 focus:outline-none sm:text-sm bg-transparent border border-w-100 border-opacity-[8%] placeholder:text-b-100 text-w-800 rounded"
-          placeholder="Имя"
-        />
-        <h5 class="mt-4 mb-3 font-semibold text-w-800">Компания</h5>
-        <input
-          type="text"
-          name="company"
-          id="company"
-          class="w-full px-4 py-3 focus:outline-none sm:text-sm bg-transparent border border-w-100 border-opacity-[8%] placeholder:text-b-100 text-w-800 rounded"
-          placeholder="Компания"
-        />
-        <h5 class="mt-4 mb-3 font-semibold text-w-800">Email</h5>
-        <input
           type="email"
           name="email"
           id="email"
@@ -79,20 +63,9 @@
           type="tel"
           name="phone"
           id="phone"
-          class="w-full px-4 py-3 focus:outline-none sm:text-sm bg-transparent border border-w-100 border-opacity-[8%] placeholder:text-b-100 text-w-800 rounded"
+          class="w-full px-4 py-3 mb-4 focus:outline-none sm:text-sm bg-transparent border border-w-100 border-opacity-[8%] placeholder:text-b-100 text-w-800 rounded"
           placeholder="Телефон"
         />
-        <h5 class="mt-4 mb-3 font-semibold text-w-800">Описание задачи</h5>
-        <textarea
-          name="description"
-          id="description"
-          placeholder="Краткое описание задачи*"
-          cols="30"
-          rows="10"
-          style="height: 120px;"
-          class="placeholder:text-b-100 px-4 py-3 w-full rounded focus:outline-none border border-w-100 border-opacity-[8%] text-base bg-transparent text-w-800"
-          required
-        ></textarea>
           <div class="flex items-center justify-start gap-2 mb-6 sm:flex md:flex lg:flex">
             <input type="checkbox" required />
             <span class="flex items-center justify-center gap-1 text-sm text-w-100">
@@ -212,11 +185,8 @@
           description: "Тестовое описание задачи"
         };
 
-        form.querySelector('[name="name"]').value = testData.name;
         form.querySelector('[name="email"]').value = testData.email;
-        form.querySelector('[name="company"]').value = testData.company;
         form.querySelector('[name="phone"]').value = testData.phone;
-        form.querySelector('[name="description"]').value = testData.description;
       }
     </script> -->
   </body>

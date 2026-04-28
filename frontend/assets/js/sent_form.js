@@ -49,9 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
             setMessage('');
 
             const payload = {
-                description: document.getElementById('description').value,
-                name: document.getElementById('name').value,
-                company: document.getElementById('company').value,
                 phone: document.getElementById('phone').value,
                 email: document.getElementById('email').value,
             };
