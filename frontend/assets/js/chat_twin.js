@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   let twinSessionId = localStorage.getItem('twin_session_id') || '';
   let twinClientExternalId =
-    // localStorage.getItem('twin_client_external_id') || crypto.randomUUID();
     localStorage.getItem('twin_client_external_id') || 'cecb55e9-5ad0-4eb7-8afe-cd2a0b0e2b04';
 
   localStorage.setItem('twin_client_external_id', twinClientExternalId);
@@ -60,19 +59,9 @@ document.addEventListener('DOMContentLoaded', function () {
     chatMessages.appendChild(messageWrapper);
   }
 
-  function addBotMessageDep(text) {
-    const messageWrapper = document.createElement('div');
-    messageWrapper.className = 'flex items-end justify-start gap-2';
-    messageWrapper.innerHTML = `
-      <img src="assets/img/chatuser2.svg" alt="chatbot-avatar" />
-      <p class="p-3 w-auto sm:max-w-[240px] text-left rounded rounded-bl-none text-sm md:text-base bg-chat-secondary text-w-300">
-        ${(text)}
-      </p>
-    `;
-    chatMessages.appendChild(messageWrapper);
-  }
-
-  function addBotMessage(text) {
+  // animate=true  — посимвольная анимация (для новых сообщений)
+  // animate=false — мгновенный вывод (для истории при инициализации)
+  function addBotMessage(text, animate = true) {
     const messageWrapper = document.createElement('div');
     messageWrapper.className = 'flex items-end justify-start gap-2';
 
@@ -85,11 +74,40 @@ document.addEventListener('DOMContentLoaded', function () {
     bubble.style.whiteSpace = 'pre-line';
     bubble.style.lineHeight = '1.6';
 
-    bubble.textContent = text;
-
     messageWrapper.appendChild(avatar);
     messageWrapper.appendChild(bubble);
     chatMessages.appendChild(messageWrapper);
+
+    if (!animate) {
+      bubble.textContent = text;
+      return Promise.resolve();
+    }
+
+    // Посимвольная печать с поддержкой HTML-тегов
+    return new Promise((resolve) => {
+      // Извлекаем чистый текст из HTML для анимации
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = text;
+      const plainText = tempDiv.innerText;
+
+      let i = 0;
+      const speed = 18; // мс на символ, уменьши для более быстрой печати
+
+      function typeNextChar() {
+        if (i < plainText.length) {
+          bubble.textContent = plainText.slice(0, i + 1);
+          i++;
+          scrollChatToBottom();
+          setTimeout(typeNextChar, speed);
+        } else {
+          // После анимации рендерим финальный HTML с тегами
+          bubble.innerHTML = text;
+          resolve();
+        }
+      }
+
+      typeNextChar();
+    });
   }
 
   function showTypingIndicator() {
@@ -215,32 +233,7 @@ document.addEventListener('DOMContentLoaded', function () {
     return data;
   }
 
-//   async function fetchMessages() {
-//     const url = `${TWIN_CONFIG.baseUrl}/analyse/api/v1/statistics/chat/messages?${TWIN_CONFIG.widgetQuery}&chatId=${encodeURIComponent(TWIN_CONFIG.chatId)}&sessionId=${encodeURIComponent(twinSessionId)}&limit=50&offset=0`;
-
-//     log('Запрашиваем историю');
-//     log('GET', url);
-
-//     const response = await fetch(url, {
-//       method: 'GET',
-//       headers: {
-//         'Accept': 'application/json',
-//       },
-//     });
-
-//     log('Ответ fetchMessages status:', response.status);
-
-//     const data = await response.json().catch(() => null);
-//     log('Ответ fetchMessages body:', data);
-
-//     if (!response.ok) {
-//       throw new Error(`Ошибка получения истории: ${response.status}`);
-//     }
-
-//     return data;
-//   }
-
-    async function fetchMessages() {
+  async function fetchMessages() {
     const url = new URL(`${TWIN_CONFIG.baseUrl}/analyse/api/v1/statistics/chat/messages`);
 
     url.searchParams.set('x_widget', '1');
@@ -255,10 +248,10 @@ document.addEventListener('DOMContentLoaded', function () {
     log('GET', url.toString());
 
     const response = await fetch(url.toString(), {
-        method: 'GET',
-        headers: {
+      method: 'GET',
+      headers: {
         'Accept': 'application/json',
-        },
+      },
     });
 
     log('Ответ fetchMessages status:', response.status);
@@ -267,11 +260,11 @@ document.addEventListener('DOMContentLoaded', function () {
     log('Ответ fetchMessages body:', data);
 
     if (!response.ok) {
-        throw new Error(`Ошибка получения истории: ${response.status}`);
+      throw new Error(`Ошибка получения истории: ${response.status}`);
     }
 
     return data;
-    }
+  }
 
   function extractBotMessages(data) {
     if (!data || !Array.isArray(data.items)) {
@@ -292,7 +285,8 @@ document.addEventListener('DOMContentLoaded', function () {
     return botMessages.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt));
   }
 
-  function renderNewBotMessages(messages) {
+  // animate=true — новые сообщения печатаются посимвольно
+  async function renderNewBotMessages(messages, animate = true) {
     let rendered = 0;
 
     for (const item of messages) {
@@ -301,8 +295,7 @@ document.addEventListener('DOMContentLoaded', function () {
       log('Рендерим сообщение бота:', item.id, item.body);
 
       removeTypingIndicator();
-      // console.log('BOT RAW MESSAGE:', JSON.stringify(item.body));
-      addBotMessage(item.body);
+      await addBotMessage(item.body, animate);
       renderedMessageIds.add(item.id);
       rendered++;
     }
@@ -323,7 +316,8 @@ document.addEventListener('DOMContentLoaded', function () {
       try {
         const history = await fetchMessages();
         const botMessages = extractBotMessages(history);
-        const renderedCount = renderNewBotMessages(botMessages);
+        // animate=true — новые ответы печатаются посимвольно
+        const renderedCount = await renderNewBotMessages(botMessages, true);
 
         if (renderedCount > 0) {
           log('Ответ бота получен');
@@ -384,13 +378,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (!gotReply) {
         removeTypingIndicator();
-        addBotMessage('Не удалось дождаться ответа. Попробуйте ещё раз.');
+        await addBotMessage('Не удалось дождаться ответа. Попробуйте ещё раз.', true);
         scrollChatToBottom();
       }
     } catch (err) {
       errorLog('Ошибка handleSendMessage:', err);
       removeTypingIndicator();
-      addBotMessage('Ошибка соединения с сервером. Попробуйте позже.');
+      await addBotMessage('Ошибка соединения с сервером. Попробуйте позже.', true);
       scrollChatToBottom();
     } finally {
       isSending = false;
