@@ -11,6 +11,11 @@
   max-width: fit-content;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 @keyframes slides {
   from {
     transform: translateX(0);
@@ -156,6 +161,6 @@
   background: rgba(255,255,255,0.45);
 }
 
-* {
+/* * {
   outline: 1px solid red !important;
-}
+} */
