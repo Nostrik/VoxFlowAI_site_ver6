@@ -54,14 +54,6 @@ html, body {
   }
 }
 
-/* @media (hover: none) {
-  .voice-card:hover {
-    transform: none !important;
-    border-color: inherit !important;
-    box-shadow: none !important;
-  }
-} */
-
 @media (hover: none) {
   .voice-card:hover {
     border-color: rgba(255, 255, 255, 0.1) !important;
@@ -173,7 +165,3 @@ html, body {
 .voxbot-messages::-webkit-scrollbar-thumb:hover {
   background: rgba(255,255,255,0.45);
 }
-
-/* * {
-  outline: 1px solid red !important;
-} */

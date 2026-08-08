@@ -1348,71 +1348,8 @@ stroke-linecap="round"/>
         </div>
       </div>
     </footer>
-    <!-- twin widjet -->
-    <!-- <div id="chat-client" style="z-index: 1000000;"></div>
-    <script src="https://twin24.ai/app/chat-client/widget.js" charset="utf-8"></script>
-    <script>
-      appChatClient({
-        chatId: '3584817c-13f7-426d-afa8-c6acb1788a79',
-      }, {
-        host: document.getElementById('chat-client'),
-        injectStyles: `
-          [data-id=chat-host] {
-            bottom: 8px;
-            right: 8px;
-            align-items: end;
-          }`,    
-      })
-    </script> -->
-    <!-- <script>
-      document.addEventListener('DOMContentLoaded', async () => {
-        const api = new ChatApi({
-          baseUrl: '/api/chat'
-        });
-
-        const chat = new ChatWidget({
-          api,
-          rootId: 'voxbot-card',
-          messagesId: 'chat-messages',
-          formId: 'chat-form',
-          inputId: 'chat-input',
-          sendBtnId: 'send-message',
-          stopBtnId: 'stop-message',
-          refreshBtnId: 'refresh-chat',
-          closeBtnId: 'close-chat'
-        });
-
-        await chat.init();
-      });
-    </script> -->
     <!-- <script src="./assets/js/chat.js"></script> -->
     <script src="./assets/js/chat_twin.js"></script>
-    <!-- <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        document
-          .getElementById("playBtn")
-          .addEventListener("click", toggleVideo);
-        document
-          .getElementById("closeBtn")
-          .addEventListener("click", toggleVideo);
-        function toggleVideo(event) {
-          event.preventDefault();
-          var video = document.getElementById("video");
-          if (video) {
-            if (event.target.id === "playBtn") {
-              video.play();
-            } else if (event.target.id === "closeBtn") {
-              video.pause();
-            }
-            document
-              .getElementById("videoContainer")
-              .classList.toggle("hidden");
-          } else {
-            console.error("Video element not found.");
-          }
-        }
-      });
-    </script> -->
     <script src="assets/js/reviews_list.js"></script>
     <!-- <script src="assets/js/reviews-test.js"></script> -->
     <script src="assets/js/aos.js"></script>
