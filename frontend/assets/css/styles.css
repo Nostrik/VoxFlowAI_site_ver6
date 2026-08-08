@@ -54,11 +54,19 @@ html, body {
   }
 }
 
-@media (hover: none) {
+/* @media (hover: none) {
   .voice-card:hover {
     transform: none !important;
     border-color: inherit !important;
     box-shadow: none !important;
+  }
+} */
+
+@media (hover: none) {
+  .voice-card:hover {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    box-shadow: none !important;
+    transform: none !important;
   }
 }
 
