@@ -48,6 +48,18 @@
     min-width: 380px;
   }
 
+  /* changes */
+  .trusted-marquee {
+    overflow-x: auto;
+    scrollbar-width: none;      /* Firefox */
+    -ms-overflow-style: none;   /* IE/Edge */
+  }
+
+  .trusted-marquee::-webkit-scrollbar {
+    display: none;              /* Chrome/Safari */
+  }
+  /* changes */
+
   @media (max-width: 1024px) {
     .trusted-card {
       width: 320px;

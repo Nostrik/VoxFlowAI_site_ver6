@@ -51,3 +51,14 @@ document.addEventListener('DOMContentLoaded', function () {
     duplicateContainer.appendChild(card.cloneNode(true));
   });
 });
+
+// Скролл карусели отзывов колёсиком мыши
+document.addEventListener('DOMContentLoaded', () => {
+    const marquee = document.querySelector('.trusted-marquee');
+    if (!marquee) return;
+
+    marquee.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        marquee.scrollLeft += e.deltaY || e.deltaX;
+    }, { passive: false });
+});
