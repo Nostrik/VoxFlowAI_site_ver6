@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/output.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <style>
+      .mt-wrap {
+        width: 100%;
+        max-width: 720px;
+        padding: 24px;
+        box-sizing: border-box;
+      }
+      .mt-contacts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 8px;
+      }
+      .mt-contact {
+        display: inline-block;
+        padding: 12px 20px;
+        border: 1px solid rgba(255, 255, 255, 0.24);
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+      .mt-contact:hover {
+        background: #fff;
+        color: #000;
+      }
+      .mt-contact:focus-visible {
+        outline: 2px solid #fff;
+        outline-offset: 3px;
+      }
+    </style>
+    <title>Технические работы | SynthMind</title>
+  </head>
+  <body class="font-normal bg-body">
+    <div class="bg-sign-in bg-cover bg-center bg-no-repeat h-screen">
+      <div
+        class="mt-wrap fixed text-center transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+      >
+        <h2
+          class="gd-title text-5xl font-semibold leading-[64px] text-center mx-auto mb-4"
+        >
+          Технические работы на сайте
+        </h2>
+        <p class="mb-8 text-w-100 text-[20px]">
+          Приносим свои извинения за неудобства. Если вы хотите задать вопрос
+          или оставить заявку, свяжитесь с нами по контактам ниже.
+        </p>
+        <div class="mt-contacts">
+          <a class="mt-contact" href="mailto:info@voxflowai.ru"
+            >info@voxflowai.ru</a
+          >
+          <a class="mt-contact" href="tel:+79211769883">+7 (921) 176-98-83</a>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
